@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Image Blurb
- * Slug: onlinestore/image-blurb
- * Categories: onlinestore
+ * Slug: online-store/image-blurb
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px"}}},"backgroundColor":"muted","layout":{"type":"constrained"}} -->
@@ -17,11 +17,11 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"20"} -->
-<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Fast Free Delivery', 'onlinestore' ); ?></h3>
+<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Fast Free Delivery', 'online-store' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"16"} -->
-<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( 'on memtro orders over $50', 'onlinestore' ); ?></p>
+<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( 'on memtro orders over $50', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -35,11 +35,11 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"20"} -->
-<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( '#1 Pet Product', 'onlinestore' ); ?></h3>
+<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( '#1 Pet Product', 'online-store' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"16"} -->
-<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( 'Canstar Blue said it, not us', 'onlinestore' ); ?></p>
+<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( 'Canstar Blue said it, not us', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -53,11 +53,11 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"20"} -->
-<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Free Vet Services', 'onlinestore' ); ?></h3>
+<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Free Vet Services', 'online-store' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"16"} -->
-<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( 'ask us anything (really)', 'onlinestore' ); ?></p>
+<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( 'ask us anything (really)', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -71,11 +71,11 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"20"} -->
-<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Secure Payment', 'onlinestore' ); ?></h3>
+<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Secure Payment', 'online-store' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"16"} -->
-<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( '20% off your online order of $70+', 'onlinestore' ); ?></p>
+<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( '20% off your online order of $70+', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

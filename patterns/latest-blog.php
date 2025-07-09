@@ -1,22 +1,22 @@
 <?php
 /**
  * Title: Latest News & Articles
- * Slug: onlinestore/latest-blog
- * Categories: onlinestore
+ * Slug: online-store/latest-blog
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 ?>
 <!-- wp:group {"tagName":"section","metadata":{"name":"Latest Blog "},"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
 <section class="wp-block-group" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"32px"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-bottom:32px"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><?php esc_html_e( 'Our Latest News &amp; Articles', 'onlinestore' ); ?></h3>
+<h3 class="wp-block-heading"><?php esc_html_e( 'Our Latest News &amp; Articles', 'online-store' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"style":{"border":{"radius":"12px"}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" style="border-radius:12px"><?php esc_html_e( 'View All Articles', 'onlinestore' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" style="border-radius:12px"><?php esc_html_e( 'View All Articles', 'online-store' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>

@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Instagram Post
- * Slug: onlinestore/instagram-post-2
- * Categories: onlinestore
+ * Slug: online-store/instagram-post-2
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 
 ?>
@@ -29,11 +29,11 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":4,"className":"op-animated animate__fadeInUp","style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"fontSize":"36"} -->
-<h4 class="wp-block-heading has-text-align-center op-animated animate__fadeInUp has-36-font-size" style="font-style:normal;font-weight:400"><?php esc_html_e( 'Follow us on Social Media', 'onlinestore' ); ?></h4>
+<h4 class="wp-block-heading has-text-align-center op-animated animate__fadeInUp has-36-font-size" style="font-style:normal;font-weight:400"><?php esc_html_e( 'Follow us on Social Media', 'online-store' ); ?></h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","className":"op-animated animate__fadeInUp","fontSize":"24"} -->
-<p class="has-text-align-center op-animated animate__fadeInUp has-24-font-size"><?php esc_html_e( 'and tag with', 'onlinestore' ); ?> <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><strong><?php esc_html_e( '@Online Store', 'onlinestore' ); ?></strong></mark></p>
+<p class="has-text-align-center op-animated animate__fadeInUp has-24-font-size"><?php esc_html_e( 'and tag with', 'online-store' ); ?> <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><strong><?php esc_html_e( '@Online Store', 'online-store' ); ?></strong></mark></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->

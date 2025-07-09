@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Sidebar
- * Slug: onlinestore/sidebar
- * Categories: onlinestore
+ * Slug: online-store/sidebar
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 
 ?>
@@ -15,7 +15,7 @@
 
 <!-- wp:group {"metadata":{"name":"Search"},"style":{"border":{"radius":"12px"},"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small","right":"var:preset|spacing|small"}}},"backgroundColor":"muted","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-muted-background-color has-background" style="border-radius:12px;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:heading {"level":4,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}}} -->
-<h4 class="wp-block-heading" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Search', 'onlinestore' ); ?></h4>
+<h4 class="wp-block-heading" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Search', 'online-store' ); ?></h4>
 <!-- /wp:heading -->
 
 <!-- wp:separator {"className":"is-style-wide","backgroundColor":"border"} -->
@@ -27,7 +27,7 @@
 
 <!-- wp:group {"metadata":{"name":"Latest Post"},"style":{"border":{"radius":"12px"},"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small","right":"var:preset|spacing|small"}}},"backgroundColor":"muted","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-muted-background-color has-background" style="border-radius:12px;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:heading {"level":4,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}}} -->
-<h4 class="wp-block-heading" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Recent Posts', 'onlinestore' ); ?></h4>
+<h4 class="wp-block-heading" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Recent Posts', 'online-store' ); ?></h4>
 <!-- /wp:heading -->
 
 <!-- wp:separator {"className":"is-style-wide","backgroundColor":"border"} -->
@@ -39,7 +39,7 @@
 
 <!-- wp:group {"metadata":{"name":"Categories"},"style":{"border":{"radius":"12px"},"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small","right":"var:preset|spacing|small"}}},"backgroundColor":"muted","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-muted-background-color has-background" style="border-radius:12px;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:heading {"level":4,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}}} -->
-<h4 class="wp-block-heading" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Categories', 'onlinestore' ); ?></h4>
+<h4 class="wp-block-heading" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Categories', 'online-store' ); ?></h4>
 <!-- /wp:heading -->
 
 <!-- wp:separator {"className":"is-style-wide","backgroundColor":"border"} -->
@@ -51,7 +51,7 @@
 
 <!-- wp:group {"metadata":{"name":"Tags"},"style":{"border":{"radius":"12px"},"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small","right":"var:preset|spacing|small"}}},"backgroundColor":"muted","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-muted-background-color has-background" style="border-radius:12px;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:heading {"level":4,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}}} -->
-<h4 class="wp-block-heading" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Tags', 'onlinestore' ); ?></h4>
+<h4 class="wp-block-heading" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Tags', 'online-store' ); ?></h4>
 <!-- /wp:heading -->
 
 <!-- wp:separator {"className":"is-style-wide","backgroundColor":"border"} -->

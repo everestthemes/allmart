@@ -10,7 +10,7 @@
  * - Redux options
  * - Preview image and URL
  *
- * @package onlinestore
+ * @package online-store
  * @return array List of demo import configuration settings.
  */
 
@@ -88,10 +88,10 @@ if ( ! function_exists( 'onlinestore_ocdi_import_files' ) ) {
 			return array(
 				array(
 					'import_file_name'         => 'Online Store Demo',
-					'categories'               => array( 'onlinestore' ),
+					'categories'               => array( 'online-store' ),
 					'local_import_file'        => $xml_path,
 					'import_preview_image_url' => trailingslashit( get_template_directory_uri() ) . 'includes/ocdi/demo/screenshot.png',
-					'preview_url'              => 'https://ecommerce.everestthemes.com/onlinestore/',
+					'preview_url'              => 'https://ecommerce.everestthemes.com/online-store/',
 				),
 			);
 	}
@@ -137,7 +137,7 @@ if ( ! function_exists( 'onlinestore_replace_old_urls_in_content' ) ) {
 			return;
 		}
 
-		$old_url = 'https://ecommerce.everestthemes.com/onlinestore';
+		$old_url = 'https://ecommerce.everestthemes.com/online-store';
 		$new_url = home_url();
 
 		$all_pages = get_posts(

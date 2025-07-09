@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Footer V2
- * Slug: onlinestore/footer-v2
- * Categories: onlinestore
+ * Slug: online-store/footer-v2
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 
 ?>
@@ -12,17 +12,17 @@
 <div class="wp-block-group has-foreground-background-color has-background" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:columns {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|small"}}}} -->
 <div class="wp-block-columns" style="padding-bottom:var(--wp--preset--spacing--small)"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<h2 class="wp-block-heading has-text-align-center has-card-color has-text-color has-link-color"><?php esc_html_e( 'Online Store', 'onlinestore' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-center has-card-color has-text-color has-link-color"><?php esc_html_e( 'Online Store', 'online-store' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card","fontSize":"18"} -->
-<p class="has-text-align-center has-card-color has-text-color has-link-color has-18-font-size"><?php esc_html_e( 'There are many variations of passages of Lorem Ipsum available, but the majori have suffered alteration form.', 'onlinestore' ); ?></p>
+<p class="has-text-align-center has-card-color has-text-color has-link-color has-18-font-size"><?php esc_html_e( 'There are many variations of passages of Lorem Ipsum available, but the majori have suffered alteration form.', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"textAlign":"center","level":5,"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<h5 class="wp-block-heading has-text-align-center has-card-color has-text-color has-link-color"><?php esc_html_e( 'Download App', 'onlinestore' ); ?></h5>
+<h5 class="wp-block-heading has-text-align-center has-card-color has-text-color has-link-color"><?php esc_html_e( 'Download App', 'online-store' ); ?></h5>
 <!-- /wp:heading -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
@@ -48,20 +48,20 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"textAlign":"center","level":5,"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<h5 class="wp-block-heading has-text-align-center has-card-color has-text-color has-link-color"><?php esc_html_e( 'Store information', 'onlinestore' ); ?></h5>
+<h5 class="wp-block-heading has-text-align-center has-card-color has-text-color has-link-color"><?php esc_html_e( 'Store information', 'online-store' ); ?></h5>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card","fontSize":"18"} -->
-<p class="has-text-align-center has-card-color has-text-color has-link-color has-18-font-size"><?php esc_html_e( 'Address Line 1, City, New Jersey, USA', 'onlinestore' ); ?></p>
+<p class="has-text-align-center has-card-color has-text-color has-link-color has-18-font-size"><?php esc_html_e( 'Address Line 1, City, New Jersey, USA', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card","fontSize":"18"} -->
-<p class="has-text-align-center has-card-color has-text-color has-link-color has-18-font-size"><?php esc_html_e( '+(123) 456-7898', 'onlinestore' ); ?></p>
+<p class="has-text-align-center has-card-color has-text-color has-link-color has-18-font-size"><?php esc_html_e( '+(123) 456-7898', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card","fontSize":"18"} -->
-<p class="has-text-align-center has-card-color has-text-color has-link-color has-18-font-size"><?php esc_html_e( 'info@example.com', 'onlinestore' ); ?></p>
+<p class="has-text-align-center has-card-color has-text-color has-link-color has-18-font-size"><?php esc_html_e( 'info@example.com', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -70,7 +70,7 @@
 <!-- wp:columns {"style":{"border":{"top":{"color":"#4c4c4c","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small"}}}} -->
 <div class="wp-block-columns" style="border-top-color:#4c4c4c;border-top-width:1px;padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-text-align-center has-card-color has-text-color has-link-color"><?php esc_html_e( 'Copyright © 2025 Online Store. All rights reserved.', 'onlinestore' ); ?></p>
+<p class="has-text-align-center has-card-color has-text-color has-link-color"><?php esc_html_e( 'Copyright © 2025 Online Store. All rights reserved.', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

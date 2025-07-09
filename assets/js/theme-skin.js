@@ -4,7 +4,7 @@
 
 (function () {
   // Sticky Header
-  function onlinestore_header_sticky() {
+  function online-store_header_sticky() {
     const stickyHeader = document.querySelector(".op-header-sticky");
     const scrollPosition = document.documentElement.scrollTop;
 
@@ -17,7 +17,7 @@
   }
 
   // Bottom To Top Scroll.
-  function onlinestore_to_top_scroll() {
+  function online-store_to_top_scroll() {
     const toTopBtn = document.querySelector(".op-scroll-to-top");
     let scrollPos = document.documentElement.scrollTop;
     const progressColor = "var(--wp--preset--color--primary)";
@@ -43,7 +43,7 @@
   }
 
   window.addEventListener("scroll", function () {
-    onlinestore_header_sticky();
-    onlinestore_to_top_scroll();
+    online-store_header_sticky();
+    online-store_to_top_scroll();
   });
 })();

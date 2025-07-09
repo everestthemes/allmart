@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Call To Action
- * Slug: onlinestore/call-to-action
- * Categories: onlinestore
+ * Slug: online-store/call-to-action
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 ?>
 <!-- wp:group {"metadata":{"name":"Call to Action"},"style":{"spacing":{"padding":{"right":"0","left":"0"}}},"layout":{"type":"constrained"}} -->
@@ -21,23 +21,23 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"},"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card","fontSize":"16"} -->
-<p class="has-card-color has-text-color has-link-color has-16-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( '(4.9) Reviews', 'onlinestore' ); ?></p>
+<p class="has-card-color has-text-color has-link-color has-16-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( '(4.9) Reviews', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"className":"op-animated animate__fadeInUp","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"54"} -->
-<h2 class="wp-block-heading op-animated animate__fadeInUp has-54-font-size" style="text-transform:uppercase"><?php esc_html_e( 'Win Your Order', 'onlinestore' ); ?></h2>
+<h2 class="wp-block-heading op-animated animate__fadeInUp has-54-font-size" style="text-transform:uppercase"><?php esc_html_e( 'Win Your Order', 'online-store' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"op-animated animate__fadeInUp","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-small"}}},"fontSize":"24"} -->
-<p class="op-animated animate__fadeInUp has-24-font-size" style="padding-bottom:var(--wp--preset--spacing--x-small)"><?php esc_html_e( 'Share your review and automatically enter for a chance to win a full refund on your purchase!', 'onlinestore' ); ?></p>
+<p class="op-animated animate__fadeInUp has-24-font-size" style="padding-bottom:var(--wp--preset--spacing--x-small)"><?php esc_html_e( 'Share your review and automatically enter for a chance to win a full refund on your purchase!', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"op-animated animate__fadeInUp","style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"border":{"radius":"100px"}},"fontSize":"18"} -->
-<div class="wp-block-button op-animated animate__fadeInUp"><a class="wp-block-button__link has-18-font-size has-custom-font-size wp-element-button" style="border-radius:100px;font-style:normal;font-weight:500"><?php esc_html_e( 'Review The Product', 'onlinestore' ); ?></a></div>
+<div class="wp-block-button op-animated animate__fadeInUp"><a class="wp-block-button__link has-18-font-size has-custom-font-size wp-element-button" style="border-radius:100px;font-style:normal;font-weight:500"><?php esc_html_e( 'Review The Product', 'online-store' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->

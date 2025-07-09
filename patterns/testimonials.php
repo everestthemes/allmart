@@ -1,17 +1,17 @@
 <?php
 /**
  * Title: Testimonials
- * Slug: onlinestore/testimonials
- * Categories: onlinestore
+ * Slug: online-store/testimonials
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 ?>
 <!-- wp:group {"metadata":{"name":"Testimonials"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:columns {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|small"}}}} -->
 <div class="wp-block-columns" style="margin-bottom:var(--wp--preset--spacing--small)"><!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:paragraph {"align":"left","className":"op-animated animate__fadeInUp","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}},"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"primary","fontSize":"18"} -->
-<p class="has-text-align-left op-animated animate__fadeInUp has-primary-color has-text-color has-link-color has-18-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Reviews and Awards', 'onlinestore' ); ?></p>
+<p class="has-text-align-left op-animated animate__fadeInUp has-primary-color has-text-color has-link-color has-18-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Reviews and Awards', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"className":"op-animated animate__fadeInUp","layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -20,7 +20,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"left","style":{"typography":{"textTransform":"capitalize","fontStyle":"normal","fontWeight":"600"}}} -->
-<h2 class="wp-block-heading has-text-align-left" style="font-style:normal;font-weight:600;text-transform:capitalize"><?php esc_html_e( 'What pet parents are saying', 'onlinestore' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-left" style="font-style:normal;font-weight:600;text-transform:capitalize"><?php esc_html_e( 'What pet parents are saying', 'online-store' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -37,7 +37,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"20"} -->
-<p class="has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Online Store\'s dog treats are a hit with my pup, but the packaging was damaged. They sent a replacement fast, which was great. I\'ll shop here again.', 'onlinestore' ); ?></p>
+<p class="has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Online Store\'s dog treats are a hit with my pup, but the packaging was damaged. They sent a replacement fast, which was great. I\'ll shop here again.', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}},"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"foreground"} -->
@@ -51,11 +51,11 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"20"} -->
-<p class="has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'The cat toy I got from Online Store was fun, but it broke after a week. Customer service was helpful and offered a refund. I expected better quality.', 'onlinestore' ); ?></p>
+<p class="has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'The cat toy I got from Online Store was fun, but it broke after a week. Customer service was helpful and offered a refund. I expected better quality.', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}},"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"foreground"} -->
-<h4 class="wp-block-heading has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'David H.', 'onlinestore' ); ?></h4>
+<h4 class="wp-block-heading has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'David H.', 'online-store' ); ?></h4>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
@@ -65,7 +65,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"20"} -->
-<p class="has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Online Store\'s fish food is top-notch, and my tank is thriving. Fast shipping and great prices made it a win. I\'m so happy and will order again soon!', 'onlinestore' ); ?></p>
+<p class="has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Online Store\'s fish food is top-notch, and my tank is thriving. Fast shipping and great prices made it a win. I\'m so happy and will order again soon!', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}},"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"foreground"} -->
@@ -79,11 +79,11 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"20"} -->
-<p class="has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'I ordered a leash from Online Store, but it was too short for my dog. The website was okay, but the return process was slow. I might try again later.', 'onlinestore' ); ?></p>
+<p class="has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'I ordered a leash from Online Store, but it was too short for my dog. The website was okay, but the return process was slow. I might try again later.', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}},"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"foreground"} -->
-<h4 class="wp-block-heading has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Ethan C.', 'onlinestore' ); ?></h4>
+<h4 class="wp-block-heading has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Ethan C.', 'online-store' ); ?></h4>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
@@ -93,11 +93,11 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"20"} -->
-<p class="has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Online Store\'s rabbit hay is fresh and my bunny loves it! Quick delivery and eco-friendly packaging won me over. I\’m excited to shop here again soon!', 'onlinestore' ); ?></p>
+<p class="has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Online Store\'s rabbit hay is fresh and my bunny loves it! Quick delivery and eco-friendly packaging won me over. I\’m excited to shop here again soon!', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}},"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"foreground"} -->
-<h4 class="wp-block-heading has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Emma T.', 'onlinestore' ); ?></h4>
+<h4 class="wp-block-heading has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Emma T.', 'online-store' ); ?></h4>
 <!-- /wp:heading --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

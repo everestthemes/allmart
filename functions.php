@@ -4,16 +4,16 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package onlinestore
+ * @package online-store
  * @since 1.0.0
  */
 
 /**
- * onlinestore Theme Support
+ * online-store Theme Support
  */
 function onlinestore_theme_support() {
 
-	load_theme_textdomain( 'onlinestore', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'online-store', get_template_directory() . '/languages' );
 
 	// Support Post thumbnails.
 	add_theme_support( 'post-thumbnails' );

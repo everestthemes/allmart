@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Products Grid 2
- * Slug: onlinestore/product-grid-2
- * Categories: onlinestore
+ * Slug: online-store/product-grid-2
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 ?>
 <!-- wp:group {"metadata":{"name":"Products"},"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
@@ -24,11 +24,11 @@
 <!-- wp:woocommerce/product-collection-no-results -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><strong><?php esc_html_e( 'No results found', 'onlinestore' ); ?></strong></p>
+<p class="has-medium-font-size"><strong><?php esc_html_e( 'No results found', 'online-store' ); ?></strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'You can try ', 'onlinestore' ); ?> <a class="wc-link-clear-any-filters" href="#"><?php esc_html_e( 'clearing any filters', 'onlinestore' ); ?></a> <?php esc_html_e( 'or head to our', 'onlinestore' ); ?> <a class="wc-link-stores-home" href="#"><?php esc_html_e( 'store\'s home', 'onlinestore' ); ?></a></p>
+<p><?php esc_html_e( 'You can try ', 'online-store' ); ?> <a class="wc-link-clear-any-filters" href="#"><?php esc_html_e( 'clearing any filters', 'online-store' ); ?></a> <?php esc_html_e( 'or head to our', 'online-store' ); ?> <a class="wc-link-stores-home" href="#"><?php esc_html_e( 'store\'s home', 'online-store' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- /wp:woocommerce/product-collection-no-results --></div>

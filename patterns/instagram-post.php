@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Instagram Post
- * Slug: onlinestore/instagram-post
- * Categories: onlinestore
+ * Slug: online-store/instagram-post
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 
 ?>
@@ -12,16 +12,16 @@
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:columns {"style":{"spacing":{"padding":{"right":"0","left":"0"},"blockGap":{"left":"var:preset|spacing|medium"}}}} -->
 <div class="wp-block-columns" style="padding-right:0;padding-left:0"><!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:heading {"textAlign":"left"} -->
-<h2 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Follow us on Instagram', 'onlinestore' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Follow us on Instagram', 'online-store' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"24px"}}}} -->
-<p style="margin-bottom:24px"><?php esc_html_e( 'Tag @onlinestore in your Instagram photos for a chance to be featured here.', 'onlinestore' ); ?></p>
+<p style="margin-bottom:24px"><?php esc_html_e( 'Tag @online-store in your Instagram photos for a chance to be featured here.', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"style":{"border":{"radius":"12px"}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#" style="border-radius:12px"><?php esc_html_e( 'Visit Our Instagram', 'onlinestore' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#" style="border-radius:12px"><?php esc_html_e( 'Visit Our Instagram', 'online-store' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->

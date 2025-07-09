@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Products Grid
- * Slug: onlinestore/product-grid
- * Categories: onlinestore
+ * Slug: online-store/product-grid
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 ?>
 <!-- wp:group {"className":"op-overflow-hidden","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->

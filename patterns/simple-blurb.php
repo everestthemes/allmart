@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Simple Blurb
- * Slug: onlinestore/simple-blurb
- * Categories: onlinestore
+ * Slug: online-store/simple-blurb
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 
 ?>
@@ -17,7 +17,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"18"} -->
-<p class="has-18-font-size"><?php esc_html_e( 'Free Shipping On $99', 'onlinestore' ); ?></p>
+<p class="has-18-font-size"><?php esc_html_e( 'Free Shipping On $99', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -29,7 +29,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"18"} -->
-<p class="has-18-font-size"><?php esc_html_e( 'Easy Returns', 'onlinestore' ); ?></p>
+<p class="has-18-font-size"><?php esc_html_e( 'Easy Returns', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -41,7 +41,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"18"} -->
-<p class="has-18-font-size"><?php esc_html_e( 'Free Gifts, Coupons', 'onlinestore' ); ?></p>
+<p class="has-18-font-size"><?php esc_html_e( 'Free Gifts, Coupons', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -53,7 +53,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"18"} -->
-<p class="has-18-font-size"><?php esc_html_e( '24/7 Customer Support', 'onlinestore' ); ?></p>
+<p class="has-18-font-size"><?php esc_html_e( '24/7 Customer Support', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

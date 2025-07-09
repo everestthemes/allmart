@@ -1,20 +1,20 @@
 <?php
 /**
  * Title: Download Mobile App
- * Slug: onlinestore/mobile-app-banner
- * Categories: onlinestore
+ * Slug: online-store/mobile-app-banner
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 
 ?>
 <!-- wp:group {"tagName":"section","metadata":{"name":"Download App"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"0"},"blockGap":"var:preset|spacing|xx-small"},"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"backgroundColor":"primary","textColor":"card","layout":{"type":"default"}} -->
 <section class="wp-block-group has-card-color has-primary-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:0"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|lightcolor"}}}},"textColor":"lightcolor"} -->
-<p class="has-text-align-center has-lightcolor-color has-text-color has-link-color"><?php esc_html_e( 'The Ultimate Mobile App for Pet Food and Accessories', 'onlinestore' ); ?></p>
+<p class="has-text-align-center has-lightcolor-color has-text-color has-link-color"><?php esc_html_e( 'The Ultimate Mobile App for Pet Food and Accessories', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"center","fontSize":"54"} -->
-<h2 class="wp-block-heading has-text-align-center has-54-font-size"><?php esc_html_e( 'Download the App Now', 'onlinestore' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-center has-54-font-size"><?php esc_html_e( 'Download the App Now', 'online-store' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->

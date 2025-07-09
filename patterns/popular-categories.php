@@ -1,15 +1,15 @@
 <?php
 /**
  * Title: Popular Category
- * Slug: onlinestore/popular-categories
- * Categories: onlinestore
+ * Slug: online-store/popular-categories
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 ?>
 <!-- wp:group {"metadata":{"name":"Popular Category"},"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:0;padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:heading {"textAlign":"center","className":"op-animated animate__fadeInUp","style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
-<h2 class="wp-block-heading has-text-align-center op-animated animate__fadeInUp" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Explore popular categories', 'onlinestore' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-center op-animated animate__fadeInUp" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Explore popular categories', 'online-store' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"className":"grid-responsive-col op-animated animate__fadeInUp","style":{"spacing":{"blockGap":"24px"}},"layout":{"type":"grid","columnCount":5,"minimumColumnWidth":null}} -->
@@ -21,11 +21,11 @@
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"4px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":5,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"},"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground"} -->
-<h5 class="wp-block-heading has-text-align-center has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Dog Food', 'onlinestore' ); ?></h5>
+<h5 class="wp-block-heading has-text-align-center has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Dog Food', 'online-store' ); ?></h5>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground"} -->
-<p class="has-text-align-center has-foreground-color has-text-color has-link-color"><?php esc_html_e( '(20 Items)', 'onlinestore' ); ?></p>
+<p class="has-text-align-center has-foreground-color has-text-color has-link-color"><?php esc_html_e( '(20 Items)', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -39,11 +39,11 @@
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"4px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":5,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"},"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground"} -->
-<h5 class="wp-block-heading has-text-align-center has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Cat Food', 'onlinestore' ); ?></h5>
+<h5 class="wp-block-heading has-text-align-center has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Cat Food', 'online-store' ); ?></h5>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground"} -->
-<p class="has-text-align-center has-foreground-color has-text-color has-link-color"><?php esc_html_e( '(10 Items)', 'onlinestore' ); ?></p>
+<p class="has-text-align-center has-foreground-color has-text-color has-link-color"><?php esc_html_e( '(10 Items)', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -57,11 +57,11 @@
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"4px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":5,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"},"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground"} -->
-<h5 class="wp-block-heading has-text-align-center has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Bird Food', 'onlinestore' ); ?></h5>
+<h5 class="wp-block-heading has-text-align-center has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Bird Food', 'online-store' ); ?></h5>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground"} -->
-<p class="has-text-align-center has-foreground-color has-text-color has-link-color"><?php esc_html_e( '(7 Items)', 'onlinestore' ); ?></p>
+<p class="has-text-align-center has-foreground-color has-text-color has-link-color"><?php esc_html_e( '(7 Items)', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -75,11 +75,11 @@
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"4px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":5,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"},"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground"} -->
-<h5 class="wp-block-heading has-text-align-center has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Fish Food', 'onlinestore' ); ?></h5>
+<h5 class="wp-block-heading has-text-align-center has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Fish Food', 'online-store' ); ?></h5>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground"} -->
-<p class="has-text-align-center has-foreground-color has-text-color has-link-color"><?php esc_html_e( '(12 Items)', 'onlinestore' ); ?></p>
+<p class="has-text-align-center has-foreground-color has-text-color has-link-color"><?php esc_html_e( '(12 Items)', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -93,11 +93,11 @@
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"4px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":5,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"},"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground"} -->
-<h5 class="wp-block-heading has-text-align-center has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Turtle Food', 'onlinestore' ); ?></h5>
+<h5 class="wp-block-heading has-text-align-center has-foreground-color has-text-color has-link-color" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Turtle Food', 'online-store' ); ?></h5>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground"} -->
-<p class="has-text-align-center has-foreground-color has-text-color has-link-color"><?php esc_html_e( '(5 Items)', 'onlinestore' ); ?></p>
+<p class="has-text-align-center has-foreground-color has-text-color has-link-color"><?php esc_html_e( '(5 Items)', 'online-store' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

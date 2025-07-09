@@ -1,17 +1,17 @@
 <?php
 /**
  * Title: Latest News & Articles 2
- * Slug: onlinestore/latest-blog-2
- * Categories: onlinestore
+ * Slug: online-store/latest-blog-2
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 ?>
 <!-- wp:group {"metadata":{"name":"Blog Post"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"0"}},"color":{"gradient":"linear-gradient(180deg,rgb(238,238,238) 0%,rgb(255,255,255) 100%)"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background" style="background:linear-gradient(180deg,rgb(238,238,238) 0%,rgb(255,255,255) 100%);padding-top:var(--wp--preset--spacing--x-large);padding-bottom:0"><!-- wp:columns {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|small"}}}} -->
 <div class="wp-block-columns" style="margin-bottom:var(--wp--preset--spacing--small)"><!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:paragraph {"align":"left","className":"op-animated animate__fadeInUp","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}},"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"primary","fontSize":"18"} -->
-<p class="has-text-align-left op-animated animate__fadeInUp has-primary-color has-text-color has-link-color has-18-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Blog Post', 'onlinestore' ); ?></p>
+<p class="has-text-align-left op-animated animate__fadeInUp has-primary-color has-text-color has-link-color has-18-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Blog Post', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"className":"op-animated animate__fadeInUp","layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -20,7 +20,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"left","style":{"typography":{"textTransform":"capitalize","fontStyle":"normal","fontWeight":"600"}}} -->
-<h2 class="wp-block-heading has-text-align-left" style="font-style:normal;font-weight:600;text-transform:capitalize"><?php esc_html_e( 'Our Latest News & Articles', 'onlinestore' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-left" style="font-style:normal;font-weight:600;text-transform:capitalize"><?php esc_html_e( 'Our Latest News & Articles', 'online-store' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -28,7 +28,7 @@
 <!-- wp:column {"verticalAlignment":"center","width":"33.33%","style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="font-style:normal;font-weight:600;flex-basis:33.33%"><!-- wp:buttons {"style":{"border":{"radius":"100px"}},"layout":{"type":"flex","justifyContent":"right"}} -->
 <div class="wp-block-buttons" style="border-radius:100px"><!-- wp:button {"textAlign":"center","style":{"border":{"radius":"100px"}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-text-align-center wp-element-button" style="border-radius:100px"><?php esc_html_e( 'View All Articles', 'onlinestore' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link has-text-align-center wp-element-button" style="border-radius:100px"><?php esc_html_e( 'View All Articles', 'online-store' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
@@ -53,7 +53,7 @@
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
-<p><?php esc_html_e( 'No Blog Post Found..', 'onlinestore' ); ?></p>
+<p><?php esc_html_e( 'No Blog Post Found..', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></div>

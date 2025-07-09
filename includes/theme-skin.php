@@ -1,9 +1,9 @@
 <?php
 /**
- * onlinestore: Theme Skins *
+ * online-store: Theme Skins *
  *
- * @package onlinestore
- * @since onlinestore 1.0.0
+ * @package online-store
+ * @since online-store 1.0.0
  */
 
 if ( ! function_exists( 'onlinestore_skin_scroll_to_top' ) ) :

@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Offer Banner
- * Slug: onlinestore/offer-banner
- * Categories: onlinestore
+ * Slug: online-store/offer-banner
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 ?>
 <!-- wp:group {"tagName":"section","metadata":{"name":"Section"},"className":"op-overflow-hidden","style":{"spacing":{"padding":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
@@ -19,16 +19,16 @@
 <!-- /wp:group -->
 
 <!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"textColor":"background"} -->
-<h3 class="wp-block-heading has-background-color has-text-color has-link-color"><?php esc_html_e( 'Saving served up', 'onlinestore' ); ?></h3>
+<h3 class="wp-block-heading has-background-color has-text-color has-link-color"><?php esc_html_e( 'Saving served up', 'online-store' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"textColor":"background","fontSize":"18"} -->
-<p class="has-background-color has-text-color has-link-color has-18-font-size"><?php esc_html_e( 'Grab a deal on selected smart feeders', 'onlinestore' ); ?></p>
+<p class="has-background-color has-text-color has-link-color has-18-font-size"><?php esc_html_e( 'Grab a deal on selected smart feeders', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"textColor":"background"} -->
-<h2 class="wp-block-heading has-background-color has-text-color has-link-color"><?php esc_html_e( '-$40.00', 'onlinestore' ); ?></h2>
+<h2 class="wp-block-heading has-background-color has-text-color has-link-color"><?php esc_html_e( '-$40.00', 'online-store' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:buttons -->
@@ -51,16 +51,16 @@
 <!-- /wp:group -->
 
 <!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"textColor":"background"} -->
-<h3 class="wp-block-heading has-background-color has-text-color has-link-color"><?php esc_html_e( 'Shop for Bird Products', 'onlinestore' ); ?></h3>
+<h3 class="wp-block-heading has-background-color has-text-color has-link-color"><?php esc_html_e( 'Shop for Bird Products', 'online-store' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"textColor":"background","fontSize":"18"} -->
-<p class="has-background-color has-text-color has-link-color has-18-font-size"><?php esc_html_e( 'Save big on these finds for your feathered friends.', 'onlinestore' ); ?></p>
+<p class="has-background-color has-text-color has-link-color has-18-font-size"><?php esc_html_e( 'Save big on these finds for your feathered friends.', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"textColor":"background"} -->
-<h2 class="wp-block-heading has-background-color has-text-color has-link-color"><?php esc_html_e( '-$70.00', 'onlinestore' ); ?></h2>
+<h2 class="wp-block-heading has-background-color has-text-color has-link-color"><?php esc_html_e( '-$70.00', 'online-store' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:buttons -->

@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Contact
- * Slug: onlinestore/contact
- * Categories: onlinestore
+ * Slug: online-store/contact
+ * Categories: online-store
  *
- * @package onlinestore
+ * @package online-store
  */
 
 ?>
@@ -14,11 +14,11 @@
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:group -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"24px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Store Location', 'onlinestore' ); ?></h2>
+<h2 class="wp-block-heading"><?php esc_html_e( 'Store Location', 'online-store' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'If you wish to directly reach us or If you\'ve got a question about any aspect of caring for your pet, our PetCare Team is here to help.', 'onlinestore' ); ?></p>
+<p><?php esc_html_e( 'If you wish to directly reach us or If you\'ve got a question about any aspect of caring for your pet, our PetCare Team is here to help.', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->
@@ -32,7 +32,7 @@
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","right":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|medium"},"border":{"radius":"12px"}},"backgroundColor":"primary","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide has-primary-background-color has-background" style="border-radius:12px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"card","fontSize":"30"} -->
-<p class="has-card-color has-text-color has-30-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Contact Us', 'onlinestore' ); ?></p>
+<p class="has-card-color has-text-color has-30-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Contact Us', 'online-store' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"base","iconColorValue":"#fff","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|xx-small","left":"var:preset|spacing|xx-small"}}},"layout":{"type":"flex"}} -->
@@ -53,7 +53,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"textColor":"card","fontSize":"20"} -->
-<p class="has-card-color has-text-color has-20-font-size"><strong><?php esc_html_e( 'Email', 'onlinestore' ); ?></strong></p>
+<p class="has-card-color has-text-color has-20-font-size"><strong><?php esc_html_e( 'Email', 'online-store' ); ?></strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"card"} -->
@@ -67,7 +67,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"textColor":"card","fontSize":"20"} -->
-<p class="has-card-color has-text-color has-20-font-size"><strong><?php esc_html_e( 'Phone', 'onlinestore' ); ?></strong></p>
+<p class="has-card-color has-text-color has-20-font-size"><strong><?php esc_html_e( 'Phone', 'online-store' ); ?></strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"card"} -->
@@ -81,7 +81,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"textColor":"card","fontSize":"20"} -->
-<p class="has-card-color has-text-color has-20-font-size"><strong><?php esc_html_e( 'Address', 'onlinestore' ); ?></strong></p>
+<p class="has-card-color has-text-color has-20-font-size"><strong><?php esc_html_e( 'Address', 'online-store' ); ?></strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"card"} -->

@@ -1,16 +1,16 @@
 <?php
 /**
- * onlinestore: Block Patterns *
+ * online-store: Block Patterns *
  *
- * @package onlinestore
- * @since onlinestore 1.0.0
+ * @package online-store
+ * @since online-store 1.0.0
  */
 
 add_action( 'init', 'onlinestore_remove_core_block_patterns', 9 );
 /**
  * Removes core block patterns.
  *
- * @since onlinestore 1.0.0
+ * @since online-store 1.0.0
  *
  * @return void
  */
@@ -21,11 +21,11 @@ function onlinestore_remove_core_block_patterns() {
 /**
  * Registers block patterns and categories. *
  *
- * @since onlinestore 1.0.0
+ * @since online-store 1.0.0
  */
 function onlinestore_register_block_patterns() {
 	$block_pattern_categories = array(
-		'onlinestore' => array( 'label' => __( 'onlinestore', 'onlinestore' ) ),
+		'online-store' => array( 'label' => __( 'online-store', 'online-store' ) ),
 	);
 
 	$block_pattern_categories = apply_filters( 'onlinestore_block_pattern_categories', $block_pattern_categories );
