@@ -16,12 +16,12 @@
         {
           "name": "Primary",
           "slug": "primary",
-          "color": "#004f4f"
+          "color": "#1B3C53"
         },
         {
           "name": "Secondary",
           "slug": "secondary",
-          "color": "#FFAE00"
+          "color": "#456882"
         },
         {
           "name": "Background",
@@ -461,7 +461,7 @@
       "fontFamily": "var(--wp--preset--font-family--outfit)",
       "fontWeight": "var(--wp--custom--font-weight--regular)",
       "lineHeight": "var(--wp--custom--line-height--large)",
-      "fontSize": "var(--wp--preset--font-size--16)"
+      "fontSize": "var(--wp--preset--font-size--18)"
     },
     "spacing": {
       "blockGap": "var(--wp--preset--spacing--x-small)",

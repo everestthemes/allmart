@@ -1,4 +1,4 @@
-=== Online Store ===
+=== All Mart ===
 
 Contributors: OmnipressTeam
 Tested up to: 6.8
@@ -13,7 +13,7 @@ Tags: full-site-editing, e-commerce, one-column, two-columns, left-sidebar, righ
 
 
 == Description ==
-Online Store: The Ultimate WordPress Theme for Pet Food Businesses, empower your online pet food store with OnlineStore, a premium WordPress theme crafted specifically for pet food businesses like yours. Built with the latest WooCommerce and Full Site Editing features, OnlineStore empowers you to create a visually stunning and user-friendly online shop that caters to pet lovers everywhere.
+All Mart: The Ultimate WordPress Theme for Pet Food Businesses, empower your online pet food store with OnlineStore, a premium WordPress theme crafted specifically for pet food businesses like yours. Built with the latest WooCommerce and Full Site Editing features, OnlineStore empowers you to create a visually stunning and user-friendly online shop that caters to pet lovers everywhere.
 
 
 == Changelog ==
@@ -24,8 +24,8 @@ Online Store: The Ultimate WordPress Theme for Pet Food Businesses, empower your
 
 == Copyright ==
 
-Online Store WordPress Theme, 2025 everestthemes.com
-Online Store is distributed under the terms of the GNU GPL.
+All Mart WordPress Theme, 2025 everestthemes.com
+All Mart is distributed under the terms of the GNU GPL.
 
 
 = Image for theme screenshot =

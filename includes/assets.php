@@ -10,12 +10,12 @@
  * @since 1.0.0
  */
 
-if ( ! function_exists( 'onlinestore_styles' ) ) :
+if ( ! function_exists( 'allmart_styles' ) ) :
 
 	/**
 	 * Enqueue Theme Styles and JS.
 	 */
-	function onlinestore_styles() {
+	function allmart_styles() {
 
 		$version = wp_get_theme()->get( 'Version' );
 
@@ -23,13 +23,13 @@ if ( ! function_exists( 'onlinestore_styles' ) ) :
 		wp_enqueue_style( 'bootstrap-icon', get_template_directory_uri() . '/assets/vendors/bootstrap/bootstrap-icons.css', array(), $version, 'all' );
 
 		// Theme Styles.
-		wp_enqueue_style( 'online-store-styles', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'all-mart-styles', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
 		// Core Block Styles.
-		wp_enqueue_style( 'online-store-styles-blocks', get_template_directory_uri() . '/assets/css/blocks.css', array(), $version, 'all' );
+		wp_enqueue_style( 'all-mart-styles-blocks', get_template_directory_uri() . '/assets/css/blocks.css', array(), $version, 'all' );
 
 		// Woocommerce Styles.
-		wp_enqueue_style( 'online-store-styles-woocommerce', get_template_directory_uri() . '/assets/css/woocommerce.css', array(), $version, 'all' );
+		wp_enqueue_style( 'all-mart-styles-woocommerce', get_template_directory_uri() . '/assets/css/woocommerce.css', array(), $version, 'all' );
 
 		// Animate CSS.
 		wp_enqueue_style( 'op-animate-style', get_template_directory_uri() . '/assets/vendors/animatecss/animate.min.css', array(), $version, 'all' );
@@ -54,15 +54,15 @@ if ( ! function_exists( 'onlinestore_styles' ) ) :
 	}
 
 endif;
-add_action( 'wp_enqueue_scripts', 'onlinestore_styles' );
+add_action( 'wp_enqueue_scripts', 'allmart_styles' );
 
 
-if ( ! function_exists( 'onlinestore_admin_script' ) ) :
+if ( ! function_exists( 'allmart_admin_script' ) ) :
 
-	function onlinestore_admin_script() {
+	function allmart_admin_script() {
 		$version = wp_get_theme()->get( 'Version' );
 		wp_enqueue_script( 'admin-slick-slider', get_template_directory_uri() . '/assets/js/custom-slider.js', array( 'jquery' ), $version, true );
 	}
 
 endif;
-add_action( 'admin_enqueue_scripts', 'onlinestore_admin_script' );
+add_action( 'admin_enqueue_scripts', 'allmart_admin_script' );

@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Mini Cart Default
- * Slug: online-store/mini-cart-default
- * Categories: online-store
+ * Slug: all-mart/mini-cart-default
+ * Categories: all-mart
  *
- * @package online-store
+ * @package all-mart
  */
 
 ?>
@@ -40,7 +40,7 @@
 	<!-- wp:woocommerce/empty-mini-cart-contents-block -->
 	<div class="wp-block-woocommerce-empty-mini-cart-contents-block"><!-- wp:group {"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group"><!-- wp:image {"id":480,"width":"80px","sizeSlug":"large","linkDestination":"none","align":"center"} -->
-	<figure class="wp-block-image aligncenter size-large is-resized"><img src="http://online-store.local/wp-content/uploads/2024/09/icon-empty-cart.svg" alt="" class="wp-image-480" style="width:80px"/></figure>
+	<figure class="wp-block-image aligncenter size-large is-resized"><img src="http://all-mart.local/wp-content/uploads/2024/09/icon-empty-cart.svg" alt="" class="wp-image-480" style="width:80px"/></figure>
 	<!-- /wp:image -->
 	
 	<!-- wp:paragraph {"align":"center"} -->

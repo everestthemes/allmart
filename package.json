@@ -1,10 +1,10 @@
 {
-  "name": "online-store",
+  "name": "all-mart",
   "version": "1.0.0",
-  "description": "***** Description *****\r Introducing online-store, FSE theme",
+  "description": "***** Description *****\r Introducing all-mart, FSE theme",
   "main": "index.js",
   "scripts": {
-    "build": "gulp file:pot && dir-archiver --src . --dest online-store-1.0.0.zip --includebasedir true --exclude *.zip ./**/*.xml src node_modules .env .gitignore .vscode gulpfile.js package-lock.json package.json README.md .git yarn-error.log yarn.lock",
+    "build": "gulp file:pot && dir-archiver --src . --dest all-mart-1.0.0.zip --includebasedir true --exclude *.zip ./**/*.xml src node_modules .env .gitignore .vscode gulpfile.js package-lock.json package.json README.md .git yarn-error.log yarn.lock",
     "sass": "gulp sass --quiet-deps",
     "watch:sass": "gulp sass:watch"
   },

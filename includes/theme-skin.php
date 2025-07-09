@@ -1,17 +1,17 @@
 <?php
 /**
- * online-store: Theme Skins *
+ * all-mart: Theme Skins *
  *
- * @package online-store
- * @since online-store 1.0.0
+ * @package all-mart
+ * @since all-mart 1.0.0
  */
 
-if ( ! function_exists( 'onlinestore_skin_scroll_to_top' ) ) :
+if ( ! function_exists( 'allmart_skin_scroll_to_top' ) ) :
 
 	/**
 	 * Enqueue Theme Styles and js.
 	 */
-	function onlinestore_skin_scroll_to_top() {
+	function allmart_skin_scroll_to_top() {
 		?>
 
 		<a href="#" class="op-scroll-to-top scroll-progress">
@@ -24,4 +24,4 @@ if ( ! function_exists( 'onlinestore_skin_scroll_to_top' ) ) :
 	}
 
 endif;
-add_action( 'wp_body_open', 'onlinestore_skin_scroll_to_top' );
+add_action( 'wp_body_open', 'allmart_skin_scroll_to_top' );

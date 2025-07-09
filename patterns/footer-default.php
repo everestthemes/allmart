@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Footer Default
- * Slug: online-store/footer-default
- * Categories: online-store
+ * Slug: all-mart/footer-default
+ * Categories: all-mart
  *
- * @package online-store
+ * @package all-mart
  */
 
 ?>
@@ -19,11 +19,11 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"20"} -->
-<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Fast Free Delivery', 'online-store' ); ?></h3>
+<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Fast Free Delivery', 'all-mart' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"16"} -->
-<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( 'on memtro orders over $50', 'online-store' ); ?></p>
+<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( 'on memtro orders over $50', 'all-mart' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -37,11 +37,11 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"20"} -->
-<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( '#1 Pet Product', 'online-store' ); ?></h3>
+<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( '#1 Pet Product', 'all-mart' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"16"} -->
-<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( 'Canstar Blue said it, not us', 'online-store' ); ?></p>
+<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( 'Canstar Blue said it, not us', 'all-mart' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -55,11 +55,11 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"20"} -->
-<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Free Vet Services', 'online-store' ); ?></h3>
+<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Free Vet Services', 'all-mart' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"16"} -->
-<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( 'ask us anything (really)', 'online-store' ); ?></p>
+<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( 'ask us anything (really)', 'all-mart' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -73,11 +73,11 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"20"} -->
-<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Secure Payment', 'online-store' ); ?></h3>
+<h3 class="wp-block-heading has-foreground-color has-text-color has-link-color has-20-font-size"><?php esc_html_e( 'Secure Payment', 'all-mart' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"16"} -->
-<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( '20% off your online order of $70+', 'online-store' ); ?></p>
+<p class="has-foreground-color has-text-color has-link-color has-16-font-size"><?php esc_html_e( '20% off your online order of $70+', 'all-mart' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -89,7 +89,7 @@
 <div class="wp-block-group has-foreground-background-color has-background" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"30%"} -->
 <div class="wp-block-column" style="flex-basis:30%"><!-- wp:heading {"textAlign":"left","style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card","fontSize":"36"} -->
-<h2 class="wp-block-heading has-text-align-left has-card-color has-text-color has-link-color has-36-font-size"><?php esc_html_e( 'Online Store', 'online-store' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-left has-card-color has-text-color has-link-color has-36-font-size"><?php esc_html_e( 'All Mart', 'all-mart' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"left","style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card","fontSize":"18"} -->
@@ -112,84 +112,84 @@
 <div class="wp-block-group"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<h4 class="wp-block-heading has-card-color has-text-color has-link-color"><?php esc_html_e( 'Our Products', 'online-store' ); ?></h4>
+<h4 class="wp-block-heading has-card-color has-text-color has-link-color"><?php esc_html_e( 'Our Products', 'all-mart' ); ?></h4>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:0"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Shop Dog &amp; Puppy', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Shop Dog &amp; Puppy', 'all-mart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Shop Cat &amp; Kitten', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Shop Cat &amp; Kitten', 'all-mart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Shop Bird', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Shop Bird', 'all-mart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Shop Fish', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Shop Fish', 'all-mart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Shop Raptile', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Shop Raptile', 'all-mart' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<h4 class="wp-block-heading has-card-color has-text-color has-link-color"><?php esc_html_e( 'Customer Services', 'online-store' ); ?></h4>
+<h4 class="wp-block-heading has-card-color has-text-color has-link-color"><?php esc_html_e( 'Customer Services', 'all-mart' ); ?></h4>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:0"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Track Order', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Track Order', 'all-mart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Returns', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Returns', 'all-mart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Shipping Info', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Shipping Info', 'all-mart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Recalls &amp; Advisories', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Recalls &amp; Advisories', 'all-mart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Pet Store Locator', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Pet Store Locator', 'all-mart' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<h4 class="wp-block-heading has-card-color has-text-color has-link-color"><?php esc_html_e( 'Helpful Links', 'online-store' ); ?></h4>
+<h4 class="wp-block-heading has-card-color has-text-color has-link-color"><?php esc_html_e( 'Helpful Links', 'all-mart' ); ?></h4>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:0"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'About us', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'About us', 'all-mart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Contact us', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Contact us', 'all-mart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Our Ingredient', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Our Ingredient', 'all-mart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Why Choose us?', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Why Choose us?', 'all-mart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Reviews', 'online-store' ); ?> </p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Reviews', 'all-mart' ); ?> </p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -207,7 +207,7 @@
 <div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column {"verticalAlignment":"top"} -->
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":6,"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<h6 class="wp-block-heading has-card-color has-text-color has-link-color"><?php esc_html_e( 'Our Social', 'online-store' ); ?></h6>
+<h6 class="wp-block-heading has-card-color has-text-color has-link-color"><?php esc_html_e( 'Our Social', 'all-mart' ); ?></h6>
 <!-- /wp:heading -->
 
 <!-- wp:social-links {"iconBackgroundColor":"primary","iconBackgroundColorValue":"#004f4f","style":{"spacing":{"blockGap":{"top":"8px","left":"var:preset|spacing|xx-small"}}}} -->
@@ -225,7 +225,7 @@
 <!-- wp:column {"verticalAlignment":"top"} -->
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"left","level":6,"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}},"spacing":{"margin":{"bottom":"16px"}}},"textColor":"card"} -->
-<h6 class="wp-block-heading has-text-align-left has-card-color has-text-color has-link-color" style="margin-bottom:16px"><?php esc_html_e( 'Guarantee safe and secure checkout', 'online-store' ); ?></h6>
+<h6 class="wp-block-heading has-text-align-left has-card-color has-text-color has-link-color" style="margin-bottom:16px"><?php esc_html_e( 'Guarantee safe and secure checkout', 'all-mart' ); ?></h6>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":790,"sizeSlug":"full","linkDestination":"none"} -->
@@ -236,7 +236,7 @@
 
 <!-- wp:column {"verticalAlignment":"top"} -->
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:heading {"textAlign":"left","level":6,"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<h6 class="wp-block-heading has-text-align-left has-card-color has-text-color has-link-color"><?php esc_html_e( 'Get Online Store Mobile App', 'online-store' ); ?> </h6>
+<h6 class="wp-block-heading has-text-align-left has-card-color has-text-color has-link-color"><?php esc_html_e( 'Get All Mart Mobile App', 'all-mart' ); ?> </h6>
 <!-- /wp:heading -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
@@ -269,22 +269,22 @@
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( '©Copyright 2025 Online Store | All rights reserved.', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( '©Copyright 2025 All Mart | All rights reserved.', 'all-mart' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Support', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Support', 'all-mart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Privacy Policy', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Privacy Policy', 'all-mart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}}},"textColor":"card"} -->
-<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Terms of use', 'online-store' ); ?></p>
+<p class="has-card-color has-text-color has-link-color"><?php esc_html_e( 'Terms of use', 'all-mart' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

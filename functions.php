@@ -4,16 +4,16 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package online-store
+ * @package all-mart
  * @since 1.0.0
  */
 
 /**
- * online-store Theme Support
+ * all-mart Theme Support
  */
-function onlinestore_theme_support() {
+function allmart_theme_support() {
 
-	load_theme_textdomain( 'online-store', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'all-mart', get_template_directory() . '/languages' );
 
 	// Support Post thumbnails.
 	add_theme_support( 'post-thumbnails' );
@@ -27,7 +27,7 @@ function onlinestore_theme_support() {
 	// Support Editor Styles.
 	add_editor_style( get_template_directory_uri() . '/assets/css/editor-styles.css' );
 }
-add_action( 'after_setup_theme', 'onlinestore_theme_support' );
+add_action( 'after_setup_theme', 'allmart_theme_support' );
 
 
 /**

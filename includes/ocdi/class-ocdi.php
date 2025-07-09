@@ -10,17 +10,17 @@
  * - Redux options
  * - Preview image and URL
  *
- * @package online-store
+ * @package all-mart
  * @return array List of demo import configuration settings.
  */
 
-if ( ! function_exists( 'onlinestore_ocdi_import_files' ) ) {
+if ( ! function_exists( 'allmart_ocdi_import_files' ) ) {
 	/**
 	 * OCDI Import Files
 	 *
 	 * @return array[]
 	 */
-	function onlinestore_ocdi_import_files() {
+	function allmart_ocdi_import_files() {
 
 			$upload_dir = wp_upload_dir();
 			$demo_dir   = trailingslashit( $upload_dir['basedir'] ) . 'demo-import/';
@@ -87,17 +87,17 @@ if ( ! function_exists( 'onlinestore_ocdi_import_files' ) ) {
 
 			return array(
 				array(
-					'import_file_name'         => 'Online Store Demo',
-					'categories'               => array( 'online-store' ),
+					'import_file_name'         => 'All Mart Demo',
+					'categories'               => array( 'all-mart' ),
 					'local_import_file'        => $xml_path,
 					'import_preview_image_url' => trailingslashit( get_template_directory_uri() ) . 'includes/ocdi/demo/screenshot.png',
-					'preview_url'              => 'https://ecommerce.everestthemes.com/online-store/',
+					'preview_url'              => 'https://ecommerce.everestthemes.com/all-mart/',
 				),
 			);
 	}
 }
 
-add_filter( 'ocdi/import_files', 'onlinestore_ocdi_import_files' );
+add_filter( 'ocdi/import_files', 'allmart_ocdi_import_files' );
 
 
 /**
@@ -106,7 +106,7 @@ add_filter( 'ocdi/import_files', 'onlinestore_ocdi_import_files' );
  * @param array $plugins The list of plugins.
  * @return array
  */
-function onlinestore_ocdi_register_plugins( $plugins ) {
+function allmart_ocdi_register_plugins( $plugins ) {
 
 	// Required: List of plugins used by all theme demos.
 	$theme_plugins = array(
@@ -121,23 +121,23 @@ function onlinestore_ocdi_register_plugins( $plugins ) {
 }
 
 
-add_filter( 'ocdi/register_plugins', 'onlinestore_ocdi_register_plugins' );
+add_filter( 'ocdi/register_plugins', 'allmart_ocdi_register_plugins' );
 
 
 
-if ( ! function_exists( 'onlinestore_replace_old_urls_in_content' ) ) {
+if ( ! function_exists( 'allmart_replace_old_urls_in_content' ) ) {
 	/**
 	 * Replace old URLs in content.
 	 *
 	 * @param mixed $selected Selected import file.
 	 * @return void
 	 */
-	function onlinestore_replace_old_urls_in_content( $selected ) {
-		if ( 'Online Store Demo' !== $selected['import_file_name'] ) {
+	function allmart_replace_old_urls_in_content( $selected ) {
+		if ( 'All Mart Demo' !== $selected['import_file_name'] ) {
 			return;
 		}
 
-		$old_url = 'https://ecommerce.everestthemes.com/online-store';
+		$old_url = 'https://ecommerce.everestthemes.com/all-mart';
 		$new_url = home_url();
 
 		$all_pages = get_posts(
@@ -224,11 +224,11 @@ if ( ! function_exists( 'onlinestore_replace_old_urls_in_content' ) ) {
 		}
 	}
 }
-add_action( 'ocdi/after_import', 'onlinestore_replace_old_urls_in_content' );
+add_action( 'ocdi/after_import', 'allmart_replace_old_urls_in_content' );
 
 
 
-if ( ! function_exists( 'onlinestore_delete_default_woocommerce_pages' ) ) {
+if ( ! function_exists( 'allmart_delete_default_woocommerce_pages' ) ) {
 	/**
 	 * Delete default wooCommerce pages.
 	 *
@@ -236,8 +236,8 @@ if ( ! function_exists( 'onlinestore_delete_default_woocommerce_pages' ) ) {
 	 *
 	 * @return void
 	 */
-	function onlinestore_delete_default_woocommerce_pages( $selected ) {
-		if ( 'Online Store Demo' !== $selected['import_file_name'] ) {
+	function allmart_delete_default_woocommerce_pages( $selected ) {
+		if ( 'All Mart Demo' !== $selected['import_file_name'] ) {
 			return;
 		}
 
@@ -251,4 +251,4 @@ if ( ! function_exists( 'onlinestore_delete_default_woocommerce_pages' ) ) {
 		}
 	}
 }
-add_action( 'ocdi/before_content_import', 'onlinestore_delete_default_woocommerce_pages' );
+add_action( 'ocdi/before_content_import', 'allmart_delete_default_woocommerce_pages' );

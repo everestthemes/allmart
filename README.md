@@ -1,4 +1,4 @@
-# Online Store FSE – WooCommerce Compatible Theme
+# All Mart FSE – WooCommerce Compatible Theme
 
 A modern, full site editing (FSE) WordPress theme built for online stores. Seamlessly integrates with WooCommerce for a flexible and customizable e-commerce experience.
 
@@ -15,7 +15,7 @@ A modern, full site editing (FSE) WordPress theme built for online stores. Seaml
 
 1. Download or clone the theme into your `wp-content/themes/` directory.
 2. In your WordPress admin, go to **Appearance > Themes**.
-3. Activate the **Online Store FSE** theme.
+3. Activate the **All Mart FSE** theme.
 
 ## Customization
 
