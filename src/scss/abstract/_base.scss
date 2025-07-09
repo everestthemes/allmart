@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+/*Links*/
+a {
+  outline: 0;
+}
+
+a:focus-visible,
+a:focus {
+  outline: 2px dotted;
+}
+
+a:hover,
+a:active,
+a:hover {
+  outline: none;
+}
+
+/*Forms*/
+select,
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  display: block;
+  background-color: var(--wp--preset--color--background);
+  width: 100%;
+  color: var(--wp--preset--color--foreground);
+  font-family: inherit;
+  font-size: var(--wp--preset--font-size--16);
+  line-height: var(--wp--custom--line-height--default);
+  border: 1px solid $bd-color;
+  border-radius: 12px;
+  padding: 12px 10px;
+}
+
+select:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+input[type="submit"]:focus,
+textarea:focus {
+  outline: none;
+  color: var(--wp--preset--color--card-foreground);
+  border: 1px solid var(--wp--preset--color--primary);
+  box-shadow: none;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: var(--wp--preset--spacing--xx-small);
+}
+
+input[type="checkbox"] {
+  display: inline;
+}
+
+input[type="submit"] {
+  background-color: var(--wp--preset--color--primary);
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: var(--wp--preset--spacing--xx-small)
+    var(--wp--preset--spacing--x-small);
+  margin-top: 4px;
+}
+
+/*Table */
+table {
+  border-spacing: 0;
+  border: 1px solid var(--wp--preset--color--bd-color);
+}
+
+table td,
+table th {
+  border: 1px solid var(--wp--preset--color--bd-color);
+  padding: var(--wp--preset--spacing--xx-small);
+}
+
+hr {
+  background-color: var(--wp--preset--color--bd-color);
+  height: 1px;
+  margin-bottom: var(--wp--preset--spacing--xx-small);
+}
+
+/*Contact Form 7*/
+.wpcf7-form label {
+  margin-bottom: var(--wp--preset--spacing--xx-small);
+}

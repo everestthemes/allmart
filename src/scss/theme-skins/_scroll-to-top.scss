@@ -1,0 +1,33 @@
+// Scroll to Top
+
+.op-scroll-to-top {
+  position: fixed;
+  @include square(40px);
+  bottom: -10%;
+  right: $small;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  border-radius: 100px;
+  z-index: 99999;
+  transition: all 1s ease;
+
+  &:focus,
+  &:active {
+    border: none;
+  }
+
+  .scroll-icon {
+    background-color: #FFECDC;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    display: grid;
+    place-items: center;
+    border-radius: 100px;
+  }
+
+  &.show-to-top-btn {
+    bottom: 36px;
+  }
+}

@@ -1,0 +1,35 @@
+// Shop Page Style
+div[data-template=archive-product] {
+    max-width: 100%;
+
+    .site-main {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .woocommerce-breadcrumb,
+        .woocommerce-products-header {
+            display: none;
+        }
+
+        .woocommerce-result-count {
+        }
+
+        .woocommerce-ordering {
+            margin: 0;
+            margin-left: auto;
+        }
+
+        .woocommerce-pagination {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+// Ratings
+.woocommerce .star-rating::before,
+.wc-block-components-product-rating__stars span::before {
+    color: $wc-rating-color !important;
+}
+

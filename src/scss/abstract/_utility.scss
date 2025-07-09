@@ -1,0 +1,254 @@
+/*
+    * Omnipress Theme Utilities Classes
+    * =================================
+*/
+
+// Display Properties
+.op-hidden {
+  display: none !important;
+}
+
+.op-absolute {
+  position: absolute !important;
+}
+
+.op-relative {
+  position: relative;
+}
+
+.op-fixed {
+  position: fixed !important;
+}
+
+.op-sticky {
+  position: sticky;
+}
+
+.op-top-0 {
+  top: 0;
+}
+
+.op-right-0 {
+  right: 0;
+}
+
+.op-bottom-0 {
+  bottom: 0;
+}
+
+.op-left-0 {
+  left: 0;
+}
+
+.op-z-10 {
+  z-index: 10;
+}
+
+.op-z-20 {
+  z-index: 20;
+}
+
+.op-z-30 {
+  z-index: 30;
+}
+
+.op-z-max {
+  z-index: 999999;
+}
+
+.op-overflow-hidden {
+  overflow: hidden;
+}
+
+.op-h-screen {
+  height: 100vh;
+}
+
+.op-h-100 {
+  height: 100%;
+}
+
+.op-h-auto {
+  height: auto !important;
+}
+
+.op-w-screen {
+  width: 100vw;
+}
+
+.op-w-100 {
+  width: 100%;
+}
+
+// Flex 
+.op-flex {
+  display: flex;
+}
+
+.op-flex-col {
+  flex-direction: column !important;
+}
+
+.op-justify-end {
+  justify-content: flex-end !important;
+}
+
+.op-text-nowrap {
+  white-space: nowrap;
+}
+
+.op-align-items-center {
+  align-items: center;
+}
+
+.op-self-end {
+  align-self: flex-end;
+}
+
+// Grid
+.op-grid {
+  display: grid;
+}
+
+.op-grow {
+  flex-grow: 1;
+}
+
+@media (min-width: 576px) {
+  .op-order-sm-1 {
+    order: 1 !important;
+  }
+
+  .op-order-sm-2 {
+    order: 2 !important;
+  }
+
+  .op-order-sm-3 {
+    order: 3 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .op-order-md-2 {
+    order: 2 !important;
+  }
+
+  .op-order-md-1 {
+    order: 1 !important;
+  }
+}
+
+// Spacing
+.op-p-0 {
+  padding: 0;
+}
+
+.op-m-0 {
+  margin: 0;
+}
+
+.op-mt-0 {
+  margin-top: 0 !important;
+}
+
+.op-mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.op-n-mt-4 {
+  margin-top: -4px !important;
+}
+
+.op-n-mt-8 {
+  margin-top: -8px !important;
+}
+
+.op-n-mt-16 {
+  margin-top: -16px !important;
+}
+
+.op-n-mt-24 {
+  margin-top: -24px !important;
+}
+
+.op-n-mt-32 {
+  margin-top: -32px !important;
+}
+
+.op-n-mt-40 {
+  margin-top: -40px !important;
+}
+
+.op-n-mb-4 {
+  margin-bottom: -4px !important;
+}
+
+.op-n-mb-8 {
+  margin-bottom: -8px !important;
+}
+
+.op-n-mb-16 {
+  margin-bottom: -16px !important;
+}
+
+.op-n-mb-24 {
+  margin-bottom: -24px !important;
+}
+
+.op-n-mb-32 {
+  margin-bottom: -32px !important;
+}
+
+.op-n-mb-40 {
+  margin-bottom: -40px !important;
+}
+
+// Border radius
+.op-rounded-full {
+  border-radius: 9999px;
+}
+
+.op-rounded-sm {
+  border-radius: 2px;
+}
+
+.op-rounded {
+  border-radius: 4px;
+}
+
+.op-rounded-md {
+  border-radius: 8px;
+}
+
+.op-rounded-lg {
+  border-radius: 16px;
+}
+
+.op-rounded-xl {
+  border-radius: 24px;
+}
+
+.op-rounded-2xl {
+  border-radius: 32px;
+}
+
+.op-rounded-3xl {
+  border-radius: 40px;
+}
+
+.op-rounded-4xl {
+  border-radius: 48px;
+}
+
+
+// Listing
+.op-list-none {
+  list-style: none;
+}
+
+// Overflow
+.op-overflow-hidden {
+  overflow: hidden;
+}
+
+

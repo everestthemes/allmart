@@ -1,0 +1,4 @@
+*** Online Store ***
+
+2025-04-30 - version 1.0.0
+* Initial release

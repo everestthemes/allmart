@@ -1,0 +1,91 @@
+// Sale Badge Style
+.wc-block-grid .wc-block-grid__product-onsale,
+.wc-block-grid__product-image .wc-block-grid__product-onsale {
+  position: absolute;
+  display: inline-block;
+  background-color: $primary-color;
+  top: $xx-small;
+  color: #ffffff;
+  @include font(12px, $fw-medium, $lh-default, normal);
+  text-transform: uppercase;
+  border: none;
+  padding: 6px 8px;
+  z-index: 1;
+  right: -8px;
+  left: auto;
+
+  
+
+  &.wc-block-components-product-sale-badge--align-right {
+    border-radius: 4px 0 0 4px;
+    right: -8px;
+    left: auto;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -8px;
+      right: 0;
+      border-top: 8px solid #b7b7b7;
+      border-right: 8px solid transparent;
+    }
+  }
+
+  &.wc-block-components-product-sale-badge--align-left {
+    border-radius: 0px 4px 4px 0;
+    right: auto;
+    left: -8px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -8px;
+      left: 0;
+      border-top: 8px solid #b7b7b7;
+      border-left: 8px solid transparent;
+    }
+  }
+
+  &.wc-block-components-product-sale-badge--align-center {
+    display: inline-block;
+    left: 50%;
+    right: unset;
+    transform: translateX(-50%);
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+// Single Product page
+.woocommerce.single-product {
+  .wp-block-woocommerce-product-image-gallery {
+    span.onsale {
+      position: absolute;
+      min-width: unset;
+      min-height: unset;
+      top: 16px;
+      left: auto;
+      right: -8px;
+      display: inline-block;
+      background-color: $primary-color;
+      color: #ffffff;
+      @include font(12px, $fw-medium, $lh-default, norlal);
+      text-transform: uppercase;
+      border: none;
+      @include border-sharp;
+      padding: 4px $xx-small;
+      z-index: 1;
+
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: -8px;
+        right: 0;
+        border-top: 8px solid #b7b7b7;
+        border-right: 8px solid transparent;
+      }
+    }
+  }
+}

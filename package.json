@@ -1,0 +1,28 @@
+{
+  "name": "onlinestore",
+  "version": "1.0.0",
+  "description": "***** Description *****\r Introducing onlinestore, FSE theme",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp file:pot && dir-archiver --src . --dest onlinestore-1.0.0.zip --includebasedir true --exclude *.zip ./**/*.xml src node_modules .env .gitignore .vscode gulpfile.js package-lock.json package.json README.md .git yarn-error.log yarn.lock",
+    "sass": "gulp sass --quiet-deps",
+    "watch:sass": "gulp sass:watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap-icons": "^1.10.5",
+    "dir-archiver": "^2.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-wp-pot": "^2.5.0",
+    "node-sass": "^8.0.0",
+    "sass": "^1.62.0",
+    "swiper": "^11.2.8"
+  }
+}

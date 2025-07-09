@@ -1,0 +1,478 @@
+//==================================
+// Mixins (Omnipress Theme)
+//==================================
+
+// * Browser Prefixes
+$browsers: (webkit, ms, moz, o);
+
+// * Responsive Breakpoints min-width
+@mixin breakpoint($screen-w) {
+    /* Smaller Screen */
+    @if $screen-w == sm {
+        @media (min-width: 576px) {
+        @content;
+        }
+    }
+    /* Medium Screen */
+    @else if $screen-w == md {
+        @media (min-width: 768px) {
+        @content;
+        }
+    }
+    /* Large Screen */
+    @else if $screen-w == lg {
+        @media (min-width: 992px) {
+        @content;
+        }
+    }
+    /* XL Screen */
+    @else if $screen-w == xl {
+        @media (min-width: 1200px) {
+        @content;
+        }
+    }
+    /* XXL Screen */
+    @else if $screen-w == xxl {
+        @media (min-width: 1400px) {
+        @content;
+        }
+    }
+}
+
+// * Responsive Breakpoints max-width
+@mixin breakpoint-down($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: 575.98px) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media (max-width: 767.98px) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (max-width: 991.98px) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: 1199.98px) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (max-width: 1399.98px) {
+      @content;
+    }
+  } @else if $breakpoint == xxl {
+    @content;
+  }
+}
+
+// Clear both
+@mixin clear {
+  display: block;
+  width: 100%;
+  clear: both;
+  height: 0;
+}
+
+// Div (Box) size (width / height)
+@mixin box($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+// Square element
+@mixin square($s) {
+  width: $s;
+  height: $s;
+}
+
+// Box shadow
+@mixin box-shadow($boxs...) {
+  @each $v in $browsers {
+    -#{$v}-box-shadow: $boxs;
+  }
+  box-shadow: $boxs;
+}
+
+// Box sizing
+@mixin box-sizing($bs) {
+  @each $v in $browsers {
+    -#{$v}-box-sizing: $bs;
+  }
+  box-sizing: $bs;
+}
+@mixin border-box {
+  @include box-sizing(border-box);
+}
+@mixin content-box {
+  @include box-sizing(content-box);
+}
+
+// Border radius
+@mixin border-radius($br...) {
+  @each $v in $browsers {
+    -#{$v}-border-radius: $br;
+  }
+  border-radius: $br;
+}
+@mixin border-full {
+  @include border-radius(50%);
+}
+@mixin border-sharp {
+  @include border-radius(0);
+}
+
+// Typography
+@mixin font($fsize: "", $fweight: "", $lh: "", $fstyle: "") {
+  @if $fsize != "" {
+    font-size: $fsize;
+  }
+  @if $lh != "" {
+    line-height: $lh;
+  }
+  @if $fweight != "" {
+    font-weight: $fweight;
+  }
+  @if $fstyle != "" {
+    font-style: $fstyle;
+  }
+}
+
+// Flex
+@mixin flex() {
+  @each $v in $browsers {
+    @if $v == ms {
+      display: -ms-flexbox;
+    } @else {
+      display: unquote("-#{$v}-flex");
+    }
+  }
+  display: flex;
+}
+@mixin flex_important() {
+  @each $v in $browsers {
+    @if $v == ms {
+      display: -ms-flexbox !important;
+    } @else {
+      display: unquote("-#{$v}-flex") !important;
+    }
+  }
+  display: flex !important;
+}
+@mixin flex-basis($d) {
+  @each $v in $browsers {
+    -#{$v}-flex-basis: $d;
+  }
+  flex-basis: $d;
+}
+@mixin flex-wrap($d) {
+  @each $v in $browsers {
+    -#{$v}-flex-wrap: $d;
+  }
+  flex-wrap: $d;
+}
+@mixin flex-direction($d) {
+  @each $v in $browsers {
+    -#{$v}-flex-direction: $d;
+  }
+  flex-direction: $d;
+}
+@mixin flex-grow($d) {
+  @each $v in $browsers {
+    -#{$v}-flex-grow: $d;
+  }
+  flex-grow: $d;
+}
+@mixin flex-shrink($d) {
+  @each $v in $browsers {
+    -#{$v}-flex-shrink: $d;
+  }
+  flex-shrink: $d;
+}
+@mixin flex-align-items($a) {
+  @each $v in $browsers {
+    @if $v == ms {
+      -ms-flex-align: if($a==flex-start, start, if($a==flex-end, end, $a));
+    } @else {
+      -#{$v}-align-items: $a;
+    }
+  }
+  align-items: $a;
+}
+@mixin flex-align-self($a) {
+  @each $v in $browsers {
+    @if $v == ms {
+      -ms-align-self: if($a==flex-start, start, if($a==flex-end, end, $a));
+    } @else {
+      -#{$v}-align-self: $a;
+    }
+  }
+  align-self: $a;
+}
+@mixin flex-align-content($a) {
+  @each $v in $browsers {
+    @if $v == ms {
+      -ms-flex-line-pack: if($a==flex-start, start, if($a==flex-end, end, $a));
+    } @else {
+      -#{$v}-align-content: $a;
+    }
+  }
+  align-content: $a;
+}
+@mixin flex-justify-content($j) {
+  @each $v in $browsers {
+    @if $v == ms {
+      -ms-flex-pack: if($j==flex-start, start, if($j==flex-end, end, $j));
+    } @else {
+      -#{$v}-justify-content: $j;
+    }
+  }
+  justify-content: $j;
+}
+@mixin flex-justify-items($j) {
+  @each $v in $browsers {
+    -#{$v}-justify-items: $j;
+  }
+  justify-items: $j;
+}
+@mixin flex-justify-self($j) {
+  @each $v in $browsers {
+    -#{$v}-justify-self: $j;
+  }
+  justify-self: $j;
+}
+
+// Transitions
+$delay: 0.3s;
+$ease: ease-in-out;
+
+@mixin transition($params...) {
+  @each $v in $browsers {
+    -#{$v}-transition: if(
+      str-slice(nth(nth($params, 1), 1), 0, 9) == transform,
+      unquote("-#{$v}-#{$params}"),
+      $params
+    );
+  }
+  transition: $params;
+}
+@mixin transition-property($prop, $d: $delay, $e: $ease) {
+  @include transition($prop $d $e);
+}
+@mixin transition-properties($props...) {
+  $buf: "";
+  @each $p in $props {
+    @if $buf == "" {
+      $buf: unquote("#{$p} #{$delay} #{$ease}");
+    } @else {
+      $buf: unquote("#{$buf}, #{$p} #{$delay} #{$ease}");
+    }
+  }
+  @include transition($buf);
+}
+@mixin transition-none {
+  @include transition(none);
+}
+@mixin transition-all($d: $delay, $e: $ease) {
+  @include transition(all $d $e);
+}
+@mixin transition-color($d: $delay, $e: $ease) {
+  @include transition(color $d $e);
+}
+@mixin transition-bg-color($d: $delay, $e: $ease) {
+  @include transition(background-color $d $e);
+}
+@mixin transition-bd-color($d: $delay, $e: $ease) {
+  @include transition(border-color $d $e);
+}
+@mixin transition-colors($d: $delay, $e: $ease) {
+  @include transition(color $d $e, background-color $d $e, border-color $d $e);
+}
+@mixin transition-timing($x1, $y1, $x2, $y2) {
+  @each $v in $browsers {
+    -#{$v}-transition-timing-function: cubic-bezier($x1, $y1, $x2, $y2);
+  }
+  transition-timing-function: cubic-bezier($x1, $y1, $x2, $y2);
+}
+@mixin transition-duration($d) {
+  @each $v in $browsers {
+    -#{$v}-transition-duration: $d;
+  }
+  transition-duration: $d;
+}
+@mixin transition-delay($d) {
+  @each $v in $browsers {
+    -#{$v}-transition-delay: $d;
+  }
+  transition-delay: $d;
+}
+
+// Transform
+@mixin transform($params...) {
+  @each $v in $browsers {
+    -#{$v}-transform: $params;
+  }
+  transform: $params;
+}
+@mixin transform-none($imp: "") {
+  @each $v in $browsers {
+    @if $imp != "" {
+      -#{$v}-transform: none !important;
+    } @else {
+      -#{$v}-transform: none;
+    }
+  }
+  @if $imp != "" {
+    transform: none !important;
+  } @else {
+    transform: none;
+  }
+}
+@mixin transform-origin($params...) {
+  @each $v in $browsers {
+    -#{$v}-transform-origin: $params;
+  }
+  transform-origin: $params;
+}
+@mixin transform-style($s) {
+  @each $v in $browsers {
+    -#{$v}-transform-style: $s;
+  }
+  transform-style: $s;
+}
+@mixin preserve3d {
+  @each $v in $browsers {
+    -#{$v}-transform-style: preserve-3d;
+  }
+  transform-style: preserve-3d;
+}
+
+@mixin translate($x: -50%, $y: -50%) {
+  @each $v in $browsers {
+    -#{$v}-transform: translate($x, $y);
+  }
+  transform: translate($x, $y);
+}
+@mixin translate3d($x: 0, $y: 0, $z: 0) {
+  @each $v in $browsers {
+    -#{$v}-transform: translate3d($x, $y, $z);
+  }
+  transform: translate3d($x, $y, $z);
+}
+@mixin translateX($x: -50%) {
+  @each $v in $browsers {
+    -#{$v}-transform: translateX($x);
+  }
+  transform: translateX($x);
+}
+@mixin translateY($y: -50%) {
+  @each $v in $browsers {
+    -#{$v}-transform: translateY($y);
+  }
+  transform: translateY($y);
+}
+
+@mixin rotate($a) {
+  @each $v in $browsers {
+    -#{$v}-transform: rotate($a);
+  }
+  transform: rotate($a);
+}
+@mixin rotateX($a) {
+  @each $v in $browsers {
+    -#{$v}-transform: rotateX($a);
+  }
+  transform: rotateX($a);
+}
+@mixin rotateY($a) {
+  @each $v in $browsers {
+    -#{$v}-transform: rotateY($a);
+  }
+  transform: rotateY($a);
+}
+@mixin rotateZ($a) {
+  @each $v in $browsers {
+    -#{$v}-transform: rotateZ($a);
+  }
+  transform: rotateZ($a);
+}
+
+@mixin scale($x: 0, $y: "") {
+  @if $y == "" {
+    $y: $x;
+  }
+  @each $v in $browsers {
+    -#{$v}-transform: scale($x, $y);
+  }
+  transform: scale($x, $y);
+}
+@mixin scaleX($x: 0) {
+  @each $v in $browsers {
+    -#{$v}-transform: scaleX($x);
+  }
+  transform: scaleX($x);
+}
+@mixin scaleY($y: 0) {
+  @each $v in $browsers {
+    -#{$v}-transform: scaleY($y);
+  }
+  transform: scaleY($y);
+}
+@mixin scale3d($x: 0, $y: 0, $z: 0) {
+  @each $v in $browsers {
+    -#{$v}-transform: scale3d($x, $y, $z);
+  }
+  transform: scale3d($x, $y, $z);
+}
+
+@mixin skew($x: 0, $y: "") {
+  @if $y == "" {
+    $y: $x;
+  }
+  @each $v in $browsers {
+    -#{$v}-transform: skew($x, $y);
+  }
+  transform: skew($x, $y);
+}
+
+@mixin perspective($p) {
+  @each $v in $browsers {
+    -#{$v}-perspective: $p;
+  }
+  perspective: $p;
+}
+@mixin perspective-origin($params...) {
+  @each $v in $browsers {
+    -#{$v}-perspective-origin: $params;
+  }
+  perspective-origin: $params;
+}
+
+// Filters
+
+@mixin filter($params...) {
+  @each $v in $browsers_all {
+    -#{$v}-filter: $params;
+  }
+  filter: $params;
+}
+
+// Animation
+@mixin animation($params...) {
+  @each $v in $browsers {
+    -#{$v}-animation: $params;
+  }
+  animation: $params;
+}
+@mixin animation-timing($t) {
+  @each $v in $browsers {
+    -#{$v}-animation-timing-function: $t;
+  }
+  animation-timing-function: $t;
+}
+@mixin animation-delay($t) {
+  @each $v in $browsers {
+    -#{$v}-animation-delay: $t;
+  }
+  animation-delay: $t;
+}

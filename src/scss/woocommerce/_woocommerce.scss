@@ -1,0 +1,20 @@
+@import "../abstract/variable";
+@import "../abstract/mixins";
+
+// Common Styles
+@import "./wc-common";
+
+// Components
+@import "./components/cart"; // Cart Page
+@import "./components/myaccount"; // My Account Page
+@import "./components/notifications"; // WooCommerce Notifications
+@import "./components/orderconfirmation"; // Order Confirmation Page
+@import "./components/checkout"; // checkout page
+@import "./components/product-items"; // Product Items (Grid / List View)
+@import "./components/product-query"; // Product Items (Grid / List View)
+@import "./components/single-product"; // Single Product
+@import "./components/shop-page"; // Shoppage
+
+// Compatibility
+@import "./compatibility/yith-wishlist";
+@import "./compatibility/yith-quickview";

@@ -1,0 +1,30 @@
+.wc-block-components-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+
+    &__page {
+        min-width: 44px;
+        min-height: 44px;
+        border-radius: 4px;
+        
+        &:not(.toggle) {
+            background-color: $muted-color;
+        }
+
+        &--active {
+            background-color: $primary-color !important;
+
+            span {
+                color: #fff;
+            }
+        }
+
+        &:hover {
+            background-color: $primary-color;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,213 @@
+/* 
+* WooCommerce Messages (Notifications)
+*/
+
+.woocommerce-notices-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/*
+  * Woocommerce Notices
+  * 8.0.3
+*/
+
+.woocommerce {
+  .wc-block-components-notice-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    --gap: 32px;
+    gap: var(--gap);
+    font-size: var(--wp--preset--font-size--14);
+    border: none;
+    border-radius: 4px;
+    margin: $x-small 0;
+    padding: 12px 12px 12px 40px !important;
+
+    p {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      font-family: "bootstrap-icons";
+      display: inline-block;
+      left: $x-small;
+    }
+
+    svg {
+      display: none;
+    }
+
+    &.is-info {
+      position: relative;
+      background-color: $wc-info-bg;
+      color: $wc-info;
+      list-style: none;
+
+      &::before {
+        content: "\F430";
+        font-family: "bootstrap-icons";
+        margin-right: 10px;
+      }
+
+      a {
+        color: $wc-info;
+        font-weight: $fw-semibold;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    &.is-success {
+      position: relative;
+      background-color: $wc-success-bg;
+      color: $wc-success;
+      list-style: none;
+
+      &::before {
+        content: "\F26A";
+        font-family: "bootstrap-icons";
+      }
+
+      a {
+        background: $wc-success !important;
+        color: $light-color !important;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    &.is-error {
+      position: relative;
+      background-color: $wc-danger-bg;
+      color: $wc-danger;
+      list-style: none;
+
+      &::before {
+        content: "\F430";
+        font-family: "bootstrap-icons";
+      }
+
+      a {
+        background: $wc-danger;
+        color: $light-color;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+
+  }
+
+  .woocommerce-NoticeGroup {
+    .wc-block-components-notice-banner {
+      padding: 12px !important;
+
+      &.is-info,
+      &.is-success,
+      &.is-error {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+
+        .wc-block-components-notice-banner__content {
+          align-self:  flex-start !important;
+        }
+
+        li {
+          align-self: flex-start;
+          justify-self: flex-start;
+        }
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// Notice Icon Position
+.is-info::before,
+.is-succes::before,
+.is-error::before {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.is-error a,
+.is-info a,
+.is-succes a {
+  text-decoration: none;
+
+  &.restore-item {
+    background-color: $wc-success;
+    color: $light-color;
+    font-weight: $fw-semibold;
+    border-radius: 4px;
+    padding: 6px 20px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.woocommerce .is-error .button,
+.woocommerce .is-info .button,
+.woocommerce .is-succes .button,
+.woocommerce-page .is-error .button,
+.woocommerce-page .is-info .button,
+.woocommerce-page .is-succes .button,
+.woocommerce-page .is-succes .restore-item {
+  float: right;
+  text-transform: capitalize;
+  font-weight: 400;
+  order: 3;
+  @include transition(all 0.3s ease-in-out);
+}
+
+.woocommerce .is-error .button:hover,
+.woocommerce .is-info .button:hover,
+.woocommerce .is-succes .button:hover,
+.woocommerce-page .is-error .button:hover,
+.woocommerce-page .is-info .button:hover,
+.woocommerce-page .is-succes .button:hover,
+.woocommerce-page .is-succes .restore-item:hover {
+  color: var(--wp--preset--color--lightcolor);
+  opacity: 0.8;
+}
+
+// Store Notice
+.woocommerce-store-notice,
+p.demo_store {
+  position: fixed;
+  display: none;
+  background-color: $primary-color;
+  max-width: var(--wp--style--global--content-size);
+  bottom: $x-small;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 0 auto;
+  z-index: 99998;
+  box-shadow: 0 1px 1em rgba(0, 0, 0, 0.2);
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}

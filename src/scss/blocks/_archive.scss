@@ -1,0 +1,41 @@
+/*Categories & Archive*/
+.wp-block-categories,
+.wp-block-archives {
+    list-style: none;
+    padding: 0;
+}
+
+.wp-block-categories li a,
+.wp-block-archives li a {
+    display: inline-block;
+    text-decoration: inherit;
+    padding: 5px 0;
+}
+
+.wp-block-categories li a::before,
+.wp-block-archives li a::before {
+    content: "";
+    display: inline-block;
+    font-size: 13px;
+    font-family: "bootstrap-icons";
+    margin-right: 8px;
+}
+
+.wp-block-categories li a::before {
+    content: '\F3D1';
+}
+
+.wp-block-archives li a::before {
+    content: "\f133";
+}
+
+
+// Tag Cloud
+.wp-block-tag-cloud {
+    a.tag-cloud-link {
+        font-size: 16px !important;
+        line-height: 40px;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+}

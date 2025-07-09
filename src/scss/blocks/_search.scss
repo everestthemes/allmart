@@ -1,0 +1,44 @@
+/*Search form */
+.wp-block-search {
+  &__button-only {
+    .wp-block-search__button {
+      background-color: transparent;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+
+  &__inside-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__input {
+    border: 1px solid var(--wp--preset--color--bd-color);
+    padding: 10px;
+
+    &:focus {
+      border: 1px solid var(--wp--preset--color--foreground-color);
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}

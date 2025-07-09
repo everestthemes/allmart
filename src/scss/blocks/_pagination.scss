@@ -1,0 +1,38 @@
+/* Pagination Block Query*/
+.wp-block-query-pagination {
+    padding: var(--wp--preset--spacing--medium) 0;
+    gap: 8px;
+
+    .wp-block-query-pagination-numbers {
+        min-width: 44px;
+        min-height: 44px;
+        display: inline-flex;
+        justify-content: center;
+        gap: 8px;
+        align-items: center;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    .page-numbers,
+    .wp-block-query-pagination-next,
+    .wp-block-query-pagination-previous {
+        display: inline-block;
+        background-color: $muted-color;
+        color: var(--wp--preset--color--paragraph);
+        line-height: var(--wp--preset--line-height--default);
+        text-decoration: none;
+        border-radius: 4px;
+        padding: var(--wp--preset--spacing--xx-small) var(--wp--preset--spacing--x-small);
+        margin: 0 3px;
+    }
+    
+    .page-numbers.current,
+    a:hover,
+    a:focus,
+    a:active {
+        background-color: var(--wp--preset--color--primary);
+        color: var(--wp--preset--color--white) !important;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,24 @@
+.wc-block-product-categories {
+    gap: 8px;
+    &__dropdown {
+        select {
+            appearance: none;
+            display: inline-block;
+            width: 100%;
+            max-width: 100%;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="9.71" viewBox="0 0 16 9.71"><path d="M7.776,18.136.655,11.015a.879.879,0,0,1,0-1.244l.831-.831a.879.879,0,0,1,1.242,0L8.4,14.583l5.67-5.643a.879.879,0,0,1,1.242,0l.831.831a.879.879,0,0,1,0,1.244L9.02,18.136A.879.879,0,0,1,7.776,18.136Z" transform="translate(-0.398 -8.683)" fill="%23646262"/></svg>');
+            background-size: 16px 6px;
+            background-repeat: no-repeat;
+            background-position: right 8px center;
+            cursor: pointer;
+            word-wrap: normal;
+            line-height: 1.3;
+
+            &::after {        
+                content: '\F586';
+                font-family: "bootstrap-icons";
+                color: red;
+            }
+        }
+    }
+}

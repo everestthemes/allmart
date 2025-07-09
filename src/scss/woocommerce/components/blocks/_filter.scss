@@ -1,0 +1,80 @@
+// WooCommerce Filter
+.wp-block-woocommerce-filter-wrapper {
+  padding: 24px;
+  border: 1px solid var(--wp--preset--color--border);
+  border-radius: 24px;
+
+  .wc-blocks-filter-wrapper {
+    // Price Filter
+    .wp-block-woocommerce-price-filter {
+      .wc-block-price-slider {
+        .wc-block-price-filter {
+          margin: 0;
+
+          &__range-text {
+            margin: 16px 0;
+          }
+        }
+        .wc-block-components-price-slider__range-input-progress {
+          color: var(--wp--preset--color--primary);
+        }
+        
+      }
+    }
+
+    // Rating Filter
+    .wp-block-woocommerce-rating-filter {
+      margin-bottom: 0;
+    }
+
+    .wc-block-rating-filter__actions,
+    .wc-block-components-price-slider__actions,
+    .wc-block-attribute-filter__actions,
+    .wc-block-stock-filter__actions {
+      display: flex;
+      justify-content: flex-start;
+      gap: 8px;
+
+      button {
+        background-color: var(--wp--preset--color--primary);
+        color: #fff;
+        padding: 4px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+
+        &.wc-block-components-filter-reset-button {
+          background-color: var(--wp--preset--color--destructive);
+        }
+      }
+    }
+  }
+}
+  
+  .wp-block-woocommerce-product-categories {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        margin-bottom: $xx-small;
+        a {
+          color: $card-foreground;
+          text-decoration: none;
+        }
+  
+        span.wc-block-product-categories-list-item-count {
+          opacity: 0.6;
+        }
+  
+        ul {
+          margin-top: $xx-small;
+        }
+      }
+    }
+  }
+
+
+
+
+  

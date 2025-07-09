@@ -1,0 +1,48 @@
+.top-sale-marquee {
+	animation: marquee 30s linear infinite !important;
+
+	* {
+		white-space: nowrap;
+	}
+}
+
+@media only screen and (max-width: 200px) {
+	.top-sale-marquee {
+		animation: none !important;
+		overflow-x: scroll;
+		position: relative;
+		scrollbar-width: none;
+  		-ms-overflow-style: none; 
+	}
+
+	.top-sale-marquee-container {
+		position: relative;
+	}
+
+	.top-sale-marquee ::-webkit-scrollbar {
+		display: none;
+	}
+
+	.top-sale-marquee > p {
+		width: 85% !important;
+	}
+}
+
+.top-sale-marquee:hover {
+	animation-play-state: paused !important;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-20%);
+    }
+	100% {
+		transform: translateX(0);
+    }
+}
+  
+
+  

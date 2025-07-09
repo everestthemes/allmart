@@ -1,0 +1,67 @@
+/* Latest Post */
+
+.wp-block-latest-posts {
+  &__list li {
+    margin-bottom: 20px;
+    overflow: hidden;
+    clear: both;
+  }
+
+  &__featured-image {
+    vertical-align: middle;
+
+    .wp-post-image {
+      border-radius: 12px;
+    }
+  }
+
+  &__post-title {
+    display: block;
+    text-decoration: none;
+  }
+
+  &__post-excerpt {
+    font-size: var(--wp--preset--font-size--16);
+  }
+
+}
+
+
+.wp-block-latest-posts__post-author,
+.wp-block-latest-posts__post-date,
+.wp-block-post-date,
+.wp-block-post-terms {
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: 8px;
+  opacity: 0.9;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.wp-block-latest-posts__post-author::before,
+.wp-block-latest-posts__post-date::before,
+.wp-block-post-date::before,
+.wp-block-post-terms::before {
+  content: "";
+  display: inline-block;
+  font-family: "bootstrap-icons";
+  margin-right: 8px;
+}
+
+.wp-block-latest-posts__post-author::before {
+  content: "\F4DA";
+}
+
+.wp-block-latest-posts__post-date:before,
+.wp-block-post-date:before {
+  content: "\F214";
+  font-size: 14px;
+}
+
+.wp-block-post-terms::before {
+  content: "\F3D9";
+  font-size: 18px;
+}

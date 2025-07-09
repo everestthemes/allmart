@@ -1,0 +1,80 @@
+// Theme Color Variables
+
+$primary-color: var(--wp--preset--color--primary);
+$secondary-color: var(--wp--preset--color--secondary);
+
+$fg-color: var(--wp--preset--color--foreground);
+$bg-color: var(--wp--preset--color--background); //white & black background color
+$overlay-bg: rgba(0, 0, 0, 0.7);
+
+$card-color: var(--wp--preset--color--card);
+$card-foreground: var(--wp--preset--color--card-forground);
+
+$muted-color: var(--wp--preset--color--muted);
+$muted-foreground: var(--wp--preset--color--muted-foreground);
+
+$light-color: var(--wp--preset--color--card);
+$alt-color: var(--wp--preset--color--border);
+
+$bd-color: var(--wp--preset--color--border);
+
+
+// Theme Spacing Variables
+$s-1: 0px;
+$s-1: 4px;
+$s-2: 8px;
+$s-3: 12px;
+$s-4: 16px;
+$s-5: 20px;
+$s-6: 24px;
+$s-7: 28px;
+$s-8: 32px;
+$s-9: 36px;
+$s-10: 40px;
+$s-11: 44px;
+$s-12: 48px;
+$s-13: 52px;
+$s-14: 56px;
+$s-15: 70px;
+$xx-small: var(--wp--preset--spacing--xx-small); // 8px
+$x-small: var(--wp--preset--spacing--x-small); // 16px
+$small: var(--wp--preset--spacing--small); //clamp(20px, 4vw, 40px)
+$medium: var(--wp--preset--spacing--medium); // clamp(32px, 6vw, 60px)
+$large: var(--wp--preset--spacing--large); //clamp(40px, 8vw, 80px)
+$x-large: var(--wp--preset--spacing--x-large); //clamp(56px, 10vw, 100px)
+$xx-large: var(--wp--preset--spacing--xx-large); //clamp(60px, 10vw, 120px)
+
+// Theme Line Height
+$lh-default: var(--wp--custom--line-height--default); // 1
+$lh-tiny: var(--wp--custom--line-height--tiny); // 1.2
+$lh-small: var(--wp--custom--line-height--small); // 1.3
+$lh-medium: var(--wp--custom--line-height--medium); // 1.4
+$lh-large: var(--wp--custom--line-height--large); //1.5
+$lh-xlarge: var(--wp--custom--line-height--xlarge); // 1.6
+
+// Theme Font Weight
+$fw-thin: var(--wp--custom--font-weight--thin); //100;
+$fw-extra-light: var(--wp--custom--font-weight--extra-light); //200;
+$fw-light: var(--wp--custom--font-weight--light); //300;
+$fw-regular: var(--wp--custom--font-weight--regular); //400;
+$fw-medium: var(--wp--custom--font-weight--medium); //500;
+$fw-semibold: var(--wp--custom--font-weight--semibold); //600;
+$fw-bold: var(--wp--custom--font-weight--bold); //700;
+$fw-extra-bold: var(--wp--custom--font-weight--extra-bold); //800;
+$fw-black: var(--wp--custom--font-weight--black); //900;
+
+// Omnipress WooCommerce Colors
+$wc-success: #23963e;
+$wc-info: #2654c9;
+$wc-warning: #f1b605;
+$wc-danger: #cf3141;
+
+$wc-success-bg: #def8ec;
+$wc-info-bg: #b6ecf5;
+$wc-warning-bg: #f5ebcf;
+$wc-danger-bg: #fadfdf;
+
+$wc-rating-color: #ff9529;
+
+// Spacing
+$wc-gap: 16px;

@@ -1,0 +1,108 @@
+/*Block Image*/
+.wp-block-image {
+    margin: 0;
+
+    figure {
+        overflow: hidden;
+
+        img {
+            vertical-align: middle;
+        }
+    }
+}
+
+/* Image Hover Effects */
+
+
+.is-style-image-hover-zoom-effect {
+    position: relative;
+    overflow: hidden;
+    
+    img {
+        @include transition(all 0.3s ease-in-out);
+        transform: scale(1);
+    }
+    
+    &:hover img {
+        transform: scale(1.05);
+    }
+}
+
+.is-style-image-hover-slide-effect {
+    position: relative;
+    overflow: hidden;
+    
+    img {
+        margin-left: 24px;
+        transform: scale(1.09);
+        transition: .3s ease-in-out;
+    }
+    
+    &:hover img {
+        margin-left: 0;
+    }
+}
+
+.is-style-image-hover-slide-effect {
+    position: relative;
+    overflow: hidden;
+    
+    img {
+        margin-left: 24px;
+        transform: scale(1.09);
+        transition: .3s ease-in-out;
+    }
+    
+    &:hover img {
+        margin-left: 0;
+    }
+}
+
+.is-style-image-hover-rotate-effect {
+    position: relative;
+    overflow: hidden;
+    
+    img {
+        transform: rotate(15deg) scale(1.4);
+        transition: .3s ease-in-out;
+    }
+    
+    &:hover img {
+        transform: rotate(0) scale(1);
+    }
+}
+
+.is-style-image-hover-shine-effect {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -75%;
+        z-index: 2;
+        content: '';
+        width: 50%;
+        height: 100%;
+        background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+        -webkit-transform: skewX(-25deg);
+        transform: skewX(-25deg);
+    }
+
+    &:hover::before {
+        -webkit-animation: img-shine .75s;
+        animation: img-shine .75s;
+    }
+    @-webkit-keyframes img-shine {
+        100% {
+            left: 125%;
+        }
+    }
+    @keyframes img-shine {
+        100% {
+            left: 125%;
+        }
+    }
+}
