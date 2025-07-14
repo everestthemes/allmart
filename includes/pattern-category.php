@@ -1,16 +1,16 @@
 <?php
 /**
- * all-mart: Block Patterns *
+ * allmart: Block Patterns *
  *
- * @package all-mart
- * @since all-mart 1.0.0
+ * @package allmart
+ * @since allmart 1.0.0
  */
 
 add_action( 'init', 'allmart_remove_core_block_patterns', 9 );
 /**
  * Removes core block patterns.
  *
- * @since all-mart 1.0.0
+ * @since allmart 1.0.0
  *
  * @return void
  */
@@ -21,11 +21,11 @@ function allmart_remove_core_block_patterns() {
 /**
  * Registers block patterns and categories. *
  *
- * @since all-mart 1.0.0
+ * @since allmart 1.0.0
  */
 function allmart_register_block_patterns() {
 	$block_pattern_categories = array(
-		'all-mart' => array( 'label' => __( 'all-mart', 'all-mart' ) ),
+		'allmart' => array( 'label' => __( 'allmart', 'allmart' ) ),
 	);
 
 	$block_pattern_categories = apply_filters( 'allmart_block_pattern_categories', $block_pattern_categories );

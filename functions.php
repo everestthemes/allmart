@@ -4,16 +4,16 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package all-mart
+ * @package allmart
  * @since 1.0.0
  */
 
 /**
- * all-mart Theme Support
+ * allmart Theme Support
  */
 function allmart_theme_support() {
 
-	load_theme_textdomain( 'all-mart', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'allmart', get_template_directory() . '/languages' );
 
 	// Support Post thumbnails.
 	add_theme_support( 'post-thumbnails' );

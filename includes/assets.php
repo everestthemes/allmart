@@ -23,13 +23,13 @@ if ( ! function_exists( 'allmart_styles' ) ) :
 		wp_enqueue_style( 'bootstrap-icon', get_template_directory_uri() . '/assets/vendors/bootstrap/bootstrap-icons.css', array(), $version, 'all' );
 
 		// Theme Styles.
-		wp_enqueue_style( 'all-mart-styles', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'allmart-styles', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
 		// Core Block Styles.
-		wp_enqueue_style( 'all-mart-styles-blocks', get_template_directory_uri() . '/assets/css/blocks.css', array(), $version, 'all' );
+		wp_enqueue_style( 'allmart-styles-blocks', get_template_directory_uri() . '/assets/css/blocks.css', array(), $version, 'all' );
 
 		// Woocommerce Styles.
-		wp_enqueue_style( 'all-mart-styles-woocommerce', get_template_directory_uri() . '/assets/css/woocommerce.css', array(), $version, 'all' );
+		wp_enqueue_style( 'allmart-styles-woocommerce', get_template_directory_uri() . '/assets/css/woocommerce.css', array(), $version, 'all' );
 
 		// Animate CSS.
 		wp_enqueue_style( 'op-animate-style', get_template_directory_uri() . '/assets/vendors/animatecss/animate.min.css', array(), $version, 'all' );

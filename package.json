@@ -1,10 +1,10 @@
 {
-  "name": "all-mart",
+  "name": "allmart",
   "version": "1.0.0",
-  "description": "***** Description *****\r Introducing all-mart, FSE theme",
+  "description": "***** Description *****\r Introducing allmart, FSE theme",
   "main": "index.js",
   "scripts": {
-    "build": "gulp file:pot && dir-archiver --src . --dest all-mart-1.0.0.zip --includebasedir true --exclude *.zip ./**/*.xml src node_modules .env .gitignore .vscode gulpfile.js package-lock.json package.json README.md .git yarn-error.log yarn.lock",
+    "build": "gulp file:pot && dir-archiver --src . --dest allmart-1.0.0.zip --includebasedir true --exclude *.zip ./**/*.xml src node_modules .env .gitignore .vscode gulpfile.js package-lock.json package.json README.md .git yarn-error.log yarn.lock",
     "sass": "gulp sass --quiet-deps",
     "watch:sass": "gulp sass:watch"
   },
@@ -22,7 +22,6 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-wp-pot": "^2.5.0",
     "node-sass": "^8.0.0",
-    "sass": "^1.62.0",
-    "swiper": "^11.2.8"
+    "sass": "^1.62.0"
   }
 }

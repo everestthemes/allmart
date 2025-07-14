@@ -10,7 +10,7 @@
  * - Redux options
  * - Preview image and URL
  *
- * @package all-mart
+ * @package allmart
  * @return array List of demo import configuration settings.
  */
 
@@ -88,10 +88,10 @@ if ( ! function_exists( 'allmart_ocdi_import_files' ) ) {
 			return array(
 				array(
 					'import_file_name'         => 'All Mart Demo',
-					'categories'               => array( 'all-mart' ),
+					'categories'               => array( 'allmart' ),
 					'local_import_file'        => $xml_path,
 					'import_preview_image_url' => trailingslashit( get_template_directory_uri() ) . 'includes/ocdi/demo/screenshot.png',
-					'preview_url'              => 'https://ecommerce.everestthemes.com/all-mart/',
+					'preview_url'              => 'https://ecommerce.everestthemes.com/allmart/',
 				),
 			);
 	}
@@ -137,7 +137,7 @@ if ( ! function_exists( 'allmart_replace_old_urls_in_content' ) ) {
 			return;
 		}
 
-		$old_url = 'https://ecommerce.everestthemes.com/all-mart';
+		$old_url = 'https://ecommerce.everestthemes.com/allmart';
 		$new_url = home_url();
 
 		$all_pages = get_posts(

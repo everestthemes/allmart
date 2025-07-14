@@ -4,7 +4,7 @@
 
 (function () {
   // Append Quantity Increment / Decrement Buttons
-  function all-mart_add_inc_dec() {
+  function allmart_add_inc_dec() {
     // select all quantity div
     const qtyDiv = document.querySelectorAll(".quantity");
 
@@ -20,7 +20,7 @@
   }
 
   // Handle IncDec values
-  function all-mart_handle_quantity() {
+  function allmart_handle_quantity() {
     const qtyWrapper = document.querySelectorAll(".quantity");
 
     qtyWrapper.forEach((el) => {
@@ -45,7 +45,7 @@
   }
 
   // Product Search Modal
-  function all-mart_product_search_modal() {
+  function allmart_product_search_modal() {
     const searchModal = document.querySelector(".search-modal__content");
     const searchOpen = document.querySelector(".open-search-modal");
     const searchClose = document.querySelector(".close-search-modal");
@@ -70,7 +70,7 @@
   }
 
   // Review Stars
-  function all-mart_product_review_stars() {
+  function allmart_product_review_stars() {
     for (let i = 1; i <= 5; i++) {
       const starLink = document.querySelector(`a.star-${i}`);
       if (starLink) {
@@ -80,15 +80,15 @@
   }
 
   window.addEventListener("load", function () {
-    all-mart_add_inc_dec();
-    all-mart_handle_quantity();
-    all-mart_product_search_modal();
-    all-mart_product_review_stars();
+    allmart_add_inc_dec();
+    allmart_handle_quantity();
+    allmart_product_search_modal();
+    allmart_product_review_stars();
 
     document.addEventListener("mousemove", function () {
       if (!document.querySelector(".op-btn-qty")) {
-        all-mart_add_inc_dec();
-        all-mart_handle_quantity();
+        allmart_add_inc_dec();
+        allmart_handle_quantity();
       }
     });
 

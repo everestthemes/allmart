@@ -1,9 +1,9 @@
 <?php
 /**
- * all-mart: Theme Skins *
+ * allmart: Theme Skins *
  *
- * @package all-mart
- * @since all-mart 1.0.0
+ * @package allmart
+ * @since allmart 1.0.0
  */
 
 if ( ! function_exists( 'allmart_skin_scroll_to_top' ) ) :
