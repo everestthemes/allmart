@@ -5,15 +5,15 @@
 @import "./wc-common";
 
 // Components
-// @import "./components/cart"; 
-// @import "./components/myaccount"; 
+@import "./components/cart"; 
+@import "./components/myaccount"; 
 @import "./components/notifications"; 
-// @import "./components/orderconfirmation"; 
-// @import "./components/checkout"; 
-// @import "./components/product-items"; 
-// @import "./components/product-query"; 
-// @import "./components/single-product"; 
-// @import "./components/shop-page"; 
+@import "./components/orderconfirmation"; 
+@import "./components/checkout"; 
+@import "./components/product-items"; 
+@import "./components/product-query"; 
+@import "./components/single-product"; 
+@import "./components/shop-page"; 
 
 // Compatibility
 @import "./compatibility/yith-wishlist";

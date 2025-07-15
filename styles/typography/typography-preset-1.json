@@ -170,7 +170,7 @@
 	"styles": {
 		"typography": {
 			"fontFamily": "var:preset|font-family|literata",
-			"fontSize": "1rem",
+			"fontSize": "16px",
 			"letterSpacing": "-0.24px",
 			"lineHeight": "1.3"
 		},

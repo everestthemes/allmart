@@ -3,9 +3,9 @@
 (function ($) {
 
     // Main Hero Slider
-    $('.hero-slider-home-v2').slick({
-        dots: false,
-        autoplay: true,
+    $('.hero-slider-home-v1').slick({
+        dots: true,
+        autoplay: false,
         speed: 600,
         arrows: true,
         slidesToShow: 1,

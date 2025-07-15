@@ -585,7 +585,7 @@
           "fontFamily": "var(--wp--preset--font-family--inter)",
           "lineHeight": "var(--wp--custom--line-height--small)",
           "fontSize": "var(--wp--preset--font-size--42)",
-          "letterSpacing": "-0.5px"
+          "letterSpacing": "-1.5px"
         },
         "color": {
           "text": "var(--wp--preset--color--card-foreground)"
@@ -596,7 +596,7 @@
           "fontFamily": "var(--wp--preset--font-family--inter)",
           "lineHeight": "var(--wp--custom--line-height--small)",
           "fontSize": "var(--wp--preset--font-size--36)",
-            "letterSpacing": "-0.5px"
+            "letterSpacing": "-1.5px"
         },
         "color": {
           "text": "var(--wp--preset--color--card-foreground)"
@@ -607,7 +607,7 @@
           "fontFamily": "var(--wp--preset--font-family--inter)",
           "lineHeight": "var(--wp--custom--line-height--tiny)",
           "fontSize": "var(--wp--preset--font-size--30)",
-          "letterSpacing": "-0.5px"
+          "letterSpacing": "-1.5px"
         },
         "color": {
           "text": "var(--wp--preset--color--card-foreground)"
@@ -618,7 +618,7 @@
           "fontFamily": "var(--wp--preset--font-family--inter)",
           "lineHeight": "var(--wp--custom--line-height--tiny)",
           "fontSize": "var(--wp--preset--font-size--24)",
-          "letterSpacing": "-0.5px"
+          "letterSpacing": "-1.5px"
         },
         "color": {
           "text": "var(--wp--preset--color--card-foreground)"
@@ -629,7 +629,7 @@
           "fontFamily": "var(--wp--preset--font-family--inter)",
           "lineHeight": "var(--wp--custom--line-height--default)",
           "fontSize": "var(--wp--preset--font-size--20)",
-          "letterSpacing": "-0.5px"
+          "letterSpacing": "-1.5px"
         },
         "color": {
           "text": "var(--wp--preset--color--card-foreground)"
@@ -640,7 +640,7 @@
           "fontFamily": "var(--wp--preset--font-family--inter)",
           "lineHeight": "var(--wp--custom--line-height--default)",
           "fontSize": "var(--wp--preset--font-size--18)",
-          "letterSpacing": "-0.5px"
+          "letterSpacing": "-1.5px"
         },
         "color": {
           "text": "var(--wp--preset--color--card-foreground)"

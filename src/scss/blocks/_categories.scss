@@ -1,0 +1,20 @@
+.wp-block-categories-list {
+
+    &.is-style-inline-terms {
+        display: flex;
+        justify-content: center;
+        gap: 8px 20px;
+        flex-wrap: wrap;
+        align-items: center;
+
+        li {
+            a {
+                padding: 0;
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}

@@ -14,6 +14,22 @@
   opacity: 0.5;
 }
 
+.woocommerce a.button,
+.woocommerce button.button {
+    color: $card-foreground;
+    background-color: $muted-color;
+    border-radius: 5px;
+    padding: $x-small $xx-small;
+    text-decoration: none;
+    font-weight: $fw-semibold;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover {
+        background-color: $primary-color;
+        color: $light-color;
+    }
+}
+
 // Screen Reader Text
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);

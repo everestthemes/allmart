@@ -44,7 +44,7 @@ if ( ! function_exists( 'allmart_styles' ) ) :
 		wp_enqueue_script( 'op-woocommerce-js', get_template_directory_uri() . '/assets/js/op-woo.js', array( 'jquery' ), $version, true );
 
 		// Slick Styles.
-		wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/assets/css/slick.css', array(), $version, 'all' );
+		wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/assets/css/slick/slick.css', array(), $version, 'all' );
 
 		// Slick JS.
 		wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/vendors/slick/js/slick.min.js', array( 'jquery' ), $version, true );

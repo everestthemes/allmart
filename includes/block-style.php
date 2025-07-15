@@ -33,6 +33,11 @@ function allmart_register_block_styles() {
 			'name'  => 'image-hover-shine-effect',
 			'label' => esc_html__( 'Shine Effect', 'allmart' ),
 		),
+		array(
+			'block' => 'core/categories',
+			'name'  => 'inline-terms',
+			'label' => esc_html__( 'Inline', 'allmart' ),
+		),
 	);
 
 	foreach ( $block_styles as $style ) {

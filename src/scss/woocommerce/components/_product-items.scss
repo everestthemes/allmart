@@ -47,8 +47,8 @@ ul.products,
     gap: 12px;
     transition: all 0.3s ease-in-out;
     border: 1px solid var(--wp--preset--color--border);
+    border-radius: 8px;
     padding: 16px;
-    border-radius: 20px;
 
     a {
       text-decoration: none;
@@ -95,7 +95,7 @@ ul.products,
       );
       color: #ffffff;
       text-align: center;
-      border-radius: 12px;
+      border-radius: 6px;
       padding: 8px 16px;
       margin-bottom: 0 !important;
       transition: all 0.2s ease;
@@ -260,18 +260,6 @@ ul.products,
     // OutofStock
     &.outofstock {
       position: relative;
-
-      &::before {
-        content: "";
-        position: absolute;
-        background-color: rgba(225,225,225,0.4);
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: 24px;
-        z-index: 9;
-      }
 
       &::after {
         content: "Out of stock";
