@@ -24,13 +24,14 @@ ul.products,
 .products-block-post-template,
 .wc-block-product-template,
 .wp-block-woocommerce-product-template:is(.columns-1,.columns-2,.columns-3,.columns-4,.columns-5,.columns-6) {
-  --product-gap: 24px;
+  --product-gap: 16px;
   --product-mobile-gap: 16px;
   display: grid !important;
   gap: var(--product-gap);
   @media (max-width: 480px) {
     display: grid !important; //overwrite default display block
   }
+  margin: 0;
 
   &::before {
     display: none !important;
@@ -48,7 +49,6 @@ ul.products,
     transition: all 0.3s ease-in-out;
     border: 1px solid var(--wp--preset--color--border);
     border-radius: 8px;
-    padding: 16px;
 
     a {
       text-decoration: none;
@@ -87,12 +87,6 @@ ul.products,
       justify-content: center;
       align-items: center;
       gap: 12px;
-      @include font(
-        var(--wp--preset--font-size--16),
-        $fw-medium,
-        $lh-medium,
-        normal
-      );
       color: #ffffff;
       text-align: center;
       border-radius: 6px;
@@ -299,21 +293,21 @@ ul.products,
   font-weight: $fw-semibold;
   line-height: $lh-medium;
   text-align: left;
+  text-decoration: none;
   overflow: hidden;
   margin: 0 !important;
   transition: all 0.3s ease-in-out;
 
   a {
-    font-size: var(--wp--preset--font-size--16);
     
     &:is(:hover, :focus) {
-      text-decoration: underline;
+    //   text-decoration: underline;
       text-underline-offset: 4px;
     }
   }
 
   &:is(:hover, :focus) {
-    text-decoration: underline;
+    text-decoration: none;
     text-underline-offset: 4px;
   }
 }

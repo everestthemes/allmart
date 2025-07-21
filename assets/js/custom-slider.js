@@ -7,7 +7,8 @@
         dots: true,
         autoplay: false,
         speed: 600,
-        arrows: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
         slidesToShow: 1,
         infinite: true,
         responsive: [

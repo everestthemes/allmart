@@ -252,6 +252,37 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+.hero-slider-home-v1 .slick-dots {
+  position: relative;
+  bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero-slider-home-v1 .slick-dots li {
+  background-color: var(--wp--preset--color--border);
+  width: 40px;
+  height: 4px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 0;
+}
+.hero-slider-home-v1 .slick-dots li button {
+  display: none;
+}
+.hero-slider-home-v1 .slick-dots li button::before {
+  display: none;
+}
+.hero-slider-home-v1 .slick-dots li.slick-active {
+  background-color: var(--wp--preset--color--primary);
+}
 
 .hero-slider-home-v2 .slick-prev,
 .hero-slider-home-v2 .slick-next,

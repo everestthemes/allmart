@@ -49,11 +49,10 @@ textarea {
   width: 100%;
   color: var(--wp--preset--color--foreground);
   font-family: inherit;
-  font-size: var(--wp--preset--font-size--16);
   line-height: var(--wp--custom--line-height--default);
   border: 1px solid $bd-color;
-  border-radius: 12px;
-  padding: 12px 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
 }
 
 select:focus,
@@ -95,9 +94,8 @@ input[type="submit"] {
   cursor: pointer;
   color: #fff;
   border: none;
-  border-radius: 12px;
-  padding: var(--wp--preset--spacing--xx-small)
-    var(--wp--preset--spacing--x-small);
+  border-radius: 8px;
+  padding: 8px 16px;
   margin-top: 4px;
 }
 

@@ -307,6 +307,36 @@ $slick-opacity-not-active: 0.25 !default;
             justify-content: flex-start;
         }
     }
+
+    .slick-dots {
+        position: relative;
+        bottom: 24px;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            background-color: var(--wp--preset--color--border);
+            width: 40px;
+            height: 4px;
+            cursor: pointer;
+            border-radius: 8px;
+            margin: 0;
+
+            button {
+                display: none;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            &.slick-active {
+                background-color: var(--wp--preset--color--primary);
+            }
+        }
+    }
 }
 
 .hero-slider-home-v2,

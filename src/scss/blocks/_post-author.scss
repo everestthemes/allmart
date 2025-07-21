@@ -1,8 +1,16 @@
 .wp-block-post-author {
     align-items: center;
+    gap: 8px;
+
     &__avatar {
+        margin: 0;
+
         img {
             border-radius: 100%;
         }
+    }
+
+    &__name a {
+        text-decoration: none;
     }
 }

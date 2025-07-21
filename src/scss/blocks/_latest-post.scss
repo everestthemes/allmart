@@ -62,6 +62,7 @@
 }
 
 .wp-block-post-terms::before {
+    display: none;
   content: "\F3D9";
   font-size: 18px;
 }
