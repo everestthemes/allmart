@@ -1,0 +1,187 @@
+# Copyright (C) 2025 allmart
+# This file is distributed under the same license as the allmart package.
+msgid ""
+msgstr ""
+"Project-Id-Version: allmart\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-07-22 13:34+0000\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: patterns/error-404.php:14
+msgid "404"
+msgstr ""
+
+#: patterns/error-404.php:18
+msgid "Oops! That page can’t be found."
+msgstr ""
+
+#: patterns/error-404.php:26
+msgid "We’re really sorry but we can’t seem to find the page you were looking for."
+msgstr ""
+
+#: patterns/error-404.php:31
+msgid "Go to Homepage"
+msgstr ""
+
+#: patterns/footer-default.php:22
+msgid "Fast Free Delivery"
+msgstr ""
+
+#: patterns/footer-default.php:26
+msgid "on memtro orders over $50"
+msgstr ""
+
+#: patterns/footer-default.php:40
+msgid "#1 Pet Product"
+msgstr ""
+
+#: patterns/footer-default.php:44
+msgid "Canstar Blue said it, not us"
+msgstr ""
+
+#: patterns/footer-default.php:58
+msgid "Free Vet Services"
+msgstr ""
+
+#: patterns/footer-default.php:62
+msgid "ask us anything (really)"
+msgstr ""
+
+#: patterns/footer-default.php:76
+msgid "Secure Payment"
+msgstr ""
+
+#: patterns/footer-default.php:80
+msgid "20% off your online order of $70+"
+msgstr ""
+
+#: patterns/footer-default.php:92, patterns/header-default.php:52
+msgid "All Mart"
+msgstr ""
+
+#: patterns/footer-default.php:115
+msgid "Our Products"
+msgstr ""
+
+#: patterns/footer-default.php:120
+msgid "Shop Dog &amp; Puppy"
+msgstr ""
+
+#: patterns/footer-default.php:124
+msgid "Shop Cat &amp; Kitten"
+msgstr ""
+
+#: patterns/footer-default.php:128
+msgid "Shop Bird"
+msgstr ""
+
+#: patterns/footer-default.php:132
+msgid "Shop Fish"
+msgstr ""
+
+#: patterns/footer-default.php:136
+msgid "Shop Raptile"
+msgstr ""
+
+#: patterns/footer-default.php:143
+msgid "Customer Services"
+msgstr ""
+
+#: patterns/footer-default.php:148
+msgid "Track Order"
+msgstr ""
+
+#: patterns/footer-default.php:152
+msgid "Returns"
+msgstr ""
+
+#: patterns/footer-default.php:156
+msgid "Shipping Info"
+msgstr ""
+
+#: patterns/footer-default.php:160
+msgid "Recalls &amp; Advisories"
+msgstr ""
+
+#: patterns/footer-default.php:164
+msgid "Pet Store Locator"
+msgstr ""
+
+#: patterns/footer-default.php:171
+msgid "Helpful Links"
+msgstr ""
+
+#: patterns/footer-default.php:176
+msgid "About us"
+msgstr ""
+
+#: patterns/footer-default.php:180
+msgid "Contact us"
+msgstr ""
+
+#: patterns/footer-default.php:184
+msgid "Our Ingredient"
+msgstr ""
+
+#: patterns/footer-default.php:188
+msgid "Why Choose us?"
+msgstr ""
+
+#: patterns/footer-default.php:192
+msgid "Reviews"
+msgstr ""
+
+#: patterns/footer-default.php:210
+msgid "Our Social"
+msgstr ""
+
+#: patterns/footer-default.php:228
+msgid "Guarantee safe and secure checkout"
+msgstr ""
+
+#: patterns/footer-default.php:239
+msgid "Get All Mart Mobile App"
+msgstr ""
+
+#: patterns/footer-default.php:272
+msgid "©Copyright 2025 All Mart | All rights reserved."
+msgstr ""
+
+#: patterns/footer-default.php:279
+msgid "Support"
+msgstr ""
+
+#: patterns/footer-default.php:283
+msgid "Privacy Policy"
+msgstr ""
+
+#: patterns/footer-default.php:287
+msgid "Terms of use"
+msgstr ""
+
+#: patterns/header-default.php:15, patterns/header-default.php:31
+msgid "⚡Free Shipping On Orders Over $99"
+msgstr ""
+
+#: patterns/header-default.php:19, patterns/header-default.php:35
+msgid "⚡Save flat 50% on Premium Pet Food"
+msgstr ""
+
+#: patterns/header-default.php:23, patterns/header-default.php:39
+msgid "⚡30% Off Healthy Pet Diets"
+msgstr ""
+
+#: patterns/header-default.php:27, patterns/header-default.php:43
+msgid "⚡Enjoy a special 20% off on your first purchase"
+msgstr ""
+
+#: patterns/header-default.php:88
+msgid "Start typing and press Enter to search"
+msgstr ""

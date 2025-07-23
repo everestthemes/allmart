@@ -45,6 +45,8 @@ ul.products,
     width: 100% !important;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
     gap: 12px;
     transition: all 0.3s ease-in-out;
     border: 1px solid var(--wp--preset--color--border);
@@ -89,9 +91,11 @@ ul.products,
       gap: 12px;
       color: #ffffff;
       text-align: center;
+      letter-spacing: -0.2px;
       border-radius: 6px;
       padding: 8px 16px;
       margin-bottom: 0 !important;
+      margin-top: 0 !important;
       transition: all 0.2s ease;
       @include breakpoint(lg) {
         // opacity: 0;
@@ -99,11 +103,8 @@ ul.products,
       }
 
       &::before {
-        content: "";
-        background-image: url('../img/mini-cart-light.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        font-family: "bootstrap-icons";
+        content: "\F180";
         width: 20px;
         height: 20px;
         border-radius: 100px;
