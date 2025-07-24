@@ -943,7 +943,7 @@
   margin: 0;
 }
 .wp-block-woocommerce-cart .wp-block-woocommerce-filled-cart-block .wp-block-woocommerce-cart-items-block table tbody tr td.wc-block-cart-item__product .wc-block-cart-item__wrap .wc-block-components-product-metadata__description {
-  font-size: var(--wp--preset--font-size--16);
+  font-weight: 500;
   margin: 16px 0;
 }
 .wp-block-woocommerce-cart .wp-block-woocommerce-filled-cart-block .wp-block-woocommerce-cart-items-block table tbody tr td.wc-block-cart-item__total {
