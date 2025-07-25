@@ -473,10 +473,11 @@
 
 // Minni cart items count
 .wc-block-mini-cart__badge {
-  background-color: $primary-color;
+  background-color: $wc-danger;
   @include square(20px);
   color: #fff;
   font-size: 10px;
+  transform: translate(-16px, -16px) !important;
 }
 
 // Drawer Close Button

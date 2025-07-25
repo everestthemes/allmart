@@ -1,3 +1,13 @@
+.single-product-wrapper {
+    align-items: flex-start;
+
+    .sticky-top {
+        position: sticky;
+        top: 20px;
+        z-index: 1000;
+    }
+}
+
 .single-product {
   .woocommerce-notices-wrapper {
     max-width: 100%;
@@ -59,8 +69,64 @@
         }
       }
     }
+
+    // Product Gallery V2
+    &.product-gallery-v2 {
+        .woocommerce-product-gallery {
+          flex-direction: column;
+          gap: 16px;
+
+          .flex-viewport {
+            width: 100%;
+            height: 100%;
+          }
+
+          &__wrapper {
+            width: 100%;
+            height: 100%;
+          }
+
+          &__image {
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          // Thumbnails v2
+          .flex-control-nav.flex-control-thumbs {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 16px;
+            margin-top: 16px;
+
+            li {
+              width: 100px !important;
+
+              img {
+                @include square(100px);
+                opacity: 0.4;
+                cursor: pointer;
+                border-radius: 8px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                  opacity: 1;
+                }
+
+                &.flex-active {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+    }
+
   }
 
+  // Regular Gallery Thumbnails
   .flex-control-nav.flex-control-thumbs {
     min-width: 60px;
     list-style: none;
@@ -108,8 +174,8 @@
         position: absolute;
         background-color: $light-color;
         @include square(32px);
-        top: inherit;
-        bottom: $x-small !important;
+        top: $x-small;
+        bottom: auto !important;
         right: $x-small;
         left: auto;
         font-size: 0;
@@ -863,6 +929,69 @@ body.single-product .woocommerce.product .wp-block-woocommerce-product-details {
       }
     }
   }
+}
+
+// Product Details Accordion / Tab
+.wp-block-woocommerce-accordion-group {
+    .wp-block-woocommerce-accordion-item {
+        border-bottom: 1px solid $bd-color;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        position: relative;
+        .wp-block-woocommerce-accordion-title {
+            font-size: var(--wp--preset--font-size--18);
+            font-weight: $fw-semibold;
+            color: $card-foreground;
+            padding: 16px 0;
+            cursor: pointer;
+            position: relative;
+    
+            &::after {
+            content: "\F180";
+            font-family: "bootstrap-icons";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: var(--wp--preset--font-size--16);
+            color: $primary-color;
+            transition: transform 0.3s ease-in-out;
+            }
+    
+            &.is-open::after {
+            transform: translateY(-50%) rotate(180deg);
+            }
+        }
+    
+        .wp-block-woocommerce-accordion-content {
+            padding: 16px 0;
+            font-size: var(--wp--preset--font-size--16);
+            line-height: 1.6;
+        }
+    }
+}
+
+// Review Form 
+.wp-block-woocommerce-product-review-form {
+    .comment-form-rating {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+
+        a:where(:not(.wp-element-button)) {
+            font-size: 20px !important;
+            color: $wc-rating-color;
+        }
+    }
+
+    p.comment-form-comment {
+        margin: 0 0 16px !important;
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+    }
 }
 
 // Related Product

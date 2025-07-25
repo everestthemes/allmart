@@ -1,3 +1,47 @@
+.header-v1 {
+    .wp-block-woocommerce-customer-account  a,
+    .wp-block-woocommerce-mini-cart button {
+        text-decoration: none;
+        padding: 0;
+
+        svg {
+            display: none;
+        }
+
+        &::before {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f2f2f2;
+            width: 40px;
+            height: 40px;
+            color: var(--wp--preset--color--primary);
+            font-family: "bootstrap-icons";
+            font-size: 22px;
+            border-radius: 100px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+            text-decoration: none !important;
+
+            &::before {
+                background-color: $primary-color;
+                color: #fff;
+            }
+        }
+
+    }
+    
+    .wp-block-woocommerce-customer-account  a::before {
+        content: "\f4e1";
+    }
+
+    .wp-block-woocommerce-mini-cart button::before {
+        content: "\F180";
+    }
+}
+
 .top-sale-marquee {
 	animation: marquee 30s linear infinite !important;
 

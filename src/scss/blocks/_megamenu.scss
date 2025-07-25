@@ -84,25 +84,43 @@ nav.primary-menu {
 // Verticle Menu
 .verticle-menu {
     > .wp-block-navigation-item {
-        position: relative;
-        border-radius: 100px;
+        background-color: #f2f2f2 !important;
+        border-radius: 4px;
         width: 100%;
+        padding: 12px 16px;
+        transition: all 0.3s ease-in-out;
 
         > .wp-block-navigation-item__content {
             position: relative;
-            padding-left: 24px;
+            padding-left: 28px;
+            line-height: normal !important;
 
             &::before {
                 position: absolute;
-                content:"";
-                background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDNIM1YxMEgxMFYzWiIgc3Ryb2tlPSIjMzMzMzMzIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjEgM0gxNFYxMEgyMVYzWiIgc3Ryb2tlPSIjMzMzMzMzIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjEgMTRIMTRWMjFIMjFWMTRaIiBzdHJva2U9IiMzMzMzMzMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0xMCAxNEgzVjIxSDEwVjE0WiIgc3Ryb2tlPSIjMzMzMzMzIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
-                background-size: cover;
+                content:"\F3FC";
+                font-family: 'bootstrap-icons';
                 top: 50%;
                 left: 0;
-                width: 20px;
-                height: 20px;
+                color: #242424;
+                font-size: 20px;
                 display: inline-block;
                 transform: translateY(-50%);
+            }
+        }
+
+        > .wp-block-navigation__submenu-icon {
+            display: none;
+        }
+
+        &:hover {
+            background-color: $primary-color !important;
+
+            > .wp-block-navigation-item__content {
+                color: #fff;
+
+                &::before {
+                    color: #fff;
+                }
             }
         }
     }    
