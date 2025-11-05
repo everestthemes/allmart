@@ -54,15 +54,4 @@ if ( ! function_exists( 'allmart_styles' ) ) :
 	}
 
 endif;
-add_action( 'wp_enqueue_scripts', 'allmart_styles' );
-
-
-if ( ! function_exists( 'allmart_admin_script' ) ) :
-
-	function allmart_admin_script() {
-		$version = wp_get_theme()->get( 'Version' );
-		wp_enqueue_script( 'admin-slick-slider', get_template_directory_uri() . '/assets/js/custom-slider.js', array( 'jquery' ), $version, true );
-	}
-
-endif;
-add_action( 'admin_enqueue_scripts', 'allmart_admin_script' );
+add_action( 'enqueue_block_assets', 'allmart_styles' );
