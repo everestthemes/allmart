@@ -78,13 +78,13 @@
 <!-- wp:group {"style":{"border":{"bottom":{"color":"var:preset|color|border","width":"1px"},"top":{"color":"var:preset|color|border","width":"1px"},"right":[],"left":[]},"spacing":{"padding":{"top":"4px","bottom":"4px"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="border-top-color:var(--wp--preset--color--border);border-top-width:1px;border-bottom-color:var(--wp--preset--color--border);border-bottom-width:1px;padding-top:4px;padding-bottom:4px"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:navigation {"ref":138,"textColor":"foreground","className":"verticle-menu hide-on-sm","style":{"layout":{"selfStretch":"fit","flexSize":null},"typography":{"fontStyle":"normal","fontWeight":"600","textTransform":"uppercase"}},"fontSize":"14"} /-->
+<div class="wp-block-group"><!-- wp:navigation {"textColor":"foreground","className":"verticle-menu hide-on-sm","style":{"layout":{"selfStretch":"fit","flexSize":null},"typography":{"fontStyle":"normal","fontWeight":"600","textTransform":"uppercase"}},"fontSize":"14"} /-->
 
 <!-- wp:paragraph {"className":"hide-on-sm"} -->
 <p class="hide-on-sm">|</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:navigation {"ref":4,"textColor":"muted-foreground","icon":"menu","overlayTextColor":"muted-foreground","className":"primary-menu","style":{"typography":{"fontStyle":"normal","fontWeight":"600","textTransform":"capitalize"}},"fontSize":"14"} /--></div>
+<!-- wp:navigation {"textColor":"muted-foreground","icon":"menu","overlayTextColor":"muted-foreground","className":"primary-menu","style":{"typography":{"fontStyle":"normal","fontWeight":"600","textTransform":"capitalize"}},"fontSize":"14"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|x-small"}}}} -->
@@ -98,7 +98,7 @@
 <!-- /wp:button -->
 
 <!-- wp:button {"backgroundColor":"transparent","textColor":"primary","style":{"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":"4px"},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}},"spacing":{"padding":{"left":"0","right":"0"}}},"fontSize":"14"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-primary-color has-transparent-background-color has-text-color has-background has-link-color has-14-font-size has-custom-font-size wp-element-button" href="http://localhost:10084/sale/" style="border-radius:4px;padding-right:0;padding-left:0;font-style:normal;font-weight:600"><span style="background-color: transparent; font-family: inherit;">Wishlist</span></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link has-primary-color has-transparent-background-color has-text-color has-background has-link-color has-14-font-size has-custom-font-size wp-element-button" href="/wishlist" style="border-radius:4px;padding-right:0;padding-left:0;font-style:normal;font-weight:600"><span style="background-color: transparent; font-family: inherit;"><?php esc_html_e( 'Wishlist', 'allmart' ); ?></span></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
