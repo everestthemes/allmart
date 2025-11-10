@@ -205,7 +205,6 @@ $navigation-icon-size: 24px;
     border: none;
     box-shadow: 0px 10px 20px 0px rgba(41, 51, 61, 0.1);
 
-
     // Submenu indentation when there's no background.
     left: -1px; // Border width.
     top: 100%;
@@ -221,9 +220,7 @@ $navigation-icon-size: 24px;
       > .wp-block-navigation-item__content {
         display: flex;
         flex-grow: 1;
-        font-size: 16px;
         line-height: 36px;
-        color: #242424;
 
         // Right-align the chevron in submenus.
         .wp-block-navigation__submenu-icon {

@@ -23,13 +23,11 @@
   > span {
     text-decoration: none;
     background-color: transparent;
-    font-size: 14px;
     margin-left: 0 !important;
   }
 
   del {
     order: unset;
-    font-size: 14px;
     opacity: 0.7;
     color: var(--wp--preset--color--destructive);
     margin: 0;
@@ -41,8 +39,3 @@
     line-height: unset;
   }
 }
-
-
-
-
-

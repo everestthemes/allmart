@@ -20,29 +20,29 @@
   }
 
   // Handle IncDec values
-  function allmart_handle_quantity() {
-    const qtyWrapper = document.querySelectorAll(".quantity");
+  // function allmart_handle_quantity() {
+  //   const qtyWrapper = document.querySelectorAll(".quantity");
 
-    qtyWrapper.forEach((el) => {
-      const incdecBox = el.querySelector(".op-qty-incdec-wrap");
-      const input = el.querySelector(".qty");
+  //   qtyWrapper.forEach((el) => {
+  //     const incdecBox = el.querySelector(".op-qty-incdec-wrap");
+  //     const input = el.querySelector(".qty");
 
-      incdecBox.addEventListener("click", (e) => {
-        if (!e.target.classList.contains("op-btn-qty")) return;
+  //     incdecBox.addEventListener("click", (e) => {
+  //       if (!e.target.classList.contains("op-btn-qty")) return;
 
-        let oldValue = parseInt(input.value);
+  //       let oldValue = parseInt(input.value);
 
-        if (isNaN(oldValue)) {
-          oldValue = 0;
-        }
+  //       if (isNaN(oldValue)) {
+  //         oldValue = 0;
+  //       }
 
-        input.value = e.target.classList.contains("q_inc")
-          ? oldValue + 1
-          : Math.max(oldValue - 1, 0);
-        input.dispatchEvent(new Event("change", { bubbles: true }));
-      });
-    });
-  }
+  //       input.value = e.target.classList.contains("q_inc")
+  //         ? oldValue + 1
+  //         : Math.max(oldValue - 1, 0);
+  //       input.dispatchEvent(new Event("change", { bubbles: true }));
+  //     });
+  //   });
+  // }
 
   // Product Search Modal
   function allmart_product_search_modal() {
@@ -80,17 +80,17 @@
   }
 
   window.addEventListener("load", function () {
-    allmart_add_inc_dec();
-    allmart_handle_quantity();
+    // allmart_add_inc_dec();
+    // allmart_handle_quantity();
     allmart_product_search_modal();
     allmart_product_review_stars();
 
-    document.addEventListener("mousemove", function () {
-      if (!document.querySelector(".op-btn-qty")) {
-        allmart_add_inc_dec();
-        allmart_handle_quantity();
-      }
-    });
+    // document.addEventListener("mousemove", function () {
+    //   if (!document.querySelector(".op-btn-qty")) {
+    //     allmart_add_inc_dec();
+    //     allmart_handle_quantity();
+    //   }
+    // });
 
     // Change Product add to cart button text
     const atcBtns = document.querySelectorAll(".add_to_cart_button");

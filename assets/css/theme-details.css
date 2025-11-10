@@ -20,7 +20,6 @@
   font-family: Inter;
   font-size: 16px;
   line-height: 1.2;
-  /* Components */
 }
 .omnipress-theme-details h1,
 .omnipress-theme-details h2,
@@ -637,6 +636,9 @@
 }
 .omnipress-theme-details__features .omnipress-themeinfo-wrap .omnipress-themeinfo-sidebar .omnipress-pro-card a svg {
   fill: #fff;
+}
+.omnipress-theme-details {
+  /* Components */
 }
 .omnipress-theme-details .omnipress-button {
   font-size: 14px;
