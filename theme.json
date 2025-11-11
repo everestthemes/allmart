@@ -684,11 +684,6 @@
       "name": "footer",
       "area": "footer",
       "title": "Footer"
-    },
-    {
-      "name": "Shop Filter",
-      "area": "filter",
-      "title": "Sidebar"
     }
   ],
   "customTemplates": [

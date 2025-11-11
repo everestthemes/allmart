@@ -89,7 +89,7 @@
 
 <!-- wp:buttons {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|x-small"}}}} -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"transparent","style":{"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":"4px"},"elements":{"link":{"color":{"text":"#9b3838"}}},"color":{"text":"#9b3838"},"spacing":{"padding":{"left":"0","right":"0"}}},"fontSize":"14"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-transparent-background-color has-text-color has-background has-link-color has-14-font-size has-custom-font-size wp-element-button" href="/shop" style="border-radius:4px;color:#9b3838;padding-right:0;padding-left:0;font-style:normal;font-weight:600"><img class="wp-image-403" style="width: 20px;" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/give-away-gift.gif" alt=""><img class="wp-image-81" style="width: 24px;" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/give-away-gift.gif" alt="Best Deal | Gift Icon
+<div class="wp-block-button"><a class="wp-block-button__link has-transparent-background-color has-text-color has-background has-link-color has-14-font-size has-custom-font-size wp-element-button" href="/shop" style="border-radius:4px;color:#9b3838;padding-right:0;padding-left:0;font-style:normal;font-weight:600"><img class="wp-image-81" style="width: 24px;" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/give-away-gift.gif" alt="Best Deal | Gift Icon
 "><span style="background-color: transparent; font-family: inherit;"><?php esc_html_e( 'Best Deals', 'allmart' ); ?></span></a></div>
 <!-- /wp:button -->
 

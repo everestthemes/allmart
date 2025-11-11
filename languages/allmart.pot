@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-11-10 07:16+0000\n"
+"POT-Creation-Date: 2025-11-11 17:16+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -19,169 +19,281 @@ msgid "404"
 msgstr ""
 
 #: patterns/error-404.php:18
-msgid "Oops! That page can’t be found."
+msgid "Oops! That page can't be found."
 msgstr ""
 
 #: patterns/error-404.php:26
-msgid "We’re really sorry but we can’t seem to find the page you were looking for."
+msgid "We're really sorry but we can't seem to find the page you were looking for."
 msgstr ""
 
 #: patterns/error-404.php:31
 msgid "Go to Homepage"
 msgstr ""
 
-#: patterns/footer-default.php:22
-msgid "Fast Free Delivery"
-msgstr ""
-
-#: patterns/footer-default.php:26
-msgid "on memtro orders over $50"
-msgstr ""
-
-#: patterns/footer-default.php:40
-msgid "#1 Pet Product"
-msgstr ""
-
-#: patterns/footer-default.php:44
-msgid "Canstar Blue said it, not us"
-msgstr ""
-
-#: patterns/footer-default.php:58
-msgid "Free Vet Services"
-msgstr ""
-
-#: patterns/footer-default.php:62
-msgid "ask us anything (really)"
-msgstr ""
-
-#: patterns/footer-default.php:76
-msgid "Secure Payment"
-msgstr ""
-
-#: patterns/footer-default.php:80
-msgid "20% off your online order of $70+"
-msgstr ""
-
-#: patterns/footer-default.php:92, patterns/header-default.php:52
+#: patterns/footer-default.php:16
 msgid "All Mart"
 msgstr ""
 
-#: patterns/footer-default.php:115
+#: patterns/footer-default.php:20
+msgid "If you have any question, please contact us at"
+msgstr ""
+
+#: patterns/footer-default.php:25
+msgid "Address Line, City"
+msgstr ""
+
+#: patterns/footer-default.php:25
+msgid "State, XXX"
+msgstr ""
+
+#: patterns/footer-default.php:29
+msgid "(000) 000-0000"
+msgstr ""
+
+#: patterns/footer-default.php:40
 msgid "Our Products"
 msgstr ""
 
-#: patterns/footer-default.php:120
-msgid "Shop Dog &amp; Puppy"
+#: patterns/footer-default.php:45
+msgid "Electronics"
 msgstr ""
 
-#: patterns/footer-default.php:124
-msgid "Shop Cat &amp; Kitten"
+#: patterns/footer-default.php:49
+msgid "Smartphones"
 msgstr ""
 
-#: patterns/footer-default.php:128
-msgid "Shop Bird"
+#: patterns/footer-default.php:53
+msgid "Laptops & PCs"
 msgstr ""
 
-#: patterns/footer-default.php:132
-msgid "Shop Fish"
+#: patterns/footer-default.php:57
+msgid "Home Appliances"
 msgstr ""
 
-#: patterns/footer-default.php:136
-msgid "Shop Raptile"
+#: patterns/footer-default.php:61
+msgid "Gaming"
 msgstr ""
 
-#: patterns/footer-default.php:143
+#: patterns/footer-default.php:65
+msgid "Accessories"
+msgstr ""
+
+#: patterns/footer-default.php:72
+msgid "CUSTOMER SUPPORT"
+msgstr ""
+
+#: patterns/footer-default.php:77
+msgid "Online Support Center"
+msgstr ""
+
+#: patterns/footer-default.php:81
+msgid "Customer Service"
+msgstr ""
+
+#: patterns/footer-default.php:85
+msgid "Product Registration"
+msgstr ""
+
+#: patterns/footer-default.php:89
+msgid "Warranty Lookup"
+msgstr ""
+
+#: patterns/footer-default.php:93
+msgid "Extended Warranties"
+msgstr ""
+
+#: patterns/footer-default.php:102
 msgid "Customer Services"
 msgstr ""
 
-#: patterns/footer-default.php:148
+#: patterns/footer-default.php:107, patterns/header-default.php:25
 msgid "Track Order"
 msgstr ""
 
-#: patterns/footer-default.php:152
+#: patterns/footer-default.php:111
 msgid "Returns"
 msgstr ""
 
-#: patterns/footer-default.php:156
+#: patterns/footer-default.php:115
 msgid "Shipping Info"
 msgstr ""
 
-#: patterns/footer-default.php:160
-msgid "Recalls &amp; Advisories"
+#: patterns/footer-default.php:119
+msgid "Recalls & Advisories"
 msgstr ""
 
-#: patterns/footer-default.php:164
-msgid "Pet Store Locator"
+#: patterns/footer-default.php:123
+msgid "Store Locator"
 msgstr ""
 
-#: patterns/footer-default.php:171
-msgid "Helpful Links"
+#: patterns/footer-default.php:130
+msgid "Reward & Membership"
+msgstr ""
+
+#: patterns/footer-default.php:135
+msgid "My Allmart Memberships"
+msgstr ""
+
+#: patterns/footer-default.php:139
+msgid "View Points & Certificates"
+msgstr ""
+
+#: patterns/footer-default.php:143
+msgid "Member Offers"
+msgstr ""
+
+#: patterns/footer-default.php:147
+msgid "Affiliation Program"
+msgstr ""
+
+#: patterns/footer-default.php:156
+msgid "Account"
+msgstr ""
+
+#: patterns/footer-default.php:161
+msgid "Shop"
+msgstr ""
+
+#: patterns/footer-default.php:165
+msgid "Cart Page"
+msgstr ""
+
+#: patterns/footer-default.php:169
+msgid "Checkout"
 msgstr ""
 
 #: patterns/footer-default.php:176
-msgid "About us"
+msgid "Quick Links"
 msgstr ""
 
-#: patterns/footer-default.php:180
-msgid "Contact us"
+#: patterns/footer-default.php:181
+msgid "Best Seller"
 msgstr ""
 
-#: patterns/footer-default.php:184
-msgid "Our Ingredient"
+#: patterns/footer-default.php:185
+msgid "Trending Now"
 msgstr ""
 
-#: patterns/footer-default.php:188
-msgid "Why Choose us?"
+#: patterns/footer-default.php:189
+msgid "New Arrival"
 msgstr ""
 
-#: patterns/footer-default.php:192
-msgid "Reviews"
+#: patterns/footer-default.php:193
+msgid "Discount Items"
 msgstr ""
 
-#: patterns/footer-default.php:210
-msgid "Our Social"
+#: patterns/footer-default.php:212
+msgid "Our social media"
 msgstr ""
 
-#: patterns/footer-default.php:228
+#: patterns/footer-default.php:230
 msgid "Guarantee safe and secure checkout"
 msgstr ""
 
-#: patterns/footer-default.php:239
-msgid "Get All Mart Mobile App"
+#: patterns/footer-default.php:241
+msgid "Get our mobile app"
 msgstr ""
 
-#: patterns/footer-default.php:272
+#: patterns/footer-default.php:263
+msgid "All Mart is an online marketplace offering a wide range of products from various brands and sellers. Product descriptions, images, and prices are provided for reference only and may change without notice. We strive for accuracy but cannot guarantee the completeness or reliability of all information. All trademarks and brand names are the property of their respective owners."
+msgstr ""
+
+#: patterns/footer-default.php:274
 msgid "©Copyright 2025 All Mart | All rights reserved."
 msgstr ""
 
-#: patterns/footer-default.php:279
+#: patterns/footer-default.php:281, patterns/header-default.php:29
 msgid "Support"
 msgstr ""
 
-#: patterns/footer-default.php:283
+#: patterns/footer-default.php:285
 msgid "Privacy Policy"
 msgstr ""
 
-#: patterns/footer-default.php:287
+#: patterns/footer-default.php:289
 msgid "Terms of use"
 msgstr ""
 
-#: patterns/header-default.php:15, patterns/header-default.php:31
-msgid "⚡Free Shipping On Orders Over $99"
+#: patterns/header-default.php:15
+msgid "Get Up to 50% OFF Store wide - Limited time only"
 msgstr ""
 
-#: patterns/header-default.php:19, patterns/header-default.php:35
-msgid "⚡Save flat 50% on Premium Pet Food"
+#: patterns/header-default.php:21
+msgid "Shipping & Return"
 msgstr ""
 
-#: patterns/header-default.php:23, patterns/header-default.php:39
-msgid "⚡30% Off Healthy Pet Diets"
+#: patterns/header-default.php:56
+msgid "Call Us"
 msgstr ""
 
-#: patterns/header-default.php:27, patterns/header-default.php:43
-msgid "⚡Enjoy a special 20% off on your first purchase"
+#: patterns/header-default.php:60
+msgid "(123) 456 7890"
 msgstr ""
 
-#: patterns/header-default.php:88
-msgid "Start typing and press Enter to search"
+#: patterns/header-default.php:93
+msgid "Best Deals"
+msgstr ""
+
+#: patterns/header-default.php:101
+msgid "Wishlist"
+msgstr ""
+
+#: patterns/home-hero.php:19
+msgid "New Arrivals"
+msgstr ""
+
+#: patterns/home-hero.php:25
+msgid "Top Online Electronics Store"
+msgstr ""
+
+#: patterns/home-hero.php:30
+msgid "Explore More"
+msgstr ""
+
+#: patterns/home-hero.php:48
+msgid "⚡ Limited Time Offer - Up to 60% Off"
+msgstr ""
+
+#: patterns/home-hero.php:53
+msgid "Level up your setup"
+msgstr ""
+
+#: patterns/home-hero.php:57
+msgid "Gaming Zone"
+msgstr ""
+
+#: patterns/home-hero.php:61
+msgid "Free Gift Card"
+msgstr ""
+
+#: patterns/home-hero.php:66
+msgid "from $499"
+msgstr ""
+
+#: patterns/home-hero.php:71, patterns/home-hero.php:96
+msgid "Shop Now"
+msgstr ""
+
+#: patterns/home-hero.php:75
+msgid "View Deals"
+msgstr ""
+
+#: patterns/home-hero.php:86
+msgid "⚡ Connected Home Tech"
+msgstr ""
+
+#: patterns/home-hero.php:91
+msgid "Smart Living"
+msgstr ""
+
+#: patterns/sidebar.php:13
+msgid "Search"
+msgstr ""
+
+#: patterns/sidebar.php:23
+msgid "Recent Posts"
+msgstr ""
+
+#: patterns/sidebar.php:55
+msgid "Recommended Topic"
 msgstr ""

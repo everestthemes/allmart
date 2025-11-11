@@ -15,7 +15,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:heading {"textAlign":"center","level":1} -->
-<h1 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'Oops! That page can’t be found.', 'allmart' ); ?></h1>
+<h1 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'Oops! That page can\'t be found.', 'allmart' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:separator {"className":"is-style-default","backgroundColor":"border"} -->
@@ -23,7 +23,7 @@
 <!-- /wp:separator -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"18"} -->
-<p class="has-text-align-center has-18-font-size"><?php esc_html_e( 'We’re really sorry but we can’t seem to find the page you were looking for.', 'allmart' ); ?></p>
+<p class="has-text-align-center has-18-font-size"><?php esc_html_e( 'We\'re really sorry but we can\'t seem to find the page you were looking for.', 'allmart' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
