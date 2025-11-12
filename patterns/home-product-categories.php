@@ -74,7 +74,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":298,"sizeSlug":"thumbnail","linkDestination":"none","align":"center","className":"is-style-rounded"} -->
-<figure class="wp-block-image aligncenter size-thumbnail is-style-rounded"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cat-img-2-150x150.webp" alt="" class="wp-image-298"/></figure>
+<figure class="wp-block-image aligncenter size-thumbnail is-style-rounded"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cat-img-2.webp" alt="" class="wp-image-298"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","level":5} -->
