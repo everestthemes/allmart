@@ -2,7 +2,7 @@
 /**
  * Title: Home Hero
  * Slug: allmart/home-hero
- * Categories: featured
+ * Categories: allmart
  * Keywords: Home Hero
  *
  * @package  allmart
