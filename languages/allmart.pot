@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-11-11 17:16+0000\n"
+"POT-Creation-Date: 2025-11-12 07:14+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -54,23 +54,23 @@ msgstr ""
 msgid "Our Products"
 msgstr ""
 
-#: patterns/footer-default.php:45
+#: patterns/footer-default.php:45, patterns/home-electronic-products.php:46
 msgid "Electronics"
 msgstr ""
 
-#: patterns/footer-default.php:49
+#: patterns/footer-default.php:49, patterns/home-product-categories.php:33
 msgid "Smartphones"
 msgstr ""
 
-#: patterns/footer-default.php:53
+#: patterns/footer-default.php:53, patterns/home-product-categories.php:45
 msgid "Laptops & PCs"
 msgstr ""
 
-#: patterns/footer-default.php:57
+#: patterns/footer-default.php:57, patterns/home-product-categories.php:57
 msgid "Home Appliances"
 msgstr ""
 
-#: patterns/footer-default.php:61
+#: patterns/footer-default.php:61, patterns/home-product-categories.php:69
 msgid "Gaming"
 msgstr ""
 
@@ -110,7 +110,7 @@ msgstr ""
 msgid "Track Order"
 msgstr ""
 
-#: patterns/footer-default.php:111
+#: patterns/footer-default.php:111, patterns/home-why-choose.php:43
 msgid "Returns"
 msgstr ""
 
@@ -238,6 +238,82 @@ msgstr ""
 msgid "Wishlist"
 msgstr ""
 
+#: patterns/home-appliance-products.php:18
+msgid "Trending in home appliances"
+msgstr ""
+
+#: patterns/home-appliance-products.php:22
+msgid "under $100"
+msgstr ""
+
+#: patterns/home-appliance-products.php:27, patterns/home-electronic-products.php:55, patterns/home-trending-products.php:21
+msgid "View All"
+msgstr ""
+
+#: patterns/home-appliance-products.php:51, patterns/home-electronic-products.php:31, patterns/home-trending-products.php:45
+msgid "No results found"
+msgstr ""
+
+#: patterns/home-appliance-products.php:55, patterns/home-electronic-products.php:35, patterns/home-trending-products.php:49
+msgid "You can try"
+msgstr ""
+
+#: patterns/home-appliance-products.php:55, patterns/home-electronic-products.php:35, patterns/home-trending-products.php:49
+msgid "clearing any filters"
+msgstr ""
+
+#: patterns/home-appliance-products.php:55, patterns/home-electronic-products.php:35, patterns/home-trending-products.php:49
+msgid "or head to our"
+msgstr ""
+
+#: patterns/home-appliance-products.php:55, patterns/home-electronic-products.php:35, patterns/home-trending-products.php:49
+msgid "store's home"
+msgstr ""
+
+#: patterns/home-banner-grid.php:18
+msgid "Latest Tech"
+msgstr ""
+
+#: patterns/home-banner-grid.php:23
+msgid "Great Deals"
+msgstr ""
+
+#: patterns/home-banner-grid.php:34
+msgid "Exclusive Offer"
+msgstr ""
+
+#: patterns/home-banner-grid.php:38
+msgid "Mega Tech Sale"
+msgstr ""
+
+#: patterns/home-banner-grid.php:43
+msgid "Get now"
+msgstr ""
+
+#: patterns/home-banner-grid.php:54
+msgid "Sales"
+msgstr ""
+
+#: patterns/home-banner-grid.php:58
+msgid "under $25.00"
+msgstr ""
+
+#: patterns/home-blog-post.php:15
+msgid "From Our Blog"
+msgstr ""
+
+#: patterns/home-blog-post.php:40
+msgid "No Product Found"
+msgstr ""
+
+#: patterns/home-electronic-products.php:46
+msgid "Mega Sale"
+msgstr ""
+
+#: patterns/home-electronic-products.php:50
+msgid "under $200"
+msgstr ""
+
 #: patterns/home-hero.php:19
 msgid "New Arrivals"
 msgstr ""
@@ -284,6 +360,70 @@ msgstr ""
 
 #: patterns/home-hero.php:91
 msgid "Smart Living"
+msgstr ""
+
+#: patterns/home-product-categories.php:21
+msgid "Headphone"
+msgstr ""
+
+#: patterns/home-product-categories.php:81
+msgid "Smartwatch"
+msgstr ""
+
+#: patterns/home-search.php:20
+msgid "Looking for something else?"
+msgstr ""
+
+#: patterns/home-trending-products.php:16
+msgid "Trending This Week"
+msgstr ""
+
+#: patterns/home-tv-banner.php:23
+msgid "Special Collection"
+msgstr ""
+
+#: patterns/home-tv-banner.php:27
+msgid "Television"
+msgstr ""
+
+#: patterns/home-tv-banner.php:31
+msgid "Smart LED TV 55\""
+msgstr ""
+
+#: patterns/home-tv-banner.php:35
+msgid "TV LED UHD Full Screen"
+msgstr ""
+
+#: patterns/home-tv-banner.php:43
+msgid "$199.00"
+msgstr ""
+
+#: patterns/home-why-choose.php:23
+msgid "Free Delivery"
+msgstr ""
+
+#: patterns/home-why-choose.php:27
+msgid "Free shipping on all order"
+msgstr ""
+
+#: patterns/home-why-choose.php:47
+msgid "Back guarantee under 7 days"
+msgstr ""
+
+#: patterns/home-why-choose.php:63
+msgid "Support 24/7"
+msgstr ""
+
+#: patterns/home-why-choose.php:67
+msgid "Support online 24 hours a day"
+msgstr ""
+
+#: patterns/home-why-choose.php:83
+msgid "Secure Payment"
+msgstr ""
+
+#: patterns/home-why-choose.php:87
+msgid "100% payment security"
 msgstr ""
 
 #: patterns/sidebar.php:13

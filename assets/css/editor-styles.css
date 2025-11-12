@@ -3677,6 +3677,11 @@ html.has-modal-open {
 /* 
 * WooCommerce My_Account
 */
+.woocommerce-account:not(.logged-in) .woocommerce {
+  display: block;
+  margin: 0 auto;
+}
+
 .woocommerce-account .entry-content .woocommerce {
   overflow: hidden;
   display: -webkit-box;

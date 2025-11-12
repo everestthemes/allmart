@@ -2,6 +2,11 @@
 * WooCommerce My_Account
 */
 
+.woocommerce-account:not(.logged-in) .woocommerce {
+  display: block;
+  margin: 0 auto;
+}
+
 .woocommerce-account {
   .entry-content {
     .woocommerce {
@@ -258,47 +263,47 @@
 
 .woocommerce,
 .woocommerce-page {
-    form {
-        .password-input {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        // .show-password-input {
-        //     position: absolute;
-        //     background-color: transparent;
-        //     top: 50%;
-        //     right: 12px;
-        //     appearance: none;
-        //     cursor: pointer;
-        //     color: #000;
-        //     font-size: inherit;
-        //     line-height: inherit;
-        //     text-decoration: none;
-        //     border: 0;
-        //     border-radius: 0;
-        //     padding: 0;
-        //     margin: 0;
-        //     transform: translateY(-50%);
-
-        //     &::before {
-        //         content: '\F340';
-        //         font-family: "bootstrap-icons";
-        //         color: $card-foreground;
-        //         display: block;
-        //         height: 22px;
-        //         width: 22px;
-        //     }
-
-        //     &.display-password {
-        //         &::before {
-        //             content: '\F341';
-        //         }
-        //     }
-        // }
+  form {
+    .password-input {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
+
+    // .show-password-input {
+    //     position: absolute;
+    //     background-color: transparent;
+    //     top: 50%;
+    //     right: 12px;
+    //     appearance: none;
+    //     cursor: pointer;
+    //     color: #000;
+    //     font-size: inherit;
+    //     line-height: inherit;
+    //     text-decoration: none;
+    //     border: 0;
+    //     border-radius: 0;
+    //     padding: 0;
+    //     margin: 0;
+    //     transform: translateY(-50%);
+
+    //     &::before {
+    //         content: '\F340';
+    //         font-family: "bootstrap-icons";
+    //         color: $card-foreground;
+    //         display: block;
+    //         height: 22px;
+    //         width: 22px;
+    //     }
+
+    //     &.display-password {
+    //         &::before {
+    //             content: '\F341';
+    //         }
+    //     }
+    // }
+  }
 }
 
 // Login Form
