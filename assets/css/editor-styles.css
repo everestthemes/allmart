@@ -2313,6 +2313,8 @@ html.has-modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .single.single-post .wp-block-post-terms::before {
   display: none;
