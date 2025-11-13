@@ -6,13 +6,141 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-11-12 08:19+0000\n"
+"POT-Creation-Date: 2025-11-13 08:27+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: patterns/about-bento-grid.php:15
+msgid "EXCLUSIVE OFFER"
+msgstr ""
+
+#: patterns/about-bento-grid.php:19, patterns/home-banner-grid.php:38
+msgid "Mega Tech Sale"
+msgstr ""
+
+#: patterns/about-bento-grid.php:23
+msgid "Save big on the latest smartphones, laptops, and smart home devices"
+msgstr ""
+
+#: patterns/about-bento-grid.php:28, patterns/home-hero.php:71, patterns/home-hero.php:96
+msgid "Shop Now"
+msgstr ""
+
+#: patterns/about-bento-grid.php:35
+msgid "LIMITED TIME"
+msgstr ""
+
+#: patterns/about-bento-grid.php:39
+msgid "Gaming Bundle"
+msgstr ""
+
+#: patterns/about-bento-grid.php:43
+msgid "Get 30% off on gaming consoles, accessories, and more"
+msgstr ""
+
+#: patterns/about-bento-grid.php:48, patterns/home-hero.php:75
+msgid "View Deals"
+msgstr ""
+
+#: patterns/about-bento-grid.php:57, patterns/home-hero.php:19
+msgid "New Arrivals"
+msgstr ""
+
+#: patterns/about-bento-grid.php:61
+msgid "Latest tech gadgets just released"
+msgstr ""
+
+#: patterns/about-bento-grid.php:66
+msgid "Explore →"
+msgstr ""
+
+#: patterns/about-bento-grid.php:73
+msgid "Premium Brands"
+msgstr ""
+
+#: patterns/about-bento-grid.php:77
+msgid "Top brands at best prices"
+msgstr ""
+
+#: patterns/about-bento-grid.php:82
+msgid "Browse →"
+msgstr ""
+
+#: patterns/about-bento-grid.php:89
+msgid "Gift Cards"
+msgstr ""
+
+#: patterns/about-bento-grid.php:93
+msgid "Perfect gift for tech lovers"
+msgstr ""
+
+#: patterns/about-bento-grid.php:98
+msgid "Buy Now →"
+msgstr ""
+
+#: patterns/about-blurb-1.php:16
+msgid "10K+ Happy customer"
+msgstr ""
+
+#: patterns/about-blurb-1.php:20
+msgid "A customer's perception defines your reality. The most dissatisfied customers provide the most valuable lessons for growth."
+msgstr ""
+
+#: patterns/about-blurb-1.php:28
+msgid "20+ Awards won"
+msgstr ""
+
+#: patterns/about-blurb-1.php:32
+msgid "Awards serve as powerful motivation to keep improving, regardless of your age or stage in life."
+msgstr ""
+
+#: patterns/about-blurb-1.php:40
+msgid "30 years of experiences"
+msgstr ""
+
+#: patterns/about-blurb-1.php:44
+msgid "Our biggest challenge is that we often live inside our minds, lost in thoughts, disconnected from the reality of our present experiences."
+msgstr ""
+
+#: patterns/about-title.php:13
+msgid "Our Story"
+msgstr ""
+
+#: patterns/about-title.php:17
+msgid "Since 1990 our story"
+msgstr ""
+
+#: patterns/about-title.php:22
+msgid "In the early 1990s, the founder and creative director envisioned a bag collection that embodied comfort, style, and individuality. This vision gave birth to a brand that believes true fashion seamlessly blends elegance with everyday comfort."
+msgstr ""
+
+#: patterns/about-why-choose-us.php:14
+msgid "Why Choose Us?"
+msgstr ""
+
+#: patterns/about-why-choose-us.php:19
+msgid "We combine quality, innovation, and customer satisfaction to deliver products that stand out. Our commitment to excellence ensures every detail is crafted with care, offering you reliability, comfort, and style you can trust."
+msgstr ""
+
+#: patterns/about-why-choose-us.php:26, patterns/home-why-choose.php:23
+msgid "Free Delivery"
+msgstr ""
+
+#: patterns/about-why-choose-us.php:30, patterns/about-why-choose-us.php:40, patterns/about-why-choose-us.php:50
+msgid "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form"
+msgstr ""
+
+#: patterns/about-why-choose-us.php:36
+msgid "30 Day Return"
+msgstr ""
+
+#: patterns/about-why-choose-us.php:46
+msgid "24/7 Support"
+msgstr ""
 
 #: patterns/error-404.php:14
 msgid "404"
@@ -282,10 +410,6 @@ msgstr ""
 msgid "Exclusive Offer"
 msgstr ""
 
-#: patterns/home-banner-grid.php:38
-msgid "Mega Tech Sale"
-msgstr ""
-
 #: patterns/home-banner-grid.php:43
 msgid "Get now"
 msgstr ""
@@ -314,10 +438,6 @@ msgstr ""
 msgid "under $200"
 msgstr ""
 
-#: patterns/home-hero.php:19
-msgid "New Arrivals"
-msgstr ""
-
 #: patterns/home-hero.php:25
 msgid "Top Online Electronics Store"
 msgstr ""
@@ -344,14 +464,6 @@ msgstr ""
 
 #: patterns/home-hero.php:66
 msgid "from $499"
-msgstr ""
-
-#: patterns/home-hero.php:71, patterns/home-hero.php:96
-msgid "Shop Now"
-msgstr ""
-
-#: patterns/home-hero.php:75
-msgid "View Deals"
 msgstr ""
 
 #: patterns/home-hero.php:86
@@ -396,10 +508,6 @@ msgstr ""
 
 #: patterns/home-tv-banner.php:43
 msgid "$199.00"
-msgstr ""
-
-#: patterns/home-why-choose.php:23
-msgid "Free Delivery"
 msgstr ""
 
 #: patterns/home-why-choose.php:27

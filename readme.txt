@@ -13,7 +13,7 @@ Tags: full-site-editing, e-commerce, one-column, two-columns, left-sidebar, righ
 
 
 == Description ==
-All Mart: The Ultimate WordPress Theme for Pet Food Businesses, empower your online pet food store with OnlineStore, a premium WordPress theme crafted specifically for pet food businesses like yours. Built with the latest WooCommerce and Full Site Editing features, OnlineStore empowers you to create a visually stunning and user-friendly online shop that caters to pet lovers everywhere.
+All Mart is a clean, modern, and fully responsive WooCommerce theme designed for all kinds of online stores. It’s perfect for selling electronics, home appliances, fashion, furniture, and more. Built with WordPress block-based design, Allmart offers fast performance, easy customization, and seamless WooCommerce integration.
 
 
 == Changelog ==
@@ -30,10 +30,12 @@ All Mart is distributed under the terms of the GNU GPL.
 
 = Image for theme screenshot =
 
-*Hero Banner Image
-Copyright humphrey
-License: CC0 1.0 Universal (CC0 1.0)
-Source: https://stocksnap.io/photo/smilingdog-dog-VKVXXGZONA
+Allmart WooCommerce Theme is designed and developed by Everestthemes (https://everestthemes.com).
+
+All custom icons, logos, and graphic elements used in this theme are original works created by Everestthemes.
+They are licensed under the GNU General Public License v2 or later, in accordance with the theme’s overall license.
+
+You may use, modify, and redistribute these images as part of this theme under the same GPL license.
 
 
 = Fonts =
