@@ -35,7 +35,7 @@ if ( ! function_exists( 'allmart_ocdi_import_files' ) ) {
 			}
 
 			// GitHub raw URL.
-			$remote_url = 'https://raw.githubusercontent.com/everestthemes/demo-test/main/contents.xml';
+			$remote_url = 'https://raw.githubusercontent.com/everestthemes/demo-test/refs/heads/main/allmart-contents.xml';
 			$response   = wp_remote_get(
 				$remote_url,
 				array(
@@ -162,9 +162,9 @@ if ( ! function_exists( 'allmart_replace_old_urls_in_content' ) ) {
 		if ( is_array( $all_posts ) && ! empty( $all_posts ) ) {
 			foreach ( $all_posts as $post ) {
 				if ( 'page' === $post->post_type && 'home' === $post->post_name && 'publish' === $post->post_status ) {
-					$shop_page     = get_page_by_title( 'Shop' );
-					$cart_page     = get_page_by_title( 'Cart' );
-					$checkout_page = get_page_by_title( 'Checkout' );
+					$shop_page      = get_page_by_title( 'Shop' );
+					$cart_page      = get_page_by_title( 'Cart' );
+					$checkout_page  = get_page_by_title( 'Checkout' );
 					$myaccount_page = get_page_by_title( 'My account' );
 
 					update_option( 'show_on_front', 'page' );

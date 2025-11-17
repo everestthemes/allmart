@@ -3,11 +3,16 @@
 */
 
 // Products loop
-.product,
-.wc-block-grid__product,
-.wc-block-product {
+body:not(.single-product) .product {
   .yith-add-to-wishlist-button-block {
     position: absolute;
+  }
+}
+
+.product .wc-block-grid__product,
+.wc-block-product {
+  .yith-add-to-wishlist-button-block {
+    position: relative;
   }
 }
 

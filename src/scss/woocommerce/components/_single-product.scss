@@ -419,7 +419,7 @@
         td {
           text-align: left;
           border: none;
-          padding: 0;
+          padding: 0 12px 0 0;
         }
 
         tr {
@@ -472,10 +472,10 @@
               display: flex;
               align-items: center;
               gap: 5px;
-              color: $card-color;
+              color: $wc-danger;
               font-size: var(--wp--preset--font-size--14);
               text-decoration: none;
-              margin-top: 10px;
+              margin-top: 4px;
 
               @include breakpoint(md) {
                 position: absolute;
@@ -487,6 +487,7 @@
               }
 
               &:hover {
+                opacity: 0.9;
                 color: $wc-danger;
               }
             }
