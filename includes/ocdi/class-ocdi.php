@@ -115,6 +115,11 @@ function allmart_ocdi_register_plugins( $plugins ) {
 			'slug'     => 'woocommerce', // Plugin slug - the same as on WordPress.org plugin repository.
 			'required' => true, // If the plugin is required or not.
 		),
+		array( // A WordPress.org plugin repository example.
+			'name'     => 'YITH WooCommerce Wishlist', // Name of the plugin.
+			'slug'     => 'yith-woocommerce-wishlist', // Plugin slug - the same as on WordPress.org plugin repository.
+			'required' => true, // If the plugin is required or not.
+		),
 	);
 
 	return array_merge( $plugins, $theme_plugins );

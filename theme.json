@@ -601,7 +601,7 @@
           "fontFamily": "var(--wp--preset--font-family--inter)",
           "lineHeight": "var(--wp--custom--line-height--tiny)",
           "fontSize": "var(--wp--preset--font-size--30)",
-          "letterSpacing": "-1.5px"
+          "letterSpacing": "-1px"
         },
         "color": {
           "text": "var(--wp--preset--color--card-foreground)"
@@ -612,7 +612,7 @@
           "fontFamily": "var(--wp--preset--font-family--inter)",
           "lineHeight": "var(--wp--custom--line-height--tiny)",
           "fontSize": "var(--wp--preset--font-size--24)",
-          "letterSpacing": "-1.5px"
+          "letterSpacing": "-1px"
         },
         "color": {
           "text": "var(--wp--preset--color--card-foreground)"
@@ -623,7 +623,7 @@
           "fontFamily": "var(--wp--preset--font-family--inter)",
           "lineHeight": "var(--wp--custom--line-height--default)",
           "fontSize": "var(--wp--preset--font-size--20)",
-          "letterSpacing": "-1.5px"
+          "letterSpacing": "-1px"
         },
         "color": {
           "text": "var(--wp--preset--color--card-foreground)"
@@ -634,7 +634,7 @@
           "fontFamily": "var(--wp--preset--font-family--inter)",
           "lineHeight": "var(--wp--custom--line-height--default)",
           "fontSize": "var(--wp--preset--font-size--18)",
-          "letterSpacing": "-1.5px"
+          "letterSpacing": "-1px"
         },
         "color": {
           "text": "var(--wp--preset--color--card-foreground)"
