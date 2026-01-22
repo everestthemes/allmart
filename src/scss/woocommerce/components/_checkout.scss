@@ -293,7 +293,7 @@
       padding: $small;
 
       @include breakpoint(md) {
-        display: flex;        
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
       }
@@ -495,7 +495,20 @@
 // Checkout Form Descriptions
 .wc-block-components-checkout-step__description,
 .wc-block-components-shipping-address,
-.wc-block-components-product-metadata__description
- {
+.wc-block-components-product-metadata__description {
   font-size: 16px;
+}
+
+/* Select Box */
+.select2-container .select2-dropdown,
+.select2-container .select2-selection {
+  padding: 16px 6px;
+  border-color: $bd-color !important;
+}
+
+.select2-container.select2-container--open .select2-dropdown--below {
+  border-top: 1px solid $bd-color !important;
+}
+.select2-container.select2-container--open .select2-dropdown--above {
+  border-bottom: 1px solid $bd-color !important;
 }

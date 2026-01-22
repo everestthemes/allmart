@@ -847,7 +847,7 @@ body.single-product .woocommerce.product .wp-block-woocommerce-product-details {
   }
 }
 
-// Review Form
+// Review Comment Form
 
 #review_form_wrapper {
   width: 100%;
@@ -877,6 +877,10 @@ body.single-product .woocommerce.product .wp-block-woocommerce-product-details {
 
       #rating-selector {
         display: none;
+      }
+
+      p.stars-wrapper {
+        display: block;
       }
     }
 
