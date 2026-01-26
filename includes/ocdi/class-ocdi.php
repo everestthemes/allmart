@@ -2,39 +2,20 @@
 /**
  * Defines the demo content files for One Click Demo Import.
  *
- * This function provides an array of import configuration used by the
- * One Click Demo Import (OCDI) plugin to import demo content such as:
- * - XML content (pages, posts, media)
- * - Widgets configuration
- * - Customizer settings
- * - Redux options
- * - Preview image and URL
- *
  * @package allmart
- * @return array List of demo import configuration settings.
  */
 
 if ( ! function_exists( 'allmart_ocdi_import_files' ) ) {
-	/**
-	 * OCDI Import Files
-	 *
-	 * @return array[]
-	 */
 	function allmart_ocdi_import_files() {
+		$upload_dir = wp_upload_dir();
+		$demo_dir   = trailingslashit( $upload_dir['basedir'] ) . 'demo-import/';
+		$xml_path   = $demo_dir . 'content.xml';
 
-			$upload_dir = wp_upload_dir();
-			$demo_dir   = trailingslashit( $upload_dir['basedir'] ) . 'demo-import/';
-			$xml_path   = $demo_dir . 'content.xml';
-
-			// If local file doesn't exist, download from GitHub.
 		if ( ! file_exists( $xml_path ) ) {
-			// Create directory if it doesn't exist.
 			if ( ! wp_mkdir_p( $demo_dir ) ) {
-				error_log( '[OCDI] Failed to create directory: ' . $demo_dir );
 				return array();
 			}
 
-			// GitHub raw URL.
 			$remote_url = 'https://raw.githubusercontent.com/everestthemes/demo-test/refs/heads/main/allmart-contents.xml';
 			$response   = wp_remote_get(
 				$remote_url,
@@ -47,200 +28,65 @@ if ( ! function_exists( 'allmart_ocdi_import_files' ) ) {
 			);
 
 			if ( is_wp_error( $response ) ) {
-				error_log( '[OCDI] Failed to download XML from GitHub: ' . $remote_url . ' Error: ' . $response->get_error_message() );
 				return array();
 			}
 
 			$response_code = wp_remote_retrieve_response_code( $response );
+
 			if ( $response_code !== 200 ) {
-				error_log( '[OCDI] Invalid response code ' . $response_code . ' from GitHub: ' . $remote_url );
 				return array();
 			}
 
 			$body = wp_remote_retrieve_body( $response );
-			if ( empty( $body ) ) {
-				error_log( '[OCDI] Empty response body from GitHub: ' . $remote_url );
+			if ( empty( $body ) || strpos( $body, '<html' ) !== false ) {
 				return array();
 			}
 
-			// Check for HTML content (to avoid GitHub webpage).
-			if ( strpos( $body, '<html' ) !== false ) {
-				error_log( '[OCDI] GitHub URL returned HTML instead of XML: ' . $remote_url );
-				return array();
-			}
-
-			// Save the file locally.
 			if ( file_put_contents( $xml_path, $body ) === false ) {
-				error_log( '[OCDI] Failed to save XML file to: ' . $xml_path );
 				return array();
 			}
 
-			// Set file permissions.
 			chmod( $xml_path, 0644 );
 		}
 
-			// Verify the file exists.
 		if ( ! file_exists( $xml_path ) ) {
-			error_log( '[OCDI] Local XML file not found after processing: ' . $xml_path );
 			return array();
 		}
 
-			return array(
-				array(
-					'import_file_name'         => 'All Mart Demo',
-					'categories'               => array( 'allmart' ),
-					'local_import_file'        => $xml_path,
-					'import_preview_image_url' => trailingslashit( get_template_directory_uri() ) . 'includes/ocdi/demo/screenshot.png',
-					'preview_url'              => 'https://ecommerce.everestthemes.com/allmart/',
-				),
-			);
+		return array(
+			array(
+				'import_file_name'         => 'All Mart Demo',
+				'categories'               => array( 'allmart' ),
+				'local_import_file'        => $xml_path,
+				'import_preview_image_url' => trailingslashit( get_template_directory_uri() ) . 'includes/ocdi/demo/screenshot.png',
+				'preview_url'              => 'https://ecommerce.everestthemes.com/allmart/',
+			),
+		);
 	}
 }
 
 add_filter( 'ocdi/import_files', 'allmart_ocdi_import_files' );
 
-
-/**
- * Register Plugins for Demo Import.
- *
- * @param array $plugins The list of plugins.
- * @return array
- */
 function allmart_ocdi_register_plugins( $plugins ) {
-
-	// Required: List of plugins used by all theme demos.
 	$theme_plugins = array(
-		array( // A WordPress.org plugin repository example.
-			'name'     => 'WooCommerce', // Name of the plugin.
-			'slug'     => 'woocommerce', // Plugin slug - the same as on WordPress.org plugin repository.
-			'required' => true, // If the plugin is required or not.
+		array(
+			'name'     => 'WooCommerce',
+			'slug'     => 'woocommerce',
+			'required' => true,
 		),
-		array( // A WordPress.org plugin repository example.
-			'name'     => 'YITH WooCommerce Wishlist', // Name of the plugin.
-			'slug'     => 'yith-woocommerce-wishlist', // Plugin slug - the same as on WordPress.org plugin repository.
-			'required' => true, // If the plugin is required or not.
+		array(
+			'name'     => 'YITH WooCommerce Wishlist',
+			'slug'     => 'yith-woocommerce-wishlist',
+			'required' => true,
 		),
 	);
 
 	return array_merge( $plugins, $theme_plugins );
 }
 
-
 add_filter( 'ocdi/register_plugins', 'allmart_ocdi_register_plugins' );
 
-
-
-if ( ! function_exists( 'allmart_replace_old_urls_in_content' ) ) {
-	/**
-	 * Replace old URLs in content.
-	 *
-	 * @param mixed $selected Selected import file.
-	 * @return void
-	 */
-	function allmart_replace_old_urls_in_content( $selected ) {
-		if ( 'All Mart Demo' !== $selected['import_file_name'] ) {
-			return;
-		}
-
-		$old_url = 'https://ecommerce.everestthemes.com/allmart';
-		$new_url = home_url();
-
-		$all_pages = get_posts(
-			array(
-				'post_type'      => 'page',
-				'posts_per_page' => -1,
-				'post_status'    => 'publish',
-			)
-		);
-
-		$navigation = get_posts(
-			array(
-				'post_type'      => 'wp_navigation',
-				'posts_per_page' => -1,
-				'post_status'    => 'publish',
-			)
-		);
-
-		$all_posts = array_merge( $all_pages, $navigation );
-
-		// Replace content's URL's.
-		if ( is_array( $all_posts ) && ! empty( $all_posts ) ) {
-			foreach ( $all_posts as $post ) {
-				if ( 'page' === $post->post_type && 'home' === $post->post_name && 'publish' === $post->post_status ) {
-					$shop_page      = get_page_by_title( 'Shop' );
-					$cart_page      = get_page_by_title( 'Cart' );
-					$checkout_page  = get_page_by_title( 'Checkout' );
-					$myaccount_page = get_page_by_title( 'My account' );
-
-					update_option( 'show_on_front', 'page' );
-					update_option( 'page_on_front', $post->ID );
-
-					if ( $shop_page && $cart_page && $checkout_page && $myaccount_page ) {
-						update_option( 'woocommerce_shop_page_id', $shop_page->ID );
-						update_option( 'woocommerce_cart_page_id', $cart_page->ID );
-						update_option( 'woocommerce_checkout_page_id', $checkout_page->ID );
-						update_option( 'woocommerce_myaccount_page_id', $myaccount_page->ID );
-					}
-				}
-
-				$content = $post->post_content;
-				if ( strpos( $content, $old_url ) !== false ) {
-					$content = str_replace( $old_url, $new_url, $content );
-
-					wp_update_post(
-						array(
-							'ID'           => $post->ID,
-							'post_content' => $content,
-						)
-					);
-				}
-			}
-		}
-
-		// Replace navigation menu's URL's.
-		$menu_items = get_posts(
-			array(
-				'post_type'      => 'navigation',
-				'posts_per_page' => -1,
-				'post_status'    => 'publish',
-			)
-		);
-
-		if ( is_array( $menu_items ) && ! empty( $menu_items ) ) {
-
-			foreach ( $menu_items as $item ) {
-
-				$type = get_post_meta( $item->ID, '_menu_item_type', true );
-
-				// only process custom link.
-				if ( 'custom' === $type ) {
-					$url = get_post_meta( $item->ID, '_menu_item_url', true );
-					if ( $url && strpos( $url, $old_url ) !== false ) {
-						$new = str_replace( $old_url, $new_url, $url );
-						update_post_meta( $item->ID, '_menu_item_url', esc_url_raw( $new ) );
-					}
-				}
-				$url = get_post_meta( $item->ID, '_menu_item_url', true );
-				if ( $url && strpos( $url, $old_url ) !== false ) {
-					$updated_url = str_replace( $old_url, $new_url, $url );
-					update_post_meta( $item->ID, '_menu_item_url', esc_url_raw( $updated_url ) );
-				}
-			}
-		}
-	}
-}
-add_action( 'ocdi/after_import', 'allmart_replace_old_urls_in_content' );
-
-
-
 if ( ! function_exists( 'allmart_delete_default_woocommerce_pages' ) ) {
-	/**
-	 * Delete default wooCommerce pages.
-	 *
-	 * @param array $selected Selected import file.
-	 *
-	 * @return void
-	 */
 	function allmart_delete_default_woocommerce_pages( $selected ) {
 		if ( 'All Mart Demo' !== $selected['import_file_name'] ) {
 			return;
@@ -251,9 +97,305 @@ if ( ! function_exists( 'allmart_delete_default_woocommerce_pages' ) ) {
 		foreach ( $pages_to_delete as $slug ) {
 			$page = get_page_by_path( $slug );
 			if ( $page && 'page' === $page->post_type ) {
-				wp_delete_post( $page->ID, true ); // true = force delete, bypass trash
+				wp_delete_post( $page->ID, true );
 			}
 		}
 	}
 }
 add_action( 'ocdi/before_content_import', 'allmart_delete_default_woocommerce_pages' );
+
+if ( ! function_exists( 'allmart_replace_old_urls_in_content' ) ) {
+	function allmart_replace_old_urls_in_content( $selected ) {
+		if ( 'All Mart Demo' !== $selected['import_file_name'] ) {
+			return;
+		}
+
+		$old_url = 'https://ecommerce.everestthemes.com/allmart';
+		$new_url = home_url();
+
+		// Process Pages.
+		$all_pages = get_posts(
+			array(
+				'post_type'      => 'page',
+				'posts_per_page' => -1,
+				'post_status'    => 'publish',
+			)
+		);
+
+		if ( is_array( $all_pages ) && ! empty( $all_pages ) ) {
+			foreach ( $all_pages as $page ) {
+				if ( 'page' === $page->post_type && 'home' === $page->post_name ) {
+					update_option( 'show_on_front', 'page' );
+					update_option( 'page_on_front', $page->ID );
+
+					$shop_page      = get_page_by_title( 'Shop' );
+					$cart_page      = get_page_by_title( 'Cart' );
+					$checkout_page  = get_page_by_title( 'Checkout' );
+					$myaccount_page = get_page_by_title( 'My account' );
+
+					if ( $shop_page && $cart_page && $checkout_page && $myaccount_page ) {
+						update_option( 'woocommerce_shop_page_id', $shop_page->ID );
+						update_option( 'woocommerce_cart_page_id', $cart_page->ID );
+						update_option( 'woocommerce_checkout_page_id', $checkout_page->ID );
+						update_option( 'woocommerce_myaccount_page_id', $myaccount_page->ID );
+					}
+				}
+
+				$content = $page->post_content;
+				if ( strpos( $content, $old_url ) !== false ) {
+					wp_update_post(
+						array(
+							'ID'           => $page->ID,
+							'post_content' => str_replace( $old_url, $new_url, $content ),
+						)
+					);
+				}
+			}
+		}
+
+		// Get Navigation Posts.
+		$navigation_posts = get_posts(
+			array(
+				'post_type'      => 'wp_navigation',
+				'posts_per_page' => -1,
+				'post_status'    => 'publish',
+			)
+		);
+
+		$primary_nav  = null;
+		$vertical_nav = null;
+
+		foreach ( $navigation_posts as $nav_post ) {
+			$title_lower = strtolower( $nav_post->post_title );
+
+			if ( strpos( $title_lower, 'vertical' ) !== false ) {
+				$vertical_nav = $nav_post;
+			} elseif ( strpos( $title_lower, 'primary' ) !== false || strpos( $title_lower, 'main' ) !== false ) {
+				$primary_nav = $nav_post;
+			} elseif ( ! $primary_nav ) {
+				$primary_nav = $nav_post;
+			}
+
+			$nav_content = $nav_post->post_content;
+			if ( strpos( $nav_content, $old_url ) !== false ) {
+				wp_update_post(
+					array(
+						'ID'           => $nav_post->ID,
+						'post_content' => str_replace( $old_url, $new_url, $nav_content ),
+					)
+				);
+			}
+		}
+
+		// Process Template Parts - NEW APPROACH FOR THEME FILES.
+		if ( $primary_nav || $vertical_nav ) {
+			// Use WordPress Block Template API to get all templates including theme files.
+			$default_template_parts = get_posts(
+				array( 'post_type' => 'wp_template_part' )
+			);
+
+			$template_parts = get_posts(
+				array(
+					'post_type' => 'wp_template_part',
+					'tax_query' => array(
+						array(
+							'taxonomy' => 'wp_theme',
+							'field'    => 'name',
+							'terms'    => get_stylesheet(),
+						),
+					),
+				)
+			);
+
+			foreach ( $template_parts as $template_part ) {
+				// Only process header template parts.
+				if ( false === strpos( $template_part->post_name, 'header' ) ) {
+					continue;
+				}
+
+				$content = $template_part->post_content;
+				$blocks  = parse_blocks( $content );
+
+				// Update navigation blocks.
+				$updated_blocks = allmart_update_navigation_blocks_v2( $blocks, $primary_nav, $vertical_nav );
+				$new_content    = serialize_blocks( $updated_blocks );
+
+				// Check if content actually changed.
+				if ( $content === $new_content ) {
+					continue;
+				}
+
+				// CRITICAL: Create or update database version
+				// This works for both theme files (wp_id = 0) and database entries.
+				$post_data = array(
+					'post_content' => $new_content,
+				);
+
+				if ( $template_part->ID > 0 ) {
+					// Update existing database entry.
+					$post_data['ID'] = $template_part->ID;
+					$post_id         = wp_update_post( $post_data );
+				} else {
+					// Create NEW database entry (this overrides the theme file).
+					$post_id = wp_insert_post( $post_data );
+
+					if ( $post_id && ! is_wp_error( $post_id ) ) {
+						// Set the template area taxonomy.
+						wp_set_object_terms( $post_id, $template_part->area, 'wp_template_part_area' );
+
+						// Set theme taxonomy.
+						wp_set_object_terms( $post_id, $template_part->theme, 'wp_theme' );
+					} else {
+						continue;
+					}
+				}
+
+				// Clear caches for this specific template.
+				clean_post_cache( $post_id );
+				wp_cache_delete( 'wp_template_part|' . $template_part->slug, 'themes' );
+
+				// Verify the change.
+				$verify_template = get_block_template( $template_part->id, 'wp_template_part' );
+
+				if ( $verify_template && $verify_template->wp_id > 0 ) {
+					error_log( '[OCDI] ✓ Verification: Template now has wp_id=' . $verify_template->wp_id );
+				}
+			}
+		}
+
+		// Aggressive cache clearing.
+		allmart_nuclear_cache_clear();
+	}
+}
+
+add_action( 'ocdi/after_import', 'allmart_replace_old_urls_in_content' );
+
+function allmart_update_navigation_blocks_v2( $blocks, $primary_nav, $vertical_nav, $depth = 0, &$nav_counter = 0 ) {
+	foreach ( $blocks as &$block ) {
+		if ( 'core/navigation' === $block['blockName'] ) {
+			++$nav_counter;
+
+			$current_ref = isset( $block['attrs']['ref'] ) ? $block['attrs']['ref'] : null;
+			$class_name  = isset( $block['attrs']['className'] ) ? $block['attrs']['className'] : '';
+
+			if ( ! isset( $block['attrs'] ) ) {
+				$block['attrs'] = array();
+			}
+
+			// Method 1: By className.
+			if ( ! empty( $class_name ) ) {
+				if ( strpos( $class_name, 'vertical' ) !== false && $vertical_nav ) {
+					$block['attrs']['ref'] = (int) $vertical_nav->ID;
+					continue;
+				} elseif ( ( strpos( $class_name, 'primary' ) !== false ) && $primary_nav ) {
+					$block['attrs']['ref'] = (int) $primary_nav->ID;
+					continue;
+				}
+			}
+
+			// Method 2: By position (only at top level).
+			if ( 0 === $depth ) {
+				if ( 1 === $nav_counter && $primary_nav ) {
+					$block['attrs']['ref'] = (int) $primary_nav->ID;
+				} elseif ( 2 === $nav_counter && $vertical_nav ) {
+					$block['attrs']['ref'] = (int) $vertical_nav->ID;
+				}
+			}
+		}
+
+		if ( ! empty( $block['innerBlocks'] ) ) {
+			$block['innerBlocks'] = allmart_update_navigation_blocks_v2(
+				$block['innerBlocks'],
+				$primary_nav,
+				$vertical_nav,
+				$depth + 1,
+				$nav_counter
+			);
+		}
+	}
+
+	return $blocks;
+}
+
+function allmart_nuclear_cache_clear() {
+	global $wpdb;
+
+	wp_cache_flush();
+	$wpdb->query( "DELETE FROM {$wpdb->options} WHERE option_name LIKE '%_transient_%'" );
+	delete_transient( 'theme_roots' );
+	flush_rewrite_rules( true );
+
+	if ( function_exists( 'opcache_reset' ) ) {
+		opcache_reset();
+	}
+}
+
+function allmart_sync_template_part_with_pattern_content( $part_slug, $part_title, $part_area = 'uncategorized' ) {
+	// 1. Define the path to the template part file
+	$file_path = get_theme_file_path( "parts/{$part_slug}.html" );
+
+	if ( ! file_exists( $file_path ) ) {
+		return;
+	}
+
+	// 2. Read the file content (which contains the pattern reference)
+	$file_content = file_get_contents( $file_path );
+
+	// 3. Extract the pattern slug using regex
+	if ( preg_match( '/<!--\s+wp:pattern\s+{"slug":"([^"]+)"}\s+\/-->/', $file_content, $matches ) ) {
+		$pattern_slug = $matches[1];
+
+		// 4. Get the actual rendered content of the pattern
+		$registry = WP_Block_Patterns_Registry::get_instance();
+		$pattern  = $registry->get_registered( $pattern_slug );
+
+		if ( $pattern && isset( $pattern['content'] ) ) {
+			// 5. Check if the template part already exists in the database
+			$existing_part = get_posts(
+				array(
+					'posts_per_page' => 1,
+					'post_type'      => 'wp_template_part',
+					'name'           => $part_slug,
+					'post_status'    => array( 'publish', 'auto-draft' ),
+					'fields'         => 'ids',
+					'no_found_rows'  => true,
+					'tax_query'      => array(
+						array(
+							'taxonomy' => 'wp_theme',
+							'field'    => 'name',
+							'terms'    => get_stylesheet(),
+						),
+					),
+				)
+			);
+
+			$post_data = array(
+				'post_type'    => 'wp_template_part',
+				'post_status'  => 'publish', // Make it immediately available.
+				'post_title'   => $part_title,
+				'post_name'    => $part_slug,
+				'post_content' => $pattern['content'],
+				'tax_input'    => array(
+					'wp_template_part_area' => $part_area,
+					'wp_theme'              => get_stylesheet(),
+				),
+			);
+
+			// 6. Insert or update the database entry
+			if ( empty( $existing_part ) ) {
+				wp_insert_post( $post_data );
+			} else {
+				// Optionally uncomment this section if you want to force an update over user edits.
+				$post_data['ID'] = $existing_part[0];
+				wp_update_post( $post_data );
+			}
+		}
+	}
+}
+
+// --- Sync header with database When Theme activated ---
+add_action( 'after_switch_theme', 'sync_allmart_parts_on_activation' );
+
+function sync_allmart_parts_on_activation() {
+	allmart_sync_template_part_with_pattern_content( 'header', 'Site Header with Pattern', 'header' );
+}
