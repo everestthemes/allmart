@@ -17,7 +17,8 @@ if ( ! function_exists( 'allmart_ocdi_import_files' ) ) {
 			}
 
 			$remote_url = 'https://raw.githubusercontent.com/everestthemes/demo-test/refs/heads/main/allmart-contents.xml';
-			$response   = wp_remote_get(
+
+			$response = wp_remote_get(
 				$remote_url,
 				array(
 					'timeout' => 30,
@@ -33,7 +34,7 @@ if ( ! function_exists( 'allmart_ocdi_import_files' ) ) {
 
 			$response_code = wp_remote_retrieve_response_code( $response );
 
-			if ( $response_code !== 200 ) {
+			if ( 200 !== $response_code ) {
 				return array();
 			}
 
@@ -170,18 +171,24 @@ if ( ! function_exists( 'allmart_replace_old_urls_in_content' ) ) {
 
 			if ( strpos( $title_lower, 'vertical' ) !== false ) {
 				$vertical_nav = $nav_post;
-			} elseif ( strpos( $title_lower, 'primary' ) !== false || strpos( $title_lower, 'main' ) !== false ) {
+
+			} elseif ( strpos( $title_lower, 'primary' ) !== false || strpos( $title_lower, 'main' ) !== false || strpos( $title_lower, 'menu' ) !== false ) {
 				$primary_nav = $nav_post;
+
 			} elseif ( ! $primary_nav ) {
 				$primary_nav = $nav_post;
+
 			}
 
 			$nav_content = $nav_post->post_content;
+			$nav_content = preg_replace( '/u0026amp;/i', '&', $nav_content );
+
 			if ( strpos( $nav_content, $old_url ) !== false ) {
+				$nav_content = str_replace( $old_url, $new_url, $nav_content );
 				wp_update_post(
 					array(
 						'ID'           => $nav_post->ID,
-						'post_content' => str_replace( $old_url, $new_url, $nav_content ),
+						'post_content' => $nav_content,
 					)
 				);
 			}
