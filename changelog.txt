@@ -1,4 +1,9 @@
 *** All Mart ***
 
+2026-01-21 - version 1.0.1
+* Fix - Fixed demo import error occurring during content installation.
+* Fix - Improved demo import stability to ensure all layouts and data load correctly.
+* Fix - Accessibility & Typography Improvements (negative letter spacing: In some cases, particularly with smaller text)
+
 2025-04-30 - version 1.0.0
 * Initial release
