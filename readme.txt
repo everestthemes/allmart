@@ -6,7 +6,7 @@ Requires at least: 6.0
 Requires PHP: 7.4
 Stable tag: 1.0.1
 WC requires at least: 9.1
-WC tested up to: 10.4
+WC tested up to: 10.4.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: full-site-editing, e-commerce, one-column, two-columns, left-sidebar, right-sidebar, block-patterns, block-styles, editor-style, custom-background, custom-logo, custom-menu, featured-images, footer-widgets, wide-blocks, translation-ready
