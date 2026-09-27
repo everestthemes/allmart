@@ -4,7 +4,9 @@ $primary-color: var(--wp--preset--color--primary);
 $secondary-color: var(--wp--preset--color--secondary);
 
 $fg-color: var(--wp--preset--color--foreground);
-$bg-color: var(--wp--preset--color--background); //white & black background color
+$bg-color: var(
+  --wp--preset--color--background
+); //white & black background color
 $overlay-bg: rgba(0, 0, 0, 0.7);
 
 $card-color: var(--wp--preset--color--card);
@@ -17,7 +19,6 @@ $light-color: var(--wp--preset--color--card);
 $alt-color: var(--wp--preset--color--border);
 
 $bd-color: var(--wp--preset--color--border);
-
 
 // Theme Spacing Variables
 $s-1: 0px;
@@ -67,7 +68,7 @@ $fw-black: var(--wp--custom--font-weight--black); //900;
 $wc-success: #23963e;
 $wc-info: #2654c9;
 $wc-warning: #f1b605;
-$wc-danger: #FF5C5C;
+$wc-danger: #ff5c5c;
 
 $wc-success-bg: #def8ec;
 $wc-info-bg: #b6ecf5;

@@ -44,31 +44,6 @@
   //   });
   // }
 
-  // Product Search Modal
-  function allmart_product_search_modal() {
-    const searchModal = document.querySelector(".search-modal__content");
-    const searchOpen = document.querySelector(".open-search-modal");
-    const searchClose = document.querySelector(".close-search-modal");
-
-    searchOpen.addEventListener("click", (e) => {
-      searchModal.style.display = "flex";
-      document.body.style.overflow = "hidden";
-    });
-
-    // close search modal
-    searchClose.addEventListener("click", (e) => {
-      searchModal.style.display = "none";
-      document.body.style.overflow = "auto";
-    });
-
-    window.addEventListener("click", (e) => {
-      if (e.target === searchModal) {
-        searchModal.style.display = "none";
-        document.body.style.overflow = "auto";
-      }
-    });
-  }
-
   // Review Stars
   function allmart_product_review_stars() {
     for (let i = 1; i <= 5; i++) {
@@ -82,7 +57,7 @@
   window.addEventListener("load", function () {
     // allmart_add_inc_dec();
     // allmart_handle_quantity();
-    allmart_product_search_modal();
+    // allmart_product_search_modal();
     allmart_product_review_stars();
 
     // document.addEventListener("mousemove", function () {
@@ -103,17 +78,4 @@
     }
   });
 
-  const swiper = new Swiper(".swiper", {
-    slidesPerView: 1,
-    loop: true,
-    spaceBetween: 0,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-    },
-  });
 })();

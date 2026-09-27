@@ -12,7 +12,7 @@
 <div class="wp-block-group header-v1"><!-- wp:group {"className":"hide-on-sm","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-small","bottom":"var:preset|spacing|xx-small"}}},"backgroundColor":"primary","layout":{"type":"constrained"}} -->
 <div class="wp-block-group hide-on-sm has-primary-background-color has-background" style="padding-top:var(--wp--preset--spacing--xx-small);padding-bottom:var(--wp--preset--spacing--xx-small)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|card"}}},"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"card","fontSize":"small"} -->
-<p class="has-card-color has-text-color has-link-color has-small-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Get Up to 50% OFF Store wide - Limited time only', 'allmart' ); ?> </p>
+<p class="has-card-color has-text-color has-link-color has-small-font-size" style="font-style:normal;font-weight:600"> <?php esc_html_e( 'Get Up to 50% OFF Store wide - Limited time only', 'allmart' ); ?> </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -36,7 +36,9 @@
 <!-- wp:group {"backgroundColor":"background","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background-background-color has-background"><!-- wp:group {"style":{"spacing":{"blockGap":"48px"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:site-logo {"width":124,"shouldSyncIcon":true,"className":"is-style-rounded"} /--></div>
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":false},"id":84,"width":"124px","sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large is-resized"><a href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/allmart-logo.svg" alt="" class="wp-image-84" style="width:124px"/></a></figure>
+<!-- /wp:image --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"op-grow hide-on-sm","layout":{"type":"constrained"}} -->

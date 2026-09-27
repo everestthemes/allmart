@@ -8,6 +8,13 @@
 }
 
 .woocommerce-account {
+  .wp-block-post-title {
+    max-width: 100% !important;
+  }
+  .woocommerce::before {
+    display: none !important;
+  }
+
   .entry-content {
     .woocommerce {
       overflow: hidden;
@@ -152,11 +159,12 @@
           .woocommerce-Address-title {
             display: flex;
             justify-content: flex-start;
-            align-items: center;
+            align-items: flex-start;
+            flex-direction: column;
             gap: 8px;
             margin: 0 0 16px;
 
-            h3 {
+            h2 {
               font-size: var(--wp--preset--font-size--20);
               font-weight: $fw-semibold;
               margin: 0;
@@ -369,4 +377,13 @@
       }
     }
   }
+}
+
+.woocommerce-account .wp-block-post-title,
+.woocommerce-account main .woocommerce,
+.woocommerce-cart .wp-block-post-title,
+.woocommerce-cart main .woocommerce,
+.woocommerce-checkout .wp-block-post-title,
+.woocommerce-checkout main .woocommerce {
+  max-width: 100% !important;
 }
