@@ -1,5 +1,13 @@
 *** All Mart ***
 
+2026-09-28 - version 1.0.3
+* Update - Updated theme compatibility with the latest WordPress version.
+* Update - Tested up to version 7.1.
+* Update - Updated WooCommerce compatibility to latest version.
+
+2026-06-10 - version 1.0.2
+* Update - Tested up to version
+
 2026-01-21 - version 1.0.1
 * Fix - Fixed demo import error occurring during content installation.
 * Fix - Improved demo import stability to ensure all layouts and data load correctly.

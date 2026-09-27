@@ -4,7 +4,7 @@
   "description": "***** Description *****\r Introducing allmart, FSE theme",
   "main": "index.js",
   "scripts": {
-    "build": "gulp file:pot && dir-archiver --src . --dest allmart-1.0.1.zip --includebasedir true --exclude *.zip ./**/*.xml src node_modules .env .gitignore .vscode gulpfile.js package-lock.json package.json README.md .git yarn-error.log yarn.lock",
+    "build": "gulp file:pot && dir-archiver --src . --dest allmart-1.0.3.zip --includebasedir true --exclude *.zip ./**/*.xml src node_modules .env .gitignore .vscode gulpfile.js package-lock.json package.json README.md .git yarn-error.log yarn.lock",
     "sass": "gulp sass --quiet-deps",
     "watch:sass": "gulp sass:watch"
   },

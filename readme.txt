@@ -1,12 +1,12 @@
 === All Mart ===
 
 Contributors: OmnipressTeam
-Tested up to: 6.9
+Tested up to: 7.1
 Requires at least: 6.0
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.3
 WC requires at least: 9.1
-WC tested up to: 10.4.3
+WC tested up to: 11.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: full-site-editing, e-commerce, one-column, two-columns, left-sidebar, right-sidebar, block-patterns, block-styles, editor-style, custom-background, custom-logo, custom-menu, featured-images, footer-widgets, wide-blocks, translation-ready
@@ -17,6 +17,14 @@ All Mart is a clean, modern, and fully responsive WooCommerce theme designed for
 
 
 == Changelog ==
+
+2026-09-28 - version 1.0.3
+* Update - Updated theme compatibility with the latest WordPress version.
+* Update - Tested up to version 7.1.
+* Update - Updated WooCommerce compatibility to latest version.
+
+2026-06-10 - version 1.0.2
+* Update - Tested up to version
 
 2026-01-21 - version 1.0.1
 * Fix - Fixed demo import error occurring during content installation.
