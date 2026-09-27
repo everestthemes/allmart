@@ -190,9 +190,15 @@ $browsers: (webkit, ms, moz, o);
   flex-shrink: $d;
 }
 @mixin flex-align-items($a) {
+  $ms-a: $a;
+  @if $a == flex-start {
+    $ms-a: start;
+  } @else if $a == flex-end {
+    $ms-a: end;
+  }
   @each $v in $browsers {
     @if $v == ms {
-      -ms-flex-align: if($a==flex-start, start, if($a==flex-end, end, $a));
+      -ms-flex-align: $ms-a;
     } @else {
       -#{$v}-align-items: $a;
     }
@@ -200,9 +206,15 @@ $browsers: (webkit, ms, moz, o);
   align-items: $a;
 }
 @mixin flex-align-self($a) {
+  $ms-a: $a;
+  @if $a == flex-start {
+    $ms-a: start;
+  } @else if $a == flex-end {
+    $ms-a: end;
+  }
   @each $v in $browsers {
     @if $v == ms {
-      -ms-align-self: if($a==flex-start, start, if($a==flex-end, end, $a));
+      -ms-align-self: $ms-a;
     } @else {
       -#{$v}-align-self: $a;
     }
@@ -210,9 +222,15 @@ $browsers: (webkit, ms, moz, o);
   align-self: $a;
 }
 @mixin flex-align-content($a) {
+  $ms-a: $a;
+  @if $a == flex-start {
+    $ms-a: start;
+  } @else if $a == flex-end {
+    $ms-a: end;
+  }
   @each $v in $browsers {
     @if $v == ms {
-      -ms-flex-line-pack: if($a==flex-start, start, if($a==flex-end, end, $a));
+      -ms-flex-line-pack: $ms-a;
     } @else {
       -#{$v}-align-content: $a;
     }
@@ -220,9 +238,15 @@ $browsers: (webkit, ms, moz, o);
   align-content: $a;
 }
 @mixin flex-justify-content($j) {
+  $ms-j: $j;
+  @if $j == flex-start {
+    $ms-j: start;
+  } @else if $j == flex-end {
+    $ms-j: end;
+  }
   @each $v in $browsers {
     @if $v == ms {
-      -ms-flex-pack: if($j==flex-start, start, if($j==flex-end, end, $j));
+      -ms-flex-pack: $ms-j;
     } @else {
       -#{$v}-justify-content: $j;
     }
@@ -248,11 +272,11 @@ $ease: ease-in-out;
 
 @mixin transition($params...) {
   @each $v in $browsers {
-    -#{$v}-transition: if(
-      str-slice(nth(nth($params, 1), 1), 0, 9) == transform,
-      unquote("-#{$v}-#{$params}"),
-      $params
-    );
+    $trans-val: $params;
+    @if str-slice(nth(nth($params, 1), 1), 0, 9) == transform {
+      $trans-val: unquote("-#{$v}-#{$params}");
+    }
+    -#{$v}-transition: $trans-val;
   }
   transition: $params;
 }

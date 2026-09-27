@@ -15,7 +15,8 @@ function handleScssBuild() {
 	return gulp
 		.src("src/scss/**/*.scss")
 		.pipe(sass({
-			quietDeps: true  // Suppress deprecation warnings from dependencies
+			quietDeps: true,
+			silenceDeprecations: ['legacy-js-api', 'import', 'if-function', 'global-builtin', 'color-functions']
 		}).on("error", sass.logError))
 		.pipe(autoprefixer("last 2 versions"))
 		.pipe(gulp.dest("assets/css/"))
@@ -44,8 +45,12 @@ function handlePotFile() {
         .pipe(gulp.dest(`languages/${pkgJson.name}.pot`));
 }
 
+gulp.task("sass", handleScssBuild);
+gulp.task("sass:build", handleScssBuild);
 gulp.task("file:pot", handlePotFile);
 gulp.task("sass:minify", handleMinifyCSS);
 gulp.task("sass:watch", () =>
 	gulp.watch("src/scss/**/*.scss", handleScssBuild)
 );
+gulp.task("default", handleScssBuild);
+
